@@ -798,12 +798,15 @@
     btn.setAttribute('aria-busy', 'true');
     $('main').classList.add('is-refreshing');
     const before = probsById();
+    const artifact = hostedEnv().hosted === 'artifact'; // a claude.ai Artifact may not call other sites
     let res = null, error = null;
     try {
-      res = await W.fetchAll({
-        concurrency: 6,
-        onProgress: function (done, total) { label.textContent = 'Reading ' + done + ' of ' + total + ' pages'; }
-      });
+      if (!artifact) {
+        res = await W.fetchAll({
+          concurrency: 6,
+          onProgress: function (done, total) { label.textContent = 'Reading ' + done + ' of ' + total + ' pages'; }
+        });
+      }
     } catch (e) { error = e; }
     const ok = res ? res.pages.filter(function (p) { return p.ok; }) : [];
     if (ok.length) {
@@ -815,16 +818,7 @@
       showChanges(merged, res, before);
     } else {
       label.textContent = 'Loading the published data file';
-      let fallback = await loadPublishedData();
-      let via = 'the published data file';
-      let connectorError = null;
-      if (!fallback && hostedEnv().repo) {
-        label.textContent = 'Asking GitHub for the data file';
-        const viaGitHub = await loadFromRepoConnector();
-        fallback = viaGitHub.data;
-        connectorError = viaGitHub.error;
-        via = 'the repository\'s data file through your GitHub connector';
-      }
+      const fallback = await loadPublishedData();
       if (fallback) {
         const refreshed = fallback.meta && fallback.meta.refreshed;
         // A file older than the data already loaded may add polls but never rolls rows back.
@@ -834,11 +828,12 @@
         if (!older) state.data = { origin: 'repository', compiled: SNAP.meta.compiled, fetchedAt: refreshed || new Date().toISOString() };
         writeStore(STORE_KEY, Object.assign({}, state.data, { polls: state.polls }));
         recompute();
-        showBanner(false, 'This page can\'t call Wikipedia directly, so it loaded ' + via + ' (' +
+        showBanner(false, 'This page can\'t call Wikipedia directly, so it loaded the published data file (' +
           (refreshed ? 'last refreshed from Wikipedia ' + fmtTime(refreshed) + (older ? ', older than the data already here' : '') : 'the hand-compiled snapshot; the repository\'s "Update polls" action has not run yet') + '): ' +
-          plural(merged.added.length, 'new poll') + ', ' + plural(merged.updated.length, 'updated row') + '.', null);
-      } else if (connectorError) {
-        showBanner(true, connectorError, null);
+          plural(merged.added.length, 'new poll') + ', ' + plural(merged.updated.length, 'updated row') + '.' +
+          (artifact ? ' For a live pull, open the dashboard from its GitHub Pages site or a local copy.' : ''), null);
+      } else if (artifact) {
+        showBanner(true, 'This copy of the dashboard can\'t call Wikipedia and has no published data file to load. Open it from the repository\'s GitHub Pages site or a local copy for live refreshes.', null);
       } else {
         showBanner(true, 'Could not reach Wikipedia' + (error ? ' (' + error.message + ')' : '') + '. Check your connection, or open the dashboard from the repository\'s GitHub Pages site or a local copy, where the browser can call the Wikipedia API directly. The forecast still shows the last data loaded.', null);
       }
@@ -860,81 +855,6 @@
   }
 
   function hostedEnv() { return window.DASHBOARD_ENV || {}; }
-
-  /**
-   * Read data/polls.json from the GitHub repository through the viewer's
-   * GitHub connector. Only available when the page runs as a claude.ai
-   * Artifact that declared the connector. Returns { data } or { error }.
-   */
-  async function loadFromRepoConnector() {
-    const repo = hostedEnv().repo;
-    const claude = window.claude;
-    if (!repo || !claude || typeof claude.use !== 'function') return { data: null, error: null };
-    let mcp = null;
-    try { mcp = await claude.use('mcp'); } catch (e) { mcp = null; }
-    if (!mcp) return { data: null, error: 'This copy of the dashboard can\'t reach Wikipedia or GitHub. Open the GitHub Pages site or a local copy for live refreshes.' };
-    let lastErr = null;
-    for (let i = 0; i < repo.refs.length; i++) {
-      const input = { owner: repo.owner, repo: repo.repo, path: repo.path };
-      if (repo.refs[i]) input.ref = 'refs/heads/' + repo.refs[i];
-      try {
-        const result = await mcp.callTool(repo.server, 'get_file_contents', input, { cache: false });
-        const data = parseConnectorPayload(result);
-        if (data) return { data: data, error: null };
-        lastErr = { code: 'tool_error', message: 'the file did not contain poll data' };
-      } catch (err) {
-        lastErr = err || {};
-        if (lastErr.code !== 'tool_error') break;
-      }
-    }
-    return { data: null, error: connectorMessage(lastErr, repo.server) };
-  }
-
-  function connectorMessage(err, server) {
-    const code = err && err.code;
-    if (code === 'server_not_connected') return 'This page can\'t call Wikipedia directly. Add ' + server + ' in claude.ai Settings → Connectors to load the repository\'s latest data here, or open the GitHub Pages copy for live refreshes.';
-    if (code === 'needs_reauth') return 'Reconnect ' + server + ' in claude.ai Settings → Connectors, then refresh again.';
-    if (code === 'selection_required') return 'Choose which ' + server + ' connection to use when claude.ai asks, then refresh again.';
-    if (code === 'approval_required' || code === 'consent_required' || code === 'not_in_manifest') return 'Reading the data file through ' + server + ' needs your permission. Select Refresh polls again and allow it when asked.';
-    if (code === 'blocked_by_policy') return 'Your organization\'s policy blocks this page from using ' + server + '. Open the GitHub Pages copy for live refreshes.';
-    if (code === 'tool_error') return server + ' could not return the data file (' + (err.message || 'unknown error') + ').';
-    if (code === 'not_granted' || code === 'capability_disabled' || code === 'capability_removed') return 'This view can\'t use connectors. Open the GitHub Pages copy for live refreshes.';
-    return server + ' did not respond' + (code ? ' (' + code + ')' : '') + '. Try again in a moment.';
-  }
-
-  function parseConnectorPayload(res) {
-    function asData(v) {
-      if (!v) return null;
-      if (typeof v === 'object' && Array.isArray(v.polls)) return v;
-      if (typeof v === 'string') {
-        try { const j = JSON.parse(v); return j && Array.isArray(j.polls) ? j : null; } catch (e) { return null; }
-      }
-      return null;
-    }
-    function fromBase64(s) {
-      try {
-        const bin = atob(String(s).replace(/\s+/g, ''));
-        const bytes = new Uint8Array(bin.length);
-        for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
-        return new TextDecoder().decode(bytes);
-      } catch (e) { return null; }
-    }
-    if (!res) return null;
-    const p = res.payload;
-    let d = asData(p);
-    if (d) return d;
-    if (p && typeof p === 'object' && typeof p.content === 'string') {
-      d = asData(p.encoding === 'base64' ? fromBase64(p.content) : p.content);
-      if (d) return d;
-    }
-    const blocks = Array.isArray(res.content) ? res.content : [];
-    for (let i = 0; i < blocks.length; i++) {
-      const b = blocks[i] || {};
-      d = asData(b.text) || (b.resource && (asData(b.resource.text) || (b.resource.blob && asData(fromBase64(b.resource.blob)))));
-      if (d) return d;
-    }
-    return null;
-  }
 
   function showChanges(merged, res, before) {
     const after = probsById();

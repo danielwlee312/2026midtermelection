@@ -129,7 +129,7 @@ Every race where the leader's chance is below 90%:
 3. prefers the likely-voter version of each poll;
 4. merges new rows into the dataset and recalculates everything.
 
-A banner lists the new polls, the races that moved, and any page that couldn't be read. Refreshed data is saved in your browser; *Use bundled snapshot* resets it. If Wikipedia can't be reached, the page loads `data/polls.json` instead. In a claude.ai Artifact copy, it reads that file through your GitHub connector.
+A banner lists the new polls, the races that moved, and any page that couldn't be read. Refreshed data is saved in your browser; *Use bundled snapshot* resets it. If Wikipedia can't be reached, the page loads `data/polls.json` instead. A claude.ai Artifact copy can't call Wikipedia at all, so its button loads the `data/polls.json` published with it.
 
 **In GitHub:** the **Update polls** workflow (Actions tab → *Update polls* → *Run workflow*) runs the same parser in Node and commits refreshed `data/polls.js` and `data/polls.json`. A daily schedule is included in the workflow file, commented out.
 
