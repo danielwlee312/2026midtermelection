@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-24T16:01:27.330Z",
+  "refreshed": "2026-10-24T23:19:49.853Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -7610,7 +7610,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Rasmussen Reports",
+   "pollster": "Rasmussen Reports (R)",
    "pollsterId": null,
    "start": "2026-10-20",
    "end": "2026-10-21",
@@ -7620,7 +7620,7 @@
     "Talarico": 45,
     "Paxton": 45
    },
-   "partisan": null,
+   "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
    "origin": "wikipedia"
   },
@@ -7850,7 +7850,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Rasmussen Reports",
+   "pollster": "Rasmussen Reports (R)",
    "pollsterId": null,
    "start": "2026-09-28",
    "end": "2026-09-29",
@@ -7860,7 +7860,7 @@
     "Talarico": 46,
     "Paxton": 45
    },
-   "partisan": null,
+   "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
    "origin": "wikipedia"
   },
@@ -15313,6 +15313,54 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Pennsylvania_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ID",
+   "pollster": "VoteNexus Research",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-22",
+   "n": 700,
+   "pop": "LV",
+   "results": {
+    "Achilles": 43,
+    "Risch": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Idaho",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-ID",
+   "pollster": "VoteNexus Research",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-22",
+   "n": 700,
+   "pop": "LV",
+   "results": {
+    "Pickens": 30,
+    "Little": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Idaho_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-ID",
+   "pollster": "Change Research (D)",
+   "pollsterId": null,
+   "start": "2026-07-28",
+   "end": "2026-07-30",
+   "n": 1213,
+   "pop": "LV",
+   "results": {
+    "Pickens": 27,
+    "Little": 48
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Idaho_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
