@@ -118,6 +118,10 @@ async function main() {
     console.log('Dry run: data files not written.');
     return;
   }
+  if (!merged.added.length && !merged.updated.length) {
+    console.log('No poll changes: data files left as they are.');
+    return;
+  }
   const data = {
     meta: Object.assign({}, current.meta, {
       origin: 'snapshot+wikipedia',

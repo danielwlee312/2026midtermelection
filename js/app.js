@@ -161,7 +161,7 @@
         ' · ' + plural(n, 'trusted poll') + ' · ');
       append(box, h('button', { type: 'button', class: 'btn-link', onclick: resetToSnapshot, text: 'Use bundled snapshot' }));
     } else if (SNAP.meta.refreshed) {
-      append(box, 'Bundled data, last pulled from Wikipedia ' + fmtTime(SNAP.meta.refreshed) + ' · ' + plural(n, 'trusted poll'));
+      append(box, 'Bundled data, updated from Wikipedia ' + fmtTime(SNAP.meta.refreshed) + ' · ' + plural(n, 'trusted poll'));
     } else {
       append(box, 'Bundled snapshot, compiled ' + fmtDayYear(state.data.compiled) + ' · ' + plural(n, 'trusted poll'));
     }

@@ -9,7 +9,7 @@ A state-by-state forecast for every 2026 Senate and governor race. It's built fr
 | Where | How | Live refresh |
 |---|---|---|
 | **Your computer** | Download the repo and double-click `index.html` (no build, no server needed) | Yes: the browser calls Wikipedia directly |
-| **GitHub Pages** | Settings → Pages → *Deploy from a branch* → pick this branch, folder `/ (root)` | Yes, with a fallback to `data/polls.json` |
+| **GitHub Pages** | Settings → Pages → *Deploy from a branch* → pick this branch, folder `/ (root)`. The site appears at <https://danielwlee312.github.io/2026midtermelection/> and redeploys after every data update | Yes, with a fallback to `data/polls.json` |
 | **Local server** | `python3 -m http.server 8000`, then open <http://localhost:8000> | Yes, with a fallback to `data/polls.json` |
 
 Command-line tools need Node 18 or newer and no npm install:
@@ -131,7 +131,7 @@ Every race where the leader's chance is below 90%:
 
 A banner lists the new polls, the races that moved, and any page that couldn't be read. Refreshed data is saved in your browser; *Use bundled snapshot* resets it. If Wikipedia can't be reached, the page loads `data/polls.json` instead. A claude.ai Artifact copy can't call Wikipedia at all, so its button loads the `data/polls.json` published with it.
 
-**In GitHub:** the **Update polls** workflow (Actions tab → *Update polls* → *Run workflow*) runs the same parser in Node and commits refreshed `data/polls.js` and `data/polls.json`. A daily schedule is included in the workflow file, commented out.
+**In GitHub:** the **Update polls** workflow runs the same parser in Node every 3 hours and commits refreshed `data/polls.js` and `data/polls.json` whenever polls changed. You can also run it any time (Actions tab → *Update polls* → *Run workflow*), or pause the schedule by commenting out `schedule` in `.github/workflows/update-polls.yml`.
 
 ## Data and caveats
 
