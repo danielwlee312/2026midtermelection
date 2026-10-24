@@ -18,6 +18,11 @@ test('parseDateRange handles the formats Wikipedia uses', () => {
   assert.deepEqual(WIKI.parseDateRange('Oct. 1–4', 2026), { start: '2026-10-01', end: '2026-10-04' });
   assert.deepEqual(WIKI.parseDateRange('Dec 28, 2025 – Jan 6, 2026', 2026), { start: '2025-12-28', end: '2026-01-06' });
   assert.deepEqual(WIKI.parseDateRange('December 28 – January 3, 2026', 2026), { start: '2025-12-28', end: '2026-01-03' });
+  assert.deepEqual(WIKI.parseDateRange('Dec 28, 2025 – Jan 3', 2026), { start: '2025-12-28', end: '2026-01-03' });
+  assert.deepEqual(WIKI.parseDateRange('Dec 28 – Jan 3', 2026), { start: '2025-12-28', end: '2026-01-03' });
+  // A garbled range never yields a start after its end.
+  const odd = WIKI.parseDateRange('October 30 – 2, 2026', 2026);
+  assert.ok(odd.start <= odd.end, JSON.stringify(odd));
   assert.equal(WIKI.parseDateRange('Ken Paxton wins the runoff', 2026), null);
 });
 

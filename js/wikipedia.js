@@ -175,16 +175,23 @@
     }
     const a = piece(parts[0]);
     const b = parts.length > 1 ? piece(parts[parts.length - 1]) : {};
-    const end = {
-      year: b.year || a.year || defaultYear,
-      month: b.month || a.month,
-      day: b.day != null ? b.day : a.day
-    };
-    const start = { year: a.year || end.year, month: a.month || end.month, day: a.day != null ? a.day : end.day };
+    const end = { month: b.month || a.month, day: b.day != null ? b.day : a.day };
+    const start = { month: a.month || end.month, day: a.day != null ? a.day : end.day };
     if (!end.month || !end.day || !start.month || !start.day) return null;
-    if (!a.year && start.month > end.month) start.year = end.year - 1;
+    const wraps = start.month > end.month; // e.g. December 28 - January 3
+    if (b.year) {
+      end.year = b.year;
+      start.year = a.year || (wraps ? b.year - 1 : b.year);
+    } else if (a.year) {
+      start.year = a.year;
+      end.year = wraps ? a.year + 1 : a.year;
+    } else {
+      end.year = defaultYear;
+      start.year = wraps ? defaultYear - 1 : defaultYear;
+    }
     const iso = function (d) { return d.year + '-' + pad(d.month) + '-' + pad(d.day); };
-    return { start: iso(start), end: iso(end) };
+    const s = iso(start), e = iso(end);
+    return { start: s <= e ? s : e, end: e };
   }
 
   /** "1,398 (LV)" -> { n: 1398, pop: 'LV' }. */
