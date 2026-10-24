@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-24T05:19:18.918Z",
+  "refreshed": "2026-10-24T11:10:05.800Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -1259,7 +1259,7 @@
   },
   {
    "race": "SEN-MI",
-   "pollster": "InsiderAdvantage",
+   "pollster": "InsiderAdvantage (R)",
    "pollsterId": null,
    "start": "2026-10-21",
    "end": "2026-10-22",
@@ -1269,8 +1269,9 @@
     "El-Sayed": 47,
     "Rogers": 46
    },
-   "source": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed",
-   "partisan": "R"
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
   },
   {
    "race": "SEN-NE",
@@ -15264,6 +15265,22 @@
    },
    "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_Wisconsin_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NE",
+   "pollster": "Global Strategy Group (D)",
+   "pollsterId": null,
+   "start": "2026-10-13",
+   "end": "2026-10-18",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Walz": 39,
+    "Pillen": 40
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Nebraska_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
