@@ -1222,49 +1222,8 @@
     "Pappas": 49,
     "Sununu": 44
    },
-   "source": "https://www.realclearpolling.com/polls/senate/general/2026/new-hampshire/pappas-vs-sununu"
-  },
-  {
-   "race": "SEN-GA",
-   "pollster": "University of Georgia/AJC",
-   "pollsterId": null,
-   "start": "2026-10-07",
-   "end": "2026-10-15",
-   "n": 1000,
-   "pop": "LV",
-   "results": {
-    "Ossoff": 48,
-    "Collins": 40
-   },
-   "source": "https://www.wsbtv.com/news/local/ajcuga-poll-jon-ossoff-leads-mike-collins-among-likely-voters-us-senate-race/YWLQFEFS3VHILHKZ3KWBO2ZX5I/"
-  },
-  {
-   "race": "SEN-GA",
-   "pollster": "Quantus Insights",
-   "pollsterId": null,
-   "start": "2026-10-15",
-   "end": "2026-10-17",
-   "n": 755,
-   "pop": "LV",
-   "results": {
-    "Ossoff": 51.8,
-    "Collins": 44.9
-   },
-   "source": "https://www.atlantanewsfirst.com/2026/10/19/new-georgia-poll-ossoff-leads-by-nearly-7-jackson-dolezal-cling-narrow-edges/"
-  },
-  {
-   "race": "SEN-GA",
-   "pollster": "Trafalgar Group",
-   "pollsterId": null,
-   "start": "2026-10-07",
-   "end": "2026-10-09",
-   "n": 1101,
-   "pop": "LV",
-   "results": {
-    "Ossoff": 51,
-    "Collins": 43
-   },
-   "source": "https://www.newsweek.com/jon-ossoff-extends-lead-over-mike-collins-in-georgia-senate-race-poll-12552612"
+   "source": "https://www.realclearpolling.com/polls/senate/general/2026/new-hampshire/pappas-vs-sununu",
+   "partisan": "R"
   },
   {
    "race": "SEN-NC",
@@ -1281,20 +1240,6 @@
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
    "origin": "wikipedia"
-  },
-  {
-   "race": "SEN-NC",
-   "pollster": "Trafalgar Group",
-   "pollsterId": null,
-   "start": "2026-10-08",
-   "end": "2026-10-10",
-   "n": 1091,
-   "pop": "LV",
-   "results": {
-    "Cooper": 48.8,
-    "Whatley": 40.9
-   },
-   "source": "https://thehill.com/homenews/campaign/6144234-roy-cooper-leads-whatley-nc/"
   },
   {
    "race": "SEN-MI",
@@ -1324,23 +1269,8 @@
     "El-Sayed": 47,
     "Rogers": 46
    },
-   "source": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed"
-  },
-  {
-   "race": "SEN-MI",
-   "pollster": "Tyson Group",
-   "pollsterId": null,
-   "partisan": "R",
-   "start": "2026-10-06",
-   "end": "2026-10-08",
-   "n": 600,
-   "pop": "LV",
-   "results": {
-    "El-Sayed": 44,
-    "Rogers": 46
-   },
-   "note": "Sponsored by an ally of Mike Rogers.",
-   "source": "https://www.newsweek.com/rogers-el-sayed-clash-over-war-trump-in-final-michigan-senate-debate-12596649"
+   "source": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed",
+   "partisan": "R"
   },
   {
    "race": "SEN-NE",
@@ -1359,94 +1289,6 @@
    "origin": "wikipedia"
   },
   {
-   "race": "SEN-NE",
-   "pollster": "National Public Affairs",
-   "pollsterId": null,
-   "partisan": "R",
-   "start": "2026-10-10",
-   "end": "2026-10-10",
-   "n": null,
-   "pop": "LV",
-   "results": {
-    "Osborn": 43,
-    "Ricketts": 46
-   },
-   "approx": true,
-   "source": "https://politicalwire.com/2026/10/12/ricketts-leads-osborn-in-nebraska-senate-race/"
-  },
-  {
-   "race": "SEN-MT",
-   "pollster": "Quantus Insights",
-   "pollsterId": null,
-   "start": "2026-10-15",
-   "end": "2026-10-18",
-   "n": 686,
-   "pop": "LV",
-   "results": {
-    "Bodnar": 28,
-    "Alme": 44,
-    "Bankhead": 21
-   },
-   "source": "https://www.realclearpolling.com/polls/senate/general/2026/montana/alme-vs-bankhead-vs-bodnar"
-  },
-  {
-   "race": "SEN-KS",
-   "pollster": "InsiderAdvantage",
-   "pollsterId": null,
-   "start": "2026-10-13",
-   "end": "2026-10-14",
-   "n": 1200,
-   "pop": "LV",
-   "results": {
-    "Hamilton": 47,
-    "Marshall": 48
-   },
-   "source": "https://www.newsweek.com/adam-hamilton-vs-roger-marshall-kansas-senate-race-odds-polls-12460819"
-  },
-  {
-   "race": "SEN-ME",
-   "pollster": "AARP",
-   "pollsterId": null,
-   "start": "2026-09-20",
-   "end": "2026-09-22",
-   "n": 982,
-   "pop": "LV",
-   "results": {
-    "Jackson": 50,
-    "Collins": 47
-   },
-   "source": "https://www.newsweek.com/maine-senate-polling-as-susan-collins-troy-jackson-head-into-fourth-debate-12569146"
-  },
-  {
-   "race": "SEN-MN",
-   "pollster": "Trafalgar Group",
-   "pollsterId": null,
-   "start": "2026-10-15",
-   "end": "2026-10-17",
-   "n": null,
-   "pop": "LV",
-   "results": {
-    "Flanagan": 48.1,
-    "Tafoya": 44.6
-   },
-   "approx": true,
-   "source": "https://suaragarut.id/en/flanagan-tafoya-minnesota-senate-poll"
-  },
-  {
-   "race": "GOV-GA",
-   "pollster": "University of Georgia/AJC",
-   "pollsterId": null,
-   "start": "2026-10-07",
-   "end": "2026-10-15",
-   "n": 1000,
-   "pop": "LV",
-   "results": {
-    "Bottoms": 45,
-    "Jackson": 46
-   },
-   "source": "https://www.270towin.com/2026-governor-polls/georgia"
-  },
-  {
    "race": "GOV-AZ",
    "pollster": "Noble Predictive Insights",
    "pollsterId": null,
@@ -1460,65 +1302,6 @@
    },
    "approx": true,
    "source": "https://cronkitenews.azpbs.org/2026/10/01/andy-biggs-katie-hobbs-arizona-polls-kalshi/"
-  },
-  {
-   "race": "GOV-NM",
-   "pollster": "Albuquerque Journal",
-   "pollsterId": null,
-   "start": "2026-08-28",
-   "end": "2026-08-28",
-   "n": null,
-   "pop": "LV",
-   "results": {
-    "Haaland": 49,
-    "Hull": 43
-   },
-   "approx": true,
-   "source": "https://www.kunm.org/kunm-news-update/2026-08-31/mon-poll-shows-haaland-leads-hull-by-closer-than-expected-margin-in-new-mexicos-race-for-governor"
-  },
-  {
-   "race": "GOV-MN",
-   "pollster": "Star Tribune/KARE 11",
-   "pollsterId": null,
-   "start": "2026-10-08",
-   "end": "2026-10-08",
-   "n": null,
-   "pop": "LV",
-   "results": {
-    "Klobuchar": 50,
-    "Demuth": 41
-   },
-   "approx": true,
-   "source": "https://politicalwire.com/2026/10/13/amy-klobuchar-hits-50-for-minnesota-governor/"
-  },
-  {
-   "race": "GOV-OH",
-   "pollster": "co/efficient",
-   "pollsterId": null,
-   "partisan": "R",
-   "start": "2026-10-05",
-   "end": "2026-10-06",
-   "n": 925,
-   "pop": "LV",
-   "results": {
-    "Acton": 43,
-    "Ramaswamy": 45
-   },
-   "source": "https://www.newsweek.com/vivek-ramaswamy-gets-boost-after-five-ohio-polling-blows-in-a-row-12544047"
-  },
-  {
-   "race": "GOV-TX",
-   "pollster": "University of Houston Hobby School",
-   "pollsterId": null,
-   "start": "2026-10-10",
-   "end": "2026-10-14",
-   "n": null,
-   "pop": "LV",
-   "results": {
-    "Hinojosa": 46,
-    "Abbott": 49
-   },
-   "source": "https://www.fox7austin.com/news/texas-governors-race-abbott-holds-narrow-lead-over-hinojosa-latest-poll"
   },
   {
    "race": "SEN-AL",

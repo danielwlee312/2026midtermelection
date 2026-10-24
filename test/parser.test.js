@@ -130,6 +130,13 @@ test('mergePolls never lets an older data file overwrite a live Wikipedia row', 
   // Extra third-party columns alone do not count as an update.
   const withThird = Object.assign({}, live, { results: { Talarico: 47, Paxton: 45, Brown: 1 } });
   assert.equal(WIKI.mergePolls([withThird], [live]).updated.length, 0);
+  // addOnly keeps every existing row and still adds unmatched polls.
+  const edited = Object.assign({}, live, { results: { Talarico: 48, Paxton: 45 } });
+  const extra = Object.assign({}, live, { pollster: 'Emerson College', pollsterId: 'emerson' });
+  const kept = WIKI.mergePolls([live], [edited, extra], { addOnly: true });
+  assert.equal(kept.updated.length, 0);
+  assert.equal(kept.added.length, 1);
+  assert.equal(kept.polls[0].results.Talarico, 47);
 });
 
 test('Fox News polls credited to Beacon/Shaw are trusted and not partisan', () => {
@@ -168,6 +175,14 @@ test('head-to-head-only races ignore first-round ranked-choice tables', () => {
   const polls = WIKI.pollsForRace(race('GOV-AK'), html, 'x');
   assert.equal(polls.length, 1);
   assert.deepEqual(polls[0].results, { 'Kreiss-Tomkins': 47, Wilson: 48 });
+});
+
+test('mergePolls matches a pollster whether or not it carries a party tag', () => {
+  const hand = { race: 'SEN-MI', pollster: 'Tyson Group', pollsterId: null, start: '2026-10-06', end: '2026-10-08', n: 600, pop: 'LV', results: { 'El-Sayed': 44, Rogers: 46 }, source: 's' };
+  const wiki = Object.assign({}, hand, { pollster: 'The Tyson Group (R)', partisan: 'R', source: 'w', origin: 'wikipedia' });
+  const out = WIKI.mergePolls([hand], [wiki]);
+  assert.equal(out.polls.length, 1);
+  assert.equal(out.polls[0].partisan, 'R');
 });
 
 test('mergePolls keeps two distinct polls by one firm a few days apart', () => {

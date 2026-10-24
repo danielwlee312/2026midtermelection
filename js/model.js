@@ -183,7 +183,7 @@
       mean = race.last.margin + f * (env - envThen);
       sd = s.priorSigma.incumbent;
       basis = 'incumbent';
-      detail = (race.last.basis || 'Incumbent\'s last result (' + race.last.year + ')') + ' ' + fmtMargin(race.last.margin) +
+      detail = (race.last.basis || 'Incumbent\'s last result (' + race.last.year + ')') + ' ' + fmtMargin(race.last.margin, race) +
         ', plus ' + Math.round(f * 100) + '% of the national swing since then (' + fmtMargin(envThen) + ' to ' + fmtMargin(env) + ')';
     } else {
       const f = gov ? s.swing.governorOpen : s.swing.senateOpen;
@@ -330,10 +330,12 @@
     return { tier: tier, side: side, label: tier + ' ' + side, key: tier.toLowerCase() + '-' + side.toLowerCase() };
   }
 
-  function fmtMargin(m) {
+  /** Signed margin as text. With a race, the leader's own party letter: I+4.0 for an independent. */
+  function fmtMargin(m, race) {
     if (m == null || !isFinite(m)) return 'n/a';
     const v = Math.abs(m) < 0.05 ? 0 : m;
-    return v === 0 ? 'even' : (v > 0 ? 'D+' : 'R+') + Math.abs(v).toFixed(1);
+    const side = race ? race.candidates[v > 0 ? 0 : 1].party : (v > 0 ? 'D' : 'R');
+    return v === 0 ? 'even' : side + '+' + Math.abs(v).toFixed(1);
   }
 
   // ---------------------------------------------------------------- run

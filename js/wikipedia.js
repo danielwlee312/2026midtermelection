@@ -403,7 +403,9 @@
 
   // -------------------------------------------------------------- merging
   function sourceKey(p) {
-    return p.race + '|' + (p.pollsterId || normName(p.pollster).slice(0, 24));
+    // Sources disagree on party tags and a leading "The": "The Tyson Group (R)" is "Tyson Group".
+    const name = String(p.pollster || '').replace(/\((?:D|R)\)/g, ' ').replace(/^\s*the\s+/i, '');
+    return p.race + '|' + (p.pollsterId || normName(name).slice(0, 24));
   }
 
   /** Field-date gap in days if a and b can be the same poll, else -1. */
@@ -428,10 +430,12 @@
    * Merge polls into an existing list. A matching existing row (same race,
    * pollster and field dates) is replaced unless it came from Wikipedia and
    * the incoming row did not, so a stale data file never overwrites a
-   * fresher live read. Anything unmatched is added. Returns the merged list
-   * plus what changed.
+   * fresher live read. Anything unmatched is added. With addOnly, matching
+   * rows are left as they are (for a data file older than what is loaded).
+   * Returns the merged list plus what changed.
    */
-  function mergePolls(existing, incoming) {
+  function mergePolls(existing, incoming, opts) {
+    const addOnly = !!(opts && opts.addOnly);
     const merged = existing.slice();
     const added = [], updated = [];
     // Pair each incoming poll with at most one existing row, closest field dates first,
@@ -455,7 +459,7 @@
       const i = matchOf[j];
       if (i < 0) { merged.push(poll); added.push(poll); return; }
       const prev = existing[i];
-      if (prev.origin === 'wikipedia' && poll.origin !== 'wikipedia') return;
+      if (addOnly || (prev.origin === 'wikipedia' && poll.origin !== 'wikipedia')) return;
       const changed = differs(prev, poll);
       merged[i] = Object.assign({}, poll, {
         note: poll.note || (changed ? undefined : prev.note),

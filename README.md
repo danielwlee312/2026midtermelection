@@ -15,7 +15,7 @@ A state-by-state forecast for every 2026 Senate and governor race. It's built fr
 Command-line tools need Node 18 or newer and no npm install:
 
 ```bash
-node --test test/*.test.js        # 30 tests: parser, model, data integrity
+node --test test/*.test.js        # 35 tests: parser, model, data integrity
 node scripts/predict.js           # forecast table in the terminal (--all, --json, --as-of YYYY-MM-DD)
 node scripts/update-polls.js      # pull Wikipedia polls into data/polls.js and data/polls.json (--dry-run)
 node scripts/build-standalone.js  # one self-contained HTML file in dist/
@@ -50,6 +50,8 @@ Selection rule: the top-graded firms in [Silver Bulletin's pollster ratings](htt
 
 \* Silver Bulletin's mean-reverted bias, as published in [Media Bias/Fact Check pollster profiles](https://mediabiasfactcheck.com/pollster-sources/): how far the firm's past polls have leaned, in points of margin. "n/a" means no numeric value was available, so no correction is applied.
 
+Ratings belong to the firm that conducts the poll, so its polls for other sponsors count too: Siena's own New York and Texas polls, SurveyUSA's polls for local TV stations, and so on. AtlasIntel has not published polls of these races yet. It stays on the list so its polls count as soon as they appear.
+
 **Left out:** YouGov (B, 77th in the 2025 update), SSRS/CNN (C in the 2025 update), Gallup (no horse-race polls), Monmouth (polling institute closed in 2025), Selzer & Co. (retired from election polling after 2024), and partisan or lower-rated firms (Trafalgar, InsiderAdvantage, Quantus, co/efficient, Rasmussen, campaign-sponsored polls). The settings toggle can add them back at 30% weight, or 15% for party-affiliated polls (marked (D) or (R) on Wikipedia).
 
 Sources for the ratings: [Silver Bulletin January 2026 update](https://www.natesilver.net/p/pollster-ratings-silver-bulletin), [Marquette ranked No. 2 / Washington Post No. 1](https://today.marquette.edu/2026/02/marquette-law-school-poll-again-ranked-no-2-in-annual-national-pollster-ratings/), [AtlasIntel A+ in the 2025 update](https://atlasintel.org/media/atlasintel-has-an-a-rating-and-is-the-no1-pollster-in-america-according-to-the-2025-us-pollster-ratings), [FiveThirtyEight 2024 ratings (NYT/Siena most accurate)](https://scri.siena.edu/2024/02/06/the-new-york-times-siena-college-poll-ranked-most-accurate-pollster-in-america-by-fivethirtyeight-com), and the individual MBFC profiles for [Emerson](https://mediabiasfactcheck.com/emerson-college-polling-bias-and-credibility/), [Marist](https://mediabiasfactcheck.com/marist-poll-bias-and-credibility/), [Suffolk](https://mediabiasfactcheck.com/suffolk-polling-bias-and-credibility/), [Quinnipiac](https://mediabiasfactcheck.com/quinnipiac-poll-bias-and-credibility/), [SurveyUSA](https://mediabiasfactcheck.com/surveyusa-bias-and-credibility/), [Beacon/Shaw](https://mediabiasfactcheck.com/beacon-research-shaw-co-bias/), [Marquette](https://mediabiasfactcheck.com/marquette-university-poll-bias-and-credibility/), [AtlasIntel](https://mediabiasfactcheck.com/atlasintel-polling-bias-and-credibility/) and [Siena](https://mediabiasfactcheck.com/siena-college-research-institute-bias-and-credibility/).
@@ -74,40 +76,50 @@ All of this lives in [`js/model.js`](js/model.js), with defaults in `DEFAULTS`.
 
 Ratings: Safe ≥ 95%, Likely ≥ 80%, Lean ≥ 60%, otherwise Toss-up.
 
-## Forecast snapshot (bundled data, October 24, 2026)
+## Forecast snapshot (October 24, 2026)
 
-Trusted pollsters only, with default settings. The dashboard recalculates every time you refresh.
+This uses the bundled data after the **Update polls** workflow merged Wikipedia's poll tables (05:19 UTC), with trusted pollsters only and default settings. The dashboard recalculates every time you refresh.
 
-- **Senate control:** Democrats 57%, Republicans 35%, no outright majority 8%. Average seats: D 50.9, R 48.4, independents 0.7.
-- **Governors:** Democratic majority 67%. Average 26.4 Democratic governors.
+- **Senate control:** Democrats 62%, Republicans 29%, no outright majority 9%. Average seats: D 51.3, R 47.9, independents 0.8.
+- **Governors:** Democratic majority 69%. Average 26.5 Democratic governors.
 - **National environment:** D+10.9 on the generic ballot (NYT/Siena, Emerson, Marquette, Quinnipiac).
+
+Every race where the leader's chance is below 90%:
 
 | Senate race | Polls | Poll avg | Forecast | Chance |
 |---|---|---|---|---|
-| Alaska: Peltola (D) v Sullivan (R) | 1 | D+7.0 | even | Toss-up 50/50 |
-| Nebraska: Osborn (I) v Ricketts (R) | 0 | – | even | Toss-up 50/50 |
-| Maine: Jackson (D) v Collins (R) | 6 | D+1.4 | D+0.3 | Jackson 53% |
-| Texas: Talarico (D) v Paxton (R) | 6 | D+1.8 | D+0.7 | Talarico 56% |
-| Iowa: Turek (D) v Hinson (R) | 6 | even | R+0.8 | Hinson 57% |
+| Iowa: Turek (D) v Hinson (R) | 11 | D+0.8 | R+0.1 | Toss-up 50/50 |
+| Maine: Jackson (D) v Collins (R) | 6 | D+1.2 | D+0.2 | Jackson 52% |
+| Alaska: Peltola (D) v Sullivan (R) | 2 | D+6.8 | R+0.3 | Sullivan 52% |
+| Texas: Talarico (D) v Paxton (R) | 14 | D+1.6 | D+0.6 | Talarico 55% |
+| Nebraska: Osborn (I) v Ricketts (R) | 1 | I+4.0 | I+2.0 | Osborn 61% |
 | Kansas: Hamilton (D) v Marshall (R) | 2 | D+0.5 | R+2.2 | Marshall 66% |
-| Ohio (special): Brown (D) v Husted (R) | 5 | D+3.6 | D+2.0 | Brown 67% |
-| Michigan: El-Sayed (D) v Rogers (R) | 4 | D+1.7 | D+3.3 | El-Sayed 76% |
-| North Carolina: Cooper (D) v Whatley (R) | 1 | D+9.0 | D+7.0 | Cooper 80% |
+| Florida (special): Nixon (D) v Moody (R) | 1 | R+11.7 | R+4.7 | Moody 70% |
+| Mississippi: Colom (D) v Hyde-Smith (R) | 0 | – | R+4.6 | Hyde-Smith 71% |
+| Ohio (special): Brown (D) v Husted (R) | 8 | D+4.2 | D+2.8 | Brown 73% |
+| Michigan: El-Sayed (D) v Rogers (R) | 8 | D+2.6 | D+3.9 | El-Sayed 81% |
 | Georgia: Ossoff (D) v Collins (R) | 2 | D+12.8 | D+7.0 | Ossoff 81% |
-| Minnesota: Flanagan (D) v Tafoya (R) | 3 | D+2.5 | D+6.6 | Flanagan 87% |
+| Montana: Bodnar (I) v Alme (R) | 0 | – | R+10.0 | Alme 82% |
+| South Carolina: Andrews (D) v Graham (R) | 0 | – | R+9.5 | Graham 85% |
+| Minnesota: Flanagan (D) v Tafoya (R) | 3 | D+2.5 | D+6.4 | Flanagan 87% |
 
 | Governor race | Polls | Poll avg | Forecast | Chance |
 |---|---|---|---|---|
-| New Hampshire: Warmington (D) v Ayotte (R) | 0 | – | R+2.9 | Ayotte 62% |
 | Nevada: Ford (D) v Lombardo (R) | 1 | D+1.4 | D+3.9 | Ford 70% |
-| Georgia: Bottoms (D) v Jackson (R) | 0 | – | D+5.2 | Bottoms 71% |
-| Ohio: Acton (D) v Ramaswamy (R) | 3 | D+5.5 | D+2.9 | Acton 71% |
-| Iowa: Sand (D) v Lahn (R) | 3 | D+6.6 | D+3.1 | Sand 71% |
-| Wisconsin: Crowley (D) v Tiffany (R) | 2 | D+2.9 | D+4.4 | Crowley 75% |
-| Texas: Hinojosa (D) v Abbott (R) | 2 | R+3.7 | R+3.8 | Abbott 76% |
-| Michigan: Benson (D) v James (R) | 2 | D+6.3 | D+6.2 | Benson 87% |
+| Alaska: Kreiss-Tomkins (D) v Wilson (R) | 0 | – | R+5.7 | Wilson 71% |
+| Georgia: Bottoms (D) v Jackson (R) | 1 | D+5.0 | D+5.2 | Bottoms 71% |
+| Florida: Jolly (D) v Donalds (R) | 1 | R+5.7 | R+5.7 | Donalds 72% |
+| Ohio: Acton (D) v Ramaswamy (R) | 8 | D+4.4 | D+2.9 | Acton 75% |
+| Wisconsin: Crowley (D) v Tiffany (R) | 2 | D+2.9 | D+4.4 | Crowley 76% |
+| Texas: Hinojosa (D) v Abbott (R) | 13 | R+3.3 | R+3.5 | Abbott 79% |
+| Arizona: Hobbs (D) v Biggs (R) | 0 | – | D+7.5 | Hobbs 80% |
+| South Carolina: Johnson (D) v Wilson (R) | 0 | – | R+10.5 | Wilson 85% |
+| New Hampshire: Warmington (D) v Ayotte (R) | 1 | R+11.0 | R+7.0 | Ayotte 86% |
+| Oregon: Kotek (D) v Drazan (R) | 0 | – | D+10.3 | Kotek 87% |
+| Kansas: Holscher (D) v Masterson (R) | 2 | R+6.0 | R+6.8 | Masterson 88% |
+| Iowa: Sand (D) v Lahn (R) | 11 | D+8.0 | D+5.4 | Sand 88% |
 
-Run `node scripts/predict.js` for all 71 races.
+*Polls* counts every trusted poll from the last 240 days, but old polls carry little weight. Florida's only Senate poll is from March, so that forecast is essentially the baseline. Alaska shows the other side of the blend: one recent poll (Peltola +7) against an incumbent baseline of Sullivan +7 lands near even. Run `node scripts/predict.js` for all 71 races.
 
 ## Refreshing the data
 
@@ -123,7 +135,7 @@ A banner lists the new polls, the races that moved, and any page that couldn't b
 
 ## Data and caveats
 
-- `data/polls.js` was hand-compiled on October 24, 2026 from pollster releases and news coverage, with a source link on every row. It holds 96 polls, 73 of them from the trusted ten. Rows marked `approx: true` (≈ in the UI) use a release date in place of unpublished field dates, or an estimated per-state sample (NYT/Siena's five-state survey).
+- `data/polls.js` started as a hand-compiled snapshot (October 24, 2026) of 96 polls from pollster releases and news coverage, 73 of them from the trusted ten, with a source link on every row. The **Update polls** workflow then merged Wikipedia's poll tables: Wikipedia's versions replaced every matching row, so the file now holds 952 polls, 179 from the trusted ten. Nine rows remain hand-compiled: the six national generic-ballot polls and three state polls Wikipedia doesn't list. Rows marked `approx: true` (≈ in the UI) use a release date in place of unpublished field dates.
 - Only the trusted ten count by default, so races they have not polled lean on the fundamentals baseline. Turn on *Add other pollsters* to see every public poll's effect.
 - No Wikipedia article lists individual national generic-ballot polls this cycle (only aggregator averages), so the national environment comes from the bundled trusted generic-ballot polls; add new ones to `data/polls.js` as `HOUSE-US` rows.
 - Ranked-choice Alaska and the three-way Montana Senate race are modeled as the top two candidates.

@@ -165,4 +165,8 @@ test('fmtMargin labels sides', () => {
   assert.equal(MODEL.fmtMargin(2.34), 'D+2.3');
   assert.equal(MODEL.fmtMargin(-0.04), 'even');
   assert.equal(MODEL.fmtMargin(-7), 'R+7.0');
+  const ne = MODEL.RACE_BY_ID['SEN-NE'];
+  assert.equal(MODEL.fmtMargin(4, ne), 'I+4.0');
+  assert.equal(MODEL.fmtMargin(-4, ne), 'R+4.0');
+  assert.equal(MODEL.fmtMargin(4, MODEL.RACE_BY_ID['SEN-ME']), 'D+4.0');
 });

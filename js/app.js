@@ -119,7 +119,10 @@
       if (typeof prefs.applyBias === 'boolean') state.settings.applyBias = prefs.applyBias;
     }
     const saved = readStore(STORE_KEY);
-    if (saved && Array.isArray(saved.polls) && saved.polls.length && saved.fetchedAt) {
+    if (saved && SNAP.meta.refreshed && saved.fetchedAt && saved.fetchedAt < SNAP.meta.refreshed) {
+      // The bundled data was pulled from Wikipedia after this saved copy, so it supersedes it.
+      dropStore(STORE_KEY);
+    } else if (saved && Array.isArray(saved.polls) && saved.polls.length && saved.fetchedAt) {
       // Keep any hand-compiled rows the saved copy predates, then lay the saved rows on top.
       state.polls = W.mergePolls(SNAP.polls.slice(), saved.polls).polls;
       state.data = { origin: saved.origin || 'wikipedia', compiled: SNAP.meta.compiled, fetchedAt: saved.fetchedAt, pagesOk: saved.pagesOk, pagesTotal: saved.pagesTotal };
@@ -157,6 +160,8 @@
         (state.data.pagesTotal ? ' from ' + state.data.pagesOk + ' of ' + state.data.pagesTotal + ' pages' : '') +
         ' · ' + plural(n, 'trusted poll') + ' · ');
       append(box, h('button', { type: 'button', class: 'btn-link', onclick: resetToSnapshot, text: 'Use bundled snapshot' }));
+    } else if (SNAP.meta.refreshed) {
+      append(box, 'Bundled data, last pulled from Wikipedia ' + fmtTime(SNAP.meta.refreshed) + ' · ' + plural(n, 'trusted poll'));
     } else {
       append(box, 'Bundled snapshot, compiled ' + fmtDayYear(state.data.compiled) + ' · ' + plural(n, 'trusted poll'));
     }
@@ -168,7 +173,7 @@
   function resetToSnapshot() {
     dropStore(STORE_KEY);
     state.polls = SNAP.polls.slice();
-    state.data = { origin: 'snapshot', compiled: SNAP.meta.compiled, fetchedAt: null };
+    state.data = { origin: 'snapshot', compiled: SNAP.meta.compiled, fetchedAt: SNAP.meta.refreshed || null };
     $('change-banner').hidden = true;
     recompute();
   }
@@ -242,7 +247,7 @@
     return [
       h('div', { class: 'tt-value', text: raceTitle(r.race) }),
       h('div', null, ch.c0.name + ' (' + ch.c0.party + ') ' + fmtProb(r.prob) + ' · ' + ch.c1.name + ' (R) ' + fmtProb(1 - r.prob)),
-      h('div', { class: 'tt-dim' }, 'Forecast ' + fmtMargin(r.final.mean) + ' · ' + r.rating.label + ' · ' + coverageText(r))
+      h('div', { class: 'tt-dim' }, 'Forecast ' + fmtMargin(r.final.mean, r.race) + ' · ' + r.rating.label + ' · ' + coverageText(r))
     ];
   }
   function coverageText(r) {
@@ -435,9 +440,9 @@
         h('td', { class: 'state-cell' }, h('button', { type: 'button', 'aria-label': 'Open ' + raceTitle(race) + ' details', onclick: function (e) { e.stopPropagation(); openRace(race.id); }, text: race.state })),
         h('td', null, h('div', { class: 'race-name' },
           h('span', { class: 'who' }, c0.name + ' (' + c0.party + ')', h('span', { class: 'muted', text: ' vs. ' }), c1.name + ' (R)'),
-          h('span', { class: 'what' }, h('span', { class: 'what-rating', text: r.rating.label + ' · ' + fmtMargin(r.final.mean) + ' · ' }), what))),
+          h('span', { class: 'what' }, h('span', { class: 'what-rating', text: r.rating.label + ' · ' + fmtMargin(r.final.mean, race) + ' · ' }), what))),
         h('td', null, chanceCell(r)),
-        h('td', { class: 'num col-margin', text: fmtMargin(r.final.mean) }),
+        h('td', { class: 'num col-margin', text: fmtMargin(r.final.mean, race) }),
         h('td', { class: 'col-rating' }, h('span', { class: 'pill ' + fillClass(r), text: r.rating.label })),
         h('td', { class: 'col-polls' }, h('span', { class: 'coverage' }, bars, trusted ? String(trusted) : h('span', { class: 'muted', text: 'none' }))),
         h('td', { class: 'col-latest', text: r.avg ? fmtDay(r.avg.latest) : '–' }));
@@ -514,7 +519,7 @@
     if (series.length) {
       const last = series[series.length - 1];
       append(svg, sv('circle', { cx: xs(last.date), cy: ys(last.margin), r: 4.5, fill: 'var(--ink)', stroke: 'var(--surface)', 'stroke-width': 2 }));
-      append(svg, sv('text', { class: 'label-strong', x: xs(last.date) + 8, y: ys(last.margin) + 4, text: fmtMargin(last.margin) }));
+      append(svg, sv('text', { class: 'label-strong', x: xs(last.date) + 8, y: ys(last.margin) + 4, text: fmtMargin(last.margin, race) }));
     }
     const cross = sv('line', { x1: 0, x2: 0, y1: pad.t, y2: height - pad.b, stroke: 'var(--ink)', 'stroke-width': 1, opacity: 0 });
     append(svg, cross);
@@ -532,9 +537,9 @@
       cross.setAttribute('x1', xs(p.date)); cross.setAttribute('x2', xs(p.date)); cross.setAttribute('opacity', 0.35);
       const nearPolls = rows.filter(function (r) { return Math.abs(M.daysBetween(r.poll.end, p.date)) <= 1; });
       showTip(e.clientX, e.clientY, [
-        h('div', { class: 'tt-value', text: fmtMargin(p.margin) }),
+        h('div', { class: 'tt-value', text: fmtMargin(p.margin, race) }),
         h('div', { text: 'Average on ' + fmtDay(p.date) }),
-        nearPolls.map(function (r) { return h('div', { class: 'tt-dim', text: shortPollster(r.poll) + ': ' + fmtMargin(r.adjMargin) }); })
+        nearPolls.map(function (r) { return h('div', { class: 'tt-dim', text: shortPollster(r.poll) + ': ' + fmtMargin(r.adjMargin, race) }); })
       ]);
     });
     overlay.addEventListener('pointerleave', function () { cross.setAttribute('opacity', 0); hideTip(); });
@@ -650,7 +655,8 @@
       h('h3', { text: '4. Simulate' }),
       p('Each simulation draws one national polling error shared by every race (standard deviation ' + s.sigmaNational + ' points, fat-tailed) plus an independent error for each race, then counts seats. Republicans keep the Senate with 50 seats because Vice President JD Vance breaks ties. Democrats need 51. Independents such as Dan Osborn are counted separately, so some simulations end with no outright majority.'),
       h('h3', { text: '5. Refresh' }),
-      p('"Refresh polls" downloads every race article from Wikipedia through its public API, reads each poll table, keeps tables that list both nominees, prefers likely-voter versions of each poll, and merges new rows into the dataset. Everything then recalculates. Refreshed data is saved in this browser only. The bundled snapshot was compiled by hand on ' + fmtDayYear(SNAP.meta.compiled) + ' from pollster releases and news reports, with a source link on every poll. Rows marked ≈ have release dates standing in for unpublished field dates.'),
+      p('"Refresh polls" downloads every race article from Wikipedia through its public API, reads each poll table, keeps tables that list both nominees, prefers likely-voter versions of each poll, and merges new rows into the dataset. Everything then recalculates. Refreshed data is saved in this browser only. The bundled snapshot was compiled by hand on ' + fmtDayYear(SNAP.meta.compiled) + ' from pollster releases and news reports, with a source link on every poll' +
+        (SNAP.meta.refreshed ? ', then merged with Wikipedia\'s poll tables on ' + fmtTime(SNAP.meta.refreshed) : '') + '. Rows marked ≈ have release dates standing in for unpublished field dates.'),
       h('h3', { text: 'Limits' }),
       h('ul', null,
         h('li', null, 'Only the ten trusted pollsters count by default, so races they have not polled lean on the baseline. Switch on "Add other pollsters" to see how the picture changes with every public poll.'),
@@ -704,11 +710,11 @@
       : 'No qualifying polls; forecast uses the baseline only';
     append(body, h('div', { class: 'build' },
       h('div', { class: 'step' }, h('span', { class: 'k', text: state.settings.includeOthers ? 'Poll average (all pollsters)' : 'Poll average (trusted pollsters)' }),
-        h('span', { class: 'v', text: r.avg ? fmtMargin(r.avg.margin) : '–' }), h('span', { class: 's', text: pollPart })),
+        h('span', { class: 'v', text: r.avg ? fmtMargin(r.avg.margin, race) : '–' }), h('span', { class: 's', text: pollPart })),
       h('div', { class: 'step' }, h('span', { class: 'k', text: 'Fundamentals baseline' }),
-        h('span', { class: 'v', text: fmtMargin(r.prior.mean) }), h('span', { class: 's', text: r.prior.detail })),
+        h('span', { class: 'v', text: fmtMargin(r.prior.mean, race) }), h('span', { class: 's', text: r.prior.detail })),
       h('div', { class: 'step' }, h('span', { class: 'k', text: 'Forecast margin' }),
-        h('span', { class: 'v', text: fmtMargin(r.final.mean) }), h('span', { class: 's', text: '80% range ' + fmtMargin(lo) + ' to ' + fmtMargin(hi) }))));
+        h('span', { class: 'v', text: fmtMargin(r.final.mean, race) }), h('span', { class: 's', text: '80% range ' + fmtMargin(lo, race) + ' to ' + fmtMargin(hi, race) }))));
 
     const chartBox = h('div', { class: 'chart' });
     append(body, h('h3', { class: 'sub-head', text: 'Polling average since August (margin, ' + c0.last + ' minus ' + c1.last + ')' }), chartBox);
@@ -727,7 +733,7 @@
         h('td', null, dateCell(row.poll)),
         h('td', { text: sampleText(row.poll) }),
         h('td', { class: 'num', text: res }),
-        h('td', { class: 'num', title: row.bias ? 'Raw ' + fmtMargin(row.margin) + ', corrected for historical lean' : null, text: fmtMargin(row.adjMargin) }),
+        h('td', { class: 'num', title: row.bias ? 'Raw ' + fmtMargin(row.margin, race) + ', corrected for historical lean' : null, text: fmtMargin(row.adjMargin, race) }),
         h('td', { class: 'weights', text: 'trust ' + f.trust.toFixed(2) + ' × recency ' + f.recency.toFixed(2) + ' × size ' + f.size.toFixed(2) + ' × screen ' + f.pop.toFixed(2) + (f.repeat < 1 ? ' × repeat ' + f.repeat.toFixed(2) : '') }),
         h('td', { class: 'num', text: Math.round(row.share * 100) + '%' })));
     });
@@ -741,7 +747,7 @@
       if (others.length) {
         const list = h('ul', { class: 'race-notes' });
         others.slice(0, 12).forEach(function (p) {
-          append(list, h('li', null, sourceLink(p), ' · ' + fmtRange(p.start, p.end) + ' · ' + fmtMargin(M.pollMargin(p, race))));
+          append(list, h('li', null, sourceLink(p), ' · ' + fmtRange(p.start, p.end) + ' · ' + fmtMargin(M.pollMargin(p, race), race)));
         });
         append(body, h('details', { class: 'table-toggle' }, h('summary', { text: plural(others.length, 'poll') + ' from other pollsters, not used (turn on "Add other pollsters" to include them)' }), list));
       }
@@ -820,14 +826,16 @@
         via = 'the repository\'s data file through your GitHub connector';
       }
       if (fallback) {
-        const merged = W.mergePolls(state.polls, fallback.polls);
-        state.polls = merged.polls;
         const refreshed = fallback.meta && fallback.meta.refreshed;
-        state.data = { origin: 'repository', compiled: SNAP.meta.compiled, fetchedAt: refreshed || new Date().toISOString() };
-        writeStore(STORE_KEY, { origin: 'repository', fetchedAt: state.data.fetchedAt, polls: state.polls });
+        // A file older than the data already loaded may add polls but never rolls rows back.
+        const older = !!(refreshed && state.data.fetchedAt && refreshed < state.data.fetchedAt);
+        const merged = W.mergePolls(state.polls, fallback.polls, { addOnly: older });
+        state.polls = merged.polls;
+        if (!older) state.data = { origin: 'repository', compiled: SNAP.meta.compiled, fetchedAt: refreshed || new Date().toISOString() };
+        writeStore(STORE_KEY, Object.assign({}, state.data, { polls: state.polls }));
         recompute();
         showBanner(false, 'This page can\'t call Wikipedia directly, so it loaded ' + via + ' (' +
-          (refreshed ? 'last refreshed from Wikipedia ' + fmtTime(refreshed) : 'the hand-compiled snapshot; the repository\'s "Update polls" action has not run yet') + '): ' +
+          (refreshed ? 'last refreshed from Wikipedia ' + fmtTime(refreshed) + (older ? ', older than the data already here' : '') : 'the hand-compiled snapshot; the repository\'s "Update polls" action has not run yet') + '): ' +
           plural(merged.added.length, 'new poll') + ', ' + plural(merged.updated.length, 'updated row') + '.', null);
       } else if (connectorError) {
         showBanner(true, connectorError, null);
@@ -943,7 +951,7 @@
       const ul = h('ul');
       trustedNew.slice(0, 8).forEach(function (p) {
         const race = M.RACE_BY_ID[p.race];
-        append(ul, h('li', { text: shortPollster(p) + ' · ' + raceTitle(race) + ' · ' + fmtRange(p.start, p.end) + ' · ' + fmtMargin(M.pollMargin(p, race)) }));
+        append(ul, h('li', { text: shortPollster(p) + ' · ' + raceTitle(race) + ' · ' + fmtRange(p.start, p.end) + ' · ' + fmtMargin(M.pollMargin(p, race), race) }));
       });
       if (trustedNew.length > 8) append(ul, h('li', { text: 'and ' + (trustedNew.length - 8) + ' more' }));
       nodes.push(ul);

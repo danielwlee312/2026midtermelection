@@ -49,8 +49,8 @@ console.log(`Governors: Democratic majority ${pct(out.governors.probDMajority)},
       const c = r.race.candidates;
       const lead = r.prob >= 0.5 ? c[0] : c[1];
       console.log('  ' + r.race.state.padEnd(6) + (c[0].last + ' (' + c[0].party + ') v ' + c[1].last + ' (R)').padEnd(34) +
-        String(r.avg ? r.avg.count : 0).padStart(6) + (r.avg ? MODEL.fmtMargin(r.avg.margin) : '-').padStart(10) +
-        MODEL.fmtMargin(r.prior.mean).padStart(10) + MODEL.fmtMargin(r.final.mean).padStart(10) +
+        String(r.avg ? r.avg.count : 0).padStart(6) + (r.avg ? MODEL.fmtMargin(r.avg.margin, r.race) : '-').padStart(10) +
+        MODEL.fmtMargin(r.prior.mean, r.race).padStart(10) + MODEL.fmtMargin(r.final.mean, r.race).padStart(10) +
         (lead.last + ' ' + pct(Math.max(r.prob, 1 - r.prob))).padStart(18) + '  ' + r.rating.label);
     });
 });
