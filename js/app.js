@@ -589,7 +589,7 @@
     const name = poll.pollster;
     const safe = poll.source && /^https?:\/\//.test(poll.source) ? poll.source : null;
     return h('span', null, safe ? h('a', { href: safe, target: '_blank', rel: 'noopener', text: name }) : name,
-      poll.partisan ? h('span', { class: 'muted', text: ' (' + poll.partisan + ' sponsor)' }) : null);
+      poll.partisan ? h('span', { class: 'muted', text: ' (' + poll.partisan + '-affiliated)' }) : null);
   }
 
   // ------------------------------------------------------------ pollsters

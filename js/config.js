@@ -64,7 +64,9 @@
       id: 'fox', name: 'Fox News Poll (Beacon Research / Shaw & Co.)', short: 'Fox News',
       grade: 'A', standing: 'Grade A', weight: 0.9, bias: 0,
       biasNote: 'Rated as moderately favoring Democrats; no numeric value retrieved.',
-      aliases: ['fox news', 'beacon research', 'shaw & co', 'shaw and co'],
+      // Wikipedia credits Fox polls to "Beacon Research (D)/Shaw & Co. Research (R)".
+      // Beacon alone (or paired with another firm) is a different, partisan poll.
+      aliases: ['fox news', 'shaw & co', 'shaw and co'],
       media: 'Fox News',
       evidence: 'Conducted by a bipartisan team (Beacon Research, D; Shaw & Co., R) graded A in Silver Bulletin ratings.'
     },
@@ -202,7 +204,7 @@
 
   const GOVERNOR = [
     { state: 'AL', holder: 'R', incumbent: null, candidates: [c('Doug Jones', 'D'), c('Tommy Tuberville', 'R')] },
-    { state: 'AK', holder: 'R', incumbent: null, candidates: [c('Jonathan Kreiss-Tomkins', 'D'), c('Bernadette Wilson', 'R')], note: 'Ranked-choice general with three Republicans (Wilson, Dave Bronson, Candi English); the model pairs the Democrat with the leading Republican.' },
+    { state: 'AK', holder: 'R', incumbent: null, headToHeadOnly: true, candidates: [c('Jonathan Kreiss-Tomkins', 'D'), c('Bernadette Wilson', 'R')], note: 'Ranked-choice general with three Republicans (Wilson, Dave Bronson, Candi English). First-round polls split the Republican vote, so only head-to-head (final-round) polls are used.' },
     { state: 'AZ', holder: 'D', incumbent: 'running', last: { margin: 0.7, year: 2022 }, candidates: [c('Katie Hobbs', 'D', { inc: true }), c('Andy Biggs', 'R')] },
     { state: 'AR', holder: 'R', incumbent: 'running', last: { margin: -28.1, year: 2022 }, candidates: [c('Fredrick Love', 'D'), c('Sarah Huckabee Sanders', 'R', { inc: true, last: 'Sanders' })] },
     { state: 'CA', holder: 'D', incumbent: null, candidates: [c('Xavier Becerra', 'D'), c('Steve Hilton', 'R')] },
@@ -260,8 +262,7 @@
       ],
       wiki: [
         'Opinion polling for the 2026 United States House of Representatives elections',
-        'Nationwide opinion polling for the 2026 United States House of Representatives elections',
-        'Generic ballot polling for the 2026 United States House of Representatives elections'
+        '2026 United States House of Representatives elections'
       ],
       note: 'Generic congressional ballot: which party voters prefer for the House.'
     }]);

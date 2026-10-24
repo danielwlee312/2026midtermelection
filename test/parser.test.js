@@ -127,6 +127,62 @@ test('mergePolls never lets an older data file overwrite a live Wikipedia row', 
   assert.equal(WIKI.mergePolls([withThird], [live]).updated.length, 0);
 });
 
+test('Fox News polls credited to Beacon/Shaw are trusted and not partisan', () => {
+  const html = '<table><tr><th>Poll source</th><th>Date(s) administered</th><th>Sample size</th><th>Margin of error</th><th>Sherrod Brown (D)</th><th>Jon Husted (R)</th></tr>' +
+    '<tr><td>Beacon Research (D)/ Shaw &amp; Co. Research (R)</td><td>October 15–19, 2026</td><td>1,001 (LV)</td><td>± 3.0%</td><td>52%</td><td>47%</td></tr>' +
+    '<tr><td>Cygnal (R)/Beacon Research (D)</td><td>September 18–21, 2026</td><td>600 (LV)</td><td>± 4.0%</td><td>45%</td><td>40%</td></tr>' +
+    '<tr><td>Beacon Research (D)</td><td>October 1–6, 2026</td><td>800 (LV)</td><td>± 3.5%</td><td>50%</td><td>44%</td></tr></table>';
+  const polls = WIKI.pollsForRace(race('SEN-OH'), html, 'x');
+  const fox = polls.find((p) => /Shaw/.test(p.pollster));
+  assert.equal(fox.pollsterId, 'fox');
+  assert.equal(fox.partisan, null);
+  const pair = polls.find((p) => /Cygnal/.test(p.pollster));
+  assert.equal(pair.pollsterId, null, 'Cygnal/Beacon is not a Fox News poll');
+  assert.equal(pair.partisan, null);
+  const beacon = polls.find((p) => p.pollster === 'Beacon Research (D)');
+  assert.equal(beacon.pollsterId, null);
+  assert.equal(beacon.partisan, 'D');
+});
+
+test('primary-style tables with many candidates are skipped', () => {
+  const head = ['Xavier Becerra', 'Steve Hilton', 'Katie Porter', 'Chad Bianco', 'Antonio Villaraigosa', 'Tom Steyer'];
+  const html = '<table><tr><th>Poll source</th><th>Date(s) administered</th><th>Sample size</th>' + head.map((n) => '<th>' + n + '</th>').join('') + '</tr>' +
+    '<tr><td>Emerson College</td><td>May 27–28, 2026</td><td>1,000 (LV)</td><td>28%</td><td>23%</td><td>12%</td><td>10%</td><td>5%</td><td>4%</td></tr></table>' +
+    '<table><tr><th>Poll source</th><th>Date(s) administered</th><th>Sample size</th><th>Xavier Becerra (D)</th><th>Steve Hilton (R)</th></tr>' +
+    '<tr><td>Emerson College</td><td>October 17–19, 2026</td><td>1,000 (LV)</td><td>60%</td><td>33%</td></tr></table>';
+  const polls = WIKI.pollsForRace(race('GOV-CA'), html, 'x');
+  assert.equal(polls.length, 1);
+  assert.deepEqual(polls[0].results, { Becerra: 60, Hilton: 33 });
+});
+
+test('head-to-head-only races ignore first-round ranked-choice tables', () => {
+  const html = '<table><tr><th>Poll source</th><th>Date(s) administered</th><th>Jonathan Kreiss-Tomkins (D)</th><th>Bernadette Wilson (R)</th><th>Dave Bronson (R)</th><th>Candi English (R)</th></tr>' +
+    '<tr><td>New York Times / Siena University</td><td>September 24 – October 1, 2026</td><td>40%</td><td>20%</td><td>15%</td><td>10%</td></tr></table>' +
+    '<table><tr><th>Poll source</th><th>Date(s) administered</th><th>Jonathan Kreiss-Tomkins (D)</th><th>Bernadette Wilson (R)</th></tr>' +
+    '<tr><td>New York Times / Siena University</td><td>September 24 – October 1, 2026</td><td>47%</td><td>48%</td></tr></table>';
+  const polls = WIKI.pollsForRace(race('GOV-AK'), html, 'x');
+  assert.equal(polls.length, 1);
+  assert.deepEqual(polls[0].results, { 'Kreiss-Tomkins': 47, Wilson: 48 });
+});
+
+test('mergePolls keeps two distinct polls by one firm a few days apart', () => {
+  const a = { race: 'SEN-SC', pollster: 'Impact Research (D)', pollsterId: null, start: '2026-10-01', end: '2026-10-03', n: 600, pop: 'LV', results: { Andrews: 41, Graham: 41 }, source: 'w', origin: 'wikipedia' };
+  const b = Object.assign({}, a, { start: '2026-10-04', end: '2026-10-05', results: { Andrews: 42, Graham: 39 } });
+  const out = WIKI.mergePolls([], [a, b]);
+  assert.equal(out.polls.length, 2);
+  // An approximate snapshot row pairs with the closest live poll, not the first one seen.
+  const approx = { race: 'SEN-TX', pollster: 'NYT/Siena', pollsterId: 'nyt-siena', start: '2026-09-21', end: '2026-10-01', n: 589, pop: 'LV', approx: true, results: { Talarico: 51, Paxton: 45 }, source: 's' };
+  const recon = { race: 'SEN-TX', pollster: 'ReconMR/ Siena University', pollsterId: 'nyt-siena', start: '2026-10-05', end: '2026-10-08', n: 900, pop: 'LV', results: { Talarico: 48, Paxton: 44 }, source: 'w', origin: 'wikipedia' };
+  const nyt = { race: 'SEN-TX', pollster: 'New York Times / Siena University', pollsterId: 'nyt-siena', start: '2026-09-21', end: '2026-09-30', n: null, pop: 'LV', results: { Talarico: 51, Paxton: 45 }, source: 'w2', origin: 'wikipedia' };
+  const merged = WIKI.mergePolls([approx], [recon, nyt]);
+  assert.equal(merged.polls.length, 2);
+  assert.equal(merged.added.length, 1);
+  assert.equal(merged.added[0].pollster, 'ReconMR/ Siena University');
+  assert.equal(merged.updated.length, 1, 'the NYT row replaces the approximate snapshot row');
+  assert.equal(merged.polls[0].end, '2026-09-30');
+  assert.equal(merged.polls[0].n, null, 'an estimated sample is not carried over');
+});
+
 test('fetchAll works with an injected fetch and reports failed pages', async () => {
   const tx = fixture('senate-texas.html');
   const fakeFetch = async (url) => {

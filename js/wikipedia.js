@@ -209,6 +209,14 @@
   }
 
   const NON_CANDIDATE = /\b(other|others|undecided|unsure|lead|margin|refused|someone else|would not vote|none|don.?t know|no opinion|n\/a)\b/i;
+  // General-election tables list two to five candidates; more means a primary.
+  const MAX_CANDIDATES = 5;
+
+  /** Party tag in a pollster cell, unless the poll is a bipartisan pairing. */
+  function partisanTag(text) {
+    const d = /\(D\)/.test(text), r = /\(R\)/.test(text);
+    return d && !r ? 'D' : r && !d ? 'R' : null;
+  }
 
   /**
    * Find every poll table in an article and return its header roles and
@@ -245,7 +253,7 @@
         const party = /\((D|R|I|L|G|DFL|Ind\.?|Lib\.?|Grn\.?|Rep\.?|Dem\.?)\)/i.exec(cell.text);
         candidates.push({ col: c, header: cell.text, norm: ' ' + normName(cell.text) + ' ', party: party ? party[1].toUpperCase().replace('.', '') : null });
       }
-      if (!candidates.length) return;
+      if (!candidates.length || candidates.length > MAX_CANDIDATES) return;
       const rows = [];
       for (let r = h + 1; r < grid.length; r++) {
         const row = grid[r];
@@ -261,7 +269,7 @@
         });
         rows.push({
           pollster: pc.text.replace(/\s*\[[^\]]*\]\s*/g, ' ').trim(),
-          partisan: (/\((R|D)\)/.exec(pc.text) || [])[1] || null,
+          partisan: partisanTag(pc.text),
           link: firstExternalLink(pc.html),
           start: dates.start, end: dates.end, n: sample.n, pop: sample.pop, values: values
         });
@@ -302,6 +310,7 @@
     tables.forEach(function (table) {
       const cols = race.candidates.map(function (cand) { return columnFor(table, cand); });
       if (cols[0] < 0 || cols[1] < 0) return;
+      if (race.headToHeadOnly && table.candidates.length !== 2) return;
       table.rows.forEach(function (row) {
         const results = {};
         race.candidates.forEach(function (cand, i) {
@@ -386,13 +395,14 @@
   }
 
   // -------------------------------------------------------------- merging
-  function sameSource(a, b) {
-    if (a.race !== b.race) return false;
-    const ka = a.pollsterId || normName(a.pollster).slice(0, 24);
-    const kb = b.pollsterId || normName(b.pollster).slice(0, 24);
-    if (ka !== kb) return false;
+  function sourceKey(p) {
+    return p.race + '|' + (p.pollsterId || normName(p.pollster).slice(0, 24));
+  }
+
+  /** Field-date gap in days if a and b can be the same poll, else -1. */
+  function matchGap(a, b) {
     const gap = Math.abs(MODEL.daysBetween(a.end, b.end));
-    return gap <= 3 || ((a.approx || b.approx) && gap <= 12);
+    return gap <= 3 || ((a.approx || b.approx) && gap <= 12) ? gap : -1;
   }
 
   /** True when two rows for the same poll report different numbers. */
@@ -417,10 +427,27 @@
   function mergePolls(existing, incoming) {
     const merged = existing.slice();
     const added = [], updated = [];
-    incoming.forEach(function (poll) {
-      const i = merged.findIndex(function (p) { return sameSource(p, poll); });
+    // Pair each incoming poll with at most one existing row, closest field dates first,
+    // so two distinct polls by one firm a few days apart never collapse into one.
+    const byKey = {};
+    existing.forEach(function (p, i) { (byKey[sourceKey(p)] = byKey[sourceKey(p)] || []).push(i); });
+    const pairs = [];
+    incoming.forEach(function (poll, j) {
+      (byKey[sourceKey(poll)] || []).forEach(function (i) {
+        const gap = matchGap(existing[i], poll);
+        if (gap >= 0) pairs.push({ i: i, j: j, gap: gap });
+      });
+    });
+    pairs.sort(function (a, b) { return a.gap - b.gap; });
+    const matchOf = new Array(incoming.length).fill(-1);
+    const taken = {};
+    pairs.forEach(function (pr) {
+      if (matchOf[pr.j] < 0 && !taken[pr.i]) { matchOf[pr.j] = pr.i; taken[pr.i] = true; }
+    });
+    incoming.forEach(function (poll, j) {
+      const i = matchOf[j];
       if (i < 0) { merged.push(poll); added.push(poll); return; }
-      const prev = merged[i];
+      const prev = existing[i];
       if (prev.origin === 'wikipedia' && poll.origin !== 'wikipedia') return;
       const changed = differs(prev, poll);
       merged[i] = Object.assign({}, poll, {
