@@ -124,7 +124,8 @@ A banner lists the new polls, the races that moved, and any page that couldn't b
 ## Data and caveats
 
 - `data/polls.js` was hand-compiled on October 24, 2026 from pollster releases and news coverage, with a source link on every row. It holds 96 polls, 73 of them from the trusted ten. Rows marked `approx: true` (≈ in the UI) use a release date in place of unpublished field dates, or an estimated per-state sample (NYT/Siena's five-state survey).
-- Only the trusted ten count by default, so races they haven't polled (New Hampshire Senate, Nebraska Senate, Georgia and Arizona governor) rest on the fundamentals baseline. Turn on *Add other pollsters* to see every public poll's effect.
+- Only the trusted ten count by default, so races they have not polled lean on the fundamentals baseline. Turn on *Add other pollsters* to see every public poll's effect.
+- No Wikipedia article lists individual national generic-ballot polls this cycle (only aggregator averages), so the national environment comes from the bundled trusted generic-ballot polls; add new ones to `data/polls.js` as `HOUSE-US` rows.
 - Ranked-choice Alaska and the three-way Montana Senate race are modeled as the top two candidates.
 - Expert ratings shown in race details (Sabato's Crystal Ball, Cook) are context only and do not enter the model.
 - This is an independent forecast built from public polls. It is not affiliated with any pollster, news outlet or campaign.

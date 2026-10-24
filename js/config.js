@@ -260,9 +260,12 @@
         { name: 'Democrats', last: 'Democratic', party: 'D', match: ['Democratic', 'Democrats', 'Democrat', 'Dem'] },
         { name: 'Republicans', last: 'Republican', party: 'R', match: ['Republican', 'Republicans', 'Rep', 'GOP'] }
       ],
+      // No Wikipedia article lists individual national generic-ballot polls this
+      // cycle (the House article only carries aggregator averages), so these
+      // titles usually miss and the bundled generic-ballot polls are used.
       wiki: [
         'Opinion polling for the 2026 United States House of Representatives elections',
-        '2026 United States House of Representatives elections'
+        'Generic ballot polling for the 2026 United States House of Representatives elections'
       ],
       note: 'Generic congressional ballot: which party voters prefer for the House.'
     }]);
