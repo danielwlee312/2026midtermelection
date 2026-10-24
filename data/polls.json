@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-24T11:10:05.800Z",
+  "refreshed": "2026-10-24T16:01:27.330Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -5970,7 +5970,7 @@
    "pop": "LV",
    "results": {
     "Cooper": 49,
-    "Whatley": 39
+    "Whatley": 34
    },
    "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
@@ -15281,6 +15281,38 @@
    },
    "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_Nebraska_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NC",
+   "pollster": "Harper Polling (R)",
+   "pollsterId": null,
+   "start": "2026-10-18",
+   "end": "2026-10-20",
+   "n": 600,
+   "pop": "LV",
+   "results": {
+    "Cooper": 49,
+    "Whatley": 39
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-PA",
+   "pollster": "ActiVote",
+   "pollsterId": null,
+   "start": "2026-10-01",
+   "end": "2026-10-21",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Shapiro": 62,
+    "Garrity": 39
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Pennsylvania_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
