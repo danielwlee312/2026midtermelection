@@ -1,0 +1,1418 @@
+{
+ "meta": {
+  "compiled": "2026-10-24",
+  "origin": "snapshot",
+  "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls."
+ },
+ "polls": [
+  {
+   "race": "SEN-TX",
+   "pollster": "The New York Times/Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-09-21",
+   "end": "2026-10-01",
+   "n": 589,
+   "pop": "LV",
+   "results": {
+    "Talarico": 51,
+    "Paxton": 45
+   },
+   "approx": true,
+   "note": "Five-state survey of 2,946 likely voters; per-state sample estimated.",
+   "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-10-15",
+   "end": "2026-10-19",
+   "n": 1398,
+   "pop": "LV",
+   "results": {
+    "Talarico": 49,
+    "Paxton": 49
+   },
+   "source": "https://www.foxnews.com/politics/fox-news-poll-texas-senate-race-galloping-toward-photo-finish"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-09-24",
+   "end": "2026-09-28",
+   "n": 881,
+   "pop": "LV",
+   "results": {
+    "Talarico": 51,
+    "Paxton": 49
+   },
+   "source": "https://www.newsweek.com/trumps-rally-for-paxton-may-help-talarico-fox-news-poll-suggests-12517364"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-17",
+   "end": "2026-10-19",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "Talarico": 48,
+    "Paxton": 46,
+    "Brown": 1
+   },
+   "source": "https://emersoncollegepolling.com/texas-2026-poll-toss-up/"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-10-08",
+   "end": "2026-10-11",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Talarico": 47,
+    "Paxton": 45
+   },
+   "note": "1,196 registered voters; likely-voter subsample size not reported.",
+   "source": "https://maristpoll.marist.edu/wp-content/uploads/2026/10/Marist-Poll_TX-NOS-and-Tables_202610131056%5Eal3j7.pdf"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-09-17",
+   "end": "2026-09-20",
+   "n": 1139,
+   "pop": "RV",
+   "results": {
+    "Talarico": 50,
+    "Paxton": 44
+   },
+   "source": "https://maristpoll.marist.edu/polls/2026-midterm-elections-in-texas-september-2026/"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Jackson": 49,
+    "Collins": 49
+   },
+   "approx": true,
+   "note": "Field dates and sample not in available reports; dated by release.",
+   "source": "https://www.forbes.com/sites/saradorn/2026/10/23/hottest-2026-midterm-races-talarico-paxton-tied-in-fox-news-poll-updated-daily/"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "Suffolk University",
+   "pollsterId": "suffolk",
+   "start": "2026-10-08",
+   "end": "2026-10-11",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Jackson": 49,
+    "Collins": 47
+   },
+   "source": "https://www.suffolk.edu/-/media/suffolk/documents/academics/research-at-suffolk/suprc/polls/other-states/2026/10_14_2026_maine_press_release.pdf"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "The Washington Post/George Mason University",
+   "pollsterId": "wapo",
+   "start": "2026-09-30",
+   "end": "2026-10-05",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Jackson": 50,
+    "Collins": 46
+   },
+   "source": "https://www.newsweek.com/maine-senate-polling-as-susan-collins-troy-jackson-head-into-fourth-debate-12569146"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-10-01",
+   "end": "2026-10-04",
+   "n": 1505,
+   "pop": "RV",
+   "results": {
+    "Jackson": 51,
+    "Collins": 47
+   },
+   "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-maine-october-2026/"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "The New York Times/Portland Press Herald/Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-09-15",
+   "end": "2026-09-22",
+   "n": 619,
+   "pop": "LV",
+   "results": {
+    "Jackson": 46,
+    "Collins": 49
+   },
+   "source": "https://www.pressherald.com/2026/09/24/susan-collins-polling-maine-senate-race/"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-08-06",
+   "end": "2026-08-10",
+   "n": 1000,
+   "pop": "RV",
+   "results": {
+    "Jackson": 48,
+    "Collins": 46
+   },
+   "source": "https://bangordailynews.com/2026/08/12/politics/elections/new-poll-maine-us-senate-race"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-10-15",
+   "end": "2026-10-18",
+   "n": 1185,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 50,
+    "Rogers": 48
+   },
+   "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-michigan-october-2026/"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-09-24",
+   "end": "2026-09-28",
+   "n": 1028,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 50,
+    "Rogers": 49
+   },
+   "source": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-09-24",
+   "end": "2026-09-28",
+   "n": null,
+   "pop": "RV",
+   "results": {
+    "El-Sayed": 51,
+    "Rogers": 44
+   },
+   "approx": true,
+   "note": "Reported Sept. 30; field dates not in available reports.",
+   "source": "https://politicalwire.com/2026/09/30/democrats-hold-solid-leads-in-michigan/"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-09-16",
+   "end": "2026-09-16",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 48,
+    "Rogers": 46
+   },
+   "approx": true,
+   "note": "Released Sept. 17; field dates not in available reports.",
+   "source": "https://emersoncollegepolling.com/category/state-poll/michigan/"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-10-15",
+   "end": "2026-10-18",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Brown": 48,
+    "Husted": 44
+   },
+   "note": "Likely-voter subsample size not reported (MoE 4.5).",
+   "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-ohio-october-2026/"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "The New York Times/Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-09-21",
+   "end": "2026-10-01",
+   "n": 589,
+   "pop": "LV",
+   "results": {
+    "Brown": 49,
+    "Husted": 46
+   },
+   "approx": true,
+   "note": "Five-state survey of 2,946 likely voters; per-state sample estimated.",
+   "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Suffolk University/USA Today",
+   "pollsterId": "suffolk",
+   "start": "2026-09-23",
+   "end": "2026-09-27",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Brown": 47,
+    "Husted": 44
+   },
+   "source": "https://www.nbc4i.com/news/your-local-election-hq/two-ohio-polls-show-sherrod-brown-leading-jon-husted-in-u-s-senate-race/amp/"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-09-24",
+   "end": "2026-09-27",
+   "n": 1298,
+   "pop": "RV",
+   "results": {
+    "Brown": 51,
+    "Husted": 43
+   },
+   "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-ohio-september-2026/"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-05-28",
+   "end": "2026-06-01",
+   "n": 1015,
+   "pop": "RV",
+   "results": {
+    "Brown": 53,
+    "Husted": 45
+   },
+   "source": "https://foxnews.com/politics/fox-news-poll-economic-anxiety-candidate-concerns-define-ohio-senate-race.amp"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2025-08-18",
+   "end": "2025-08-19",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Brown": 44,
+    "Husted": 50
+   },
+   "note": "August 2025 survey; too old to carry weight.",
+   "source": "https://gazette.com/2025/08/22/sherrod-brown-6-points-behind-jon-husted-in-ohio-senate-race-on-kickoff-week-6d829d82-a09a-5653-9d00-9842e9222f6e/"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-05",
+   "end": "2026-10-06",
+   "n": 650,
+   "pop": "LV",
+   "results": {
+    "Turek": 45,
+    "Hinson": 47,
+    "Laehn": 2
+   },
+   "source": "https://www.ourquadcities.com/news/state-news/iowa-news/iowa-2026-poll-toss-up-in-u-s-senate-race-sand-maintains-edge-for-governor/"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "Suffolk University",
+   "pollsterId": "suffolk",
+   "start": "2026-10-01",
+   "end": "2026-10-04",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Turek": 48,
+    "Hinson": 44
+   },
+   "source": "https://thehill.com/homenews/campaign/6133817-iowa-democrats-lead-polls/"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-09-24",
+   "end": "2026-09-28",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Turek": 49,
+    "Hinson": 47
+   },
+   "approx": true,
+   "note": "Released Oct. 1; field dates and sample not in available reports.",
+   "source": "https://www.foxnews.com/politics/fox-news-poll-turek-hinson-close-iowa-senate-race.amp"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "The New York Times/Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-09-21",
+   "end": "2026-10-01",
+   "n": 589,
+   "pop": "LV",
+   "results": {
+    "Turek": 47,
+    "Hinson": 48
+   },
+   "approx": true,
+   "note": "Five-state survey of 2,946 likely voters; per-state sample estimated.",
+   "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "Suffolk University",
+   "pollsterId": "suffolk",
+   "start": "2026-08-20",
+   "end": "2026-08-23",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Turek": 41,
+    "Hinson": 45
+   },
+   "source": "https://www.kcrg.com/2026/08/26/new-poll-shows-tight-races-iowa-governor-us-senate-2026/"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-06-23",
+   "end": "2026-06-27",
+   "n": 1003,
+   "pop": "RV",
+   "results": {
+    "Turek": 50,
+    "Hinson": 46
+   },
+   "source": "https://www.foxnews.com/politics/fox-news-poll-close-senate-contest-brewing-iowa.amp"
+  },
+  {
+   "race": "SEN-AK",
+   "pollster": "The New York Times/Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-09-21",
+   "end": "2026-10-01",
+   "n": 589,
+   "pop": "LV",
+   "results": {
+    "Peltola": 50,
+    "Sullivan": 43
+   },
+   "approx": true,
+   "note": "Five-state survey of 2,946 likely voters; per-state sample estimated.",
+   "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "The New York Times/Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-09-21",
+   "end": "2026-10-01",
+   "n": 589,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 45,
+    "Marshall": 45,
+    "Graham": 3
+   },
+   "approx": true,
+   "note": "Five-state survey of 2,946 likely voters; per-state sample estimated.",
+   "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-09-15",
+   "end": "2026-09-16",
+   "n": 750,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 45,
+    "Marshall": 43,
+    "Graham": 4
+   },
+   "source": "https://emersoncollegepolling.com/kansas-2026/"
+  },
+  {
+   "race": "SEN-GA",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-06-23",
+   "end": "2026-06-27",
+   "n": 1002,
+   "pop": "RV",
+   "results": {
+    "Ossoff": 56,
+    "Collins": 43
+   },
+   "source": "https://www.fox5atlanta.com/news/fox-news-poll-jon-ossoff-holds-double-digit-lead-over-mike-collins"
+  },
+  {
+   "race": "SEN-GA",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-02-28",
+   "end": "2026-03-02",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "Ossoff": 48,
+    "Collins": 43
+   },
+   "source": "https://emersoncollegepolling.com/georgia-2026-poll-senator-ossoff-starts-re-election-near-50-and-outpaces-gop-field/"
+  },
+  {
+   "race": "SEN-NC",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-07-23",
+   "end": "2026-07-27",
+   "n": 1005,
+   "pop": "RV",
+   "results": {
+    "Cooper": 53,
+    "Whatley": 44
+   },
+   "source": "https://www.carolinajournal.com/fox-news-cooper-leads-whatley-by-9-points/"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "SurveyUSA/KSTP",
+   "pollsterId": "surveyusa",
+   "start": "2026-10-09",
+   "end": "2026-10-12",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 45,
+    "Tafoya": 42
+   },
+   "note": "Sample size not in available reports.",
+   "source": "https://suaragarut.id/en/flanagan-tafoya-minnesota-senate-poll"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "SurveyUSA/KSTP",
+   "pollsterId": "surveyusa",
+   "start": "2026-09-09",
+   "end": "2026-09-14",
+   "n": 654,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 42,
+    "Tafoya": 42
+   },
+   "source": "https://uspollingdata.com/candidates/marisa-simonetti/"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "SurveyUSA/KSTP",
+   "pollsterId": "surveyusa",
+   "start": "2026-08-13",
+   "end": "2026-08-17",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 46,
+    "Tafoya": 41
+   },
+   "source": "https://kstp.com/wp-content/uploads/2026/08/Election-Poll-8-19-26.pdf"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-02-06",
+   "end": "2026-02-08",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 47,
+    "Tafoya": 41
+   },
+   "source": "https://emersoncollegepolling.com/minnesota-2026-poll-democrats-lead-gop-as-voters-cite-threats-to-democracy/"
+  },
+  {
+   "race": "SEN-SD",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-19",
+   "end": "2026-10-21",
+   "n": 803,
+   "pop": "LV",
+   "results": {
+    "Bengs": 42,
+    "Rounds": 50
+   },
+   "source": "https://emersoncollegepolling.com/south-dakota-2026-poll-republican-sen-rounds-leads-independent-bengs-50-to-42/"
+  },
+  {
+   "race": "SEN-RI",
+   "pollster": "Emerson College/WPRI",
+   "pollsterId": "emerson",
+   "start": "2026-10-08",
+   "end": "2026-10-11",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Reed": 59,
+    "McKay": 25,
+    "Bahry": 7
+   },
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Rhode_Island"
+  },
+  {
+   "race": "SEN-MA",
+   "pollster": "Suffolk University",
+   "pollsterId": "suffolk",
+   "start": "2026-10-20",
+   "end": "2026-10-20",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Markey": 60,
+    "Deaton": 32
+   },
+   "approx": true,
+   "note": "Dated by its 270toWin listing; field dates not confirmed.",
+   "source": "https://www.270towin.com/2026-senate-polls/massachusetts"
+  },
+  {
+   "race": "SEN-FL",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-04-02",
+   "end": "2026-04-02",
+   "n": 1125,
+   "pop": "LV",
+   "results": {
+    "Nixon": 36,
+    "Moody": 47
+   },
+   "approx": true,
+   "note": "Spring 2026 matchup; dated by its 270toWin listing.",
+   "source": "https://www.270towin.com/2026-senate-polls/florida"
+  },
+  {
+   "race": "HOUSE-US",
+   "pollster": "The New York Times/Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-12",
+   "end": "2026-10-19",
+   "n": 3494,
+   "pop": "LV",
+   "results": {
+    "Democratic": 52,
+    "Republican": 41
+   },
+   "source": "https://www.nysun.com/article/times-siena-poll-gives-democrats-11-point-lead-in-generic-house-ballot-in-final-midterm-survey"
+  },
+  {
+   "race": "HOUSE-US",
+   "pollster": "The New York Times/Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-09-08",
+   "end": "2026-09-13",
+   "n": 1503,
+   "pop": "LV",
+   "results": {
+    "Democratic": 51,
+    "Republican": 43
+   },
+   "source": "https://www.cnn.com/polling/2026-generic-ballot"
+  },
+  {
+   "race": "HOUSE-US",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-09-21",
+   "end": "2026-09-22",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "Democratic": 53,
+    "Republican": 42
+   },
+   "source": "https://www.newsweek.com/democrats-take-double-digit-poll-lead-40-days-out-midterms-12483572"
+  },
+  {
+   "race": "HOUSE-US",
+   "pollster": "Marquette Law School",
+   "pollsterId": "marquette",
+   "start": "2026-09-02",
+   "end": "2026-09-09",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Democratic": 54,
+    "Republican": 41
+   },
+   "note": "Likely-voter subsample size not in available reports.",
+   "source": "https://www.fox6now.com/news/marquette-poll-091626"
+  },
+  {
+   "race": "HOUSE-US",
+   "pollster": "Quinnipiac University",
+   "pollsterId": "quinnipiac",
+   "start": "2026-09-28",
+   "end": "2026-09-28",
+   "n": null,
+   "pop": "RV",
+   "results": {
+    "Democratic": 51,
+    "Republican": 39
+   },
+   "approx": true,
+   "note": "Reported Sept. 29; field dates not in available reports.",
+   "source": "https://politicalwire.com/2026/09/29/democrats-hold-wide-lead-on-generic-ballot/"
+  },
+  {
+   "race": "HOUSE-US",
+   "pollster": "Quinnipiac University",
+   "pollsterId": "quinnipiac",
+   "start": "2026-09-09",
+   "end": "2026-09-09",
+   "n": null,
+   "pop": "RV",
+   "results": {
+    "Democratic": 49,
+    "Republican": 38
+   },
+   "approx": true,
+   "note": "Reported Sept. 10; field dates not in available reports.",
+   "source": "https://politicalwire.com/2026/09/10/democrats-lead-on-the-generic-ballot/"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-10-15",
+   "end": "2026-10-18",
+   "n": 1185,
+   "pop": "LV",
+   "results": {
+    "Benson": 51,
+    "James": 45
+   },
+   "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-michigan-october-2026/"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-09-24",
+   "end": "2026-09-28",
+   "n": null,
+   "pop": "RV",
+   "results": {
+    "Benson": 53,
+    "James": 41
+   },
+   "approx": true,
+   "note": "Reported Sept. 30; field dates not in available reports.",
+   "source": "https://politicalwire.com/2026/09/30/democrats-hold-solid-leads-in-michigan/"
+  },
+  {
+   "race": "GOV-WI",
+   "pollster": "Marquette Law School",
+   "pollsterId": "marquette",
+   "start": "2026-09-16",
+   "end": "2026-09-23",
+   "n": 692,
+   "pop": "LV",
+   "results": {
+    "Crowley": 49,
+    "Tiffany": 46
+   },
+   "source": "https://www.wpr.org/news/marquette-poll-crowley-tiffany-september-30-2026"
+  },
+  {
+   "race": "GOV-WI",
+   "pollster": "Marquette Law School",
+   "pollsterId": "marquette",
+   "start": "2026-08-12",
+   "end": "2026-08-20",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Crowley": 49,
+    "Tiffany": 44
+   },
+   "note": "Likely-voter subsample of 891 registered voters.",
+   "source": "https://fox11online.com/news/state/2026-wisconsin-governor-race-campaign-david-crowley-tom-tiffany-marquette-university-law-school-poll-august-26"
+  },
+  {
+   "race": "GOV-PA",
+   "pollster": "Quinnipiac University",
+   "pollsterId": "quinnipiac",
+   "start": "2026-10-01",
+   "end": "2026-10-05",
+   "n": 1159,
+   "pop": "LV",
+   "results": {
+    "Shapiro": 59,
+    "Garrity": 34,
+    "Krawchuk": 2
+   },
+   "source": "https://www.cityandstatepa.com/politics/2026/10/quinnipiac-poll-shapiro-garrity-race-looks-rout/416473/"
+  },
+  {
+   "race": "GOV-NY",
+   "pollster": "Quinnipiac University",
+   "pollsterId": "quinnipiac",
+   "start": "2026-10-15",
+   "end": "2026-10-19",
+   "n": 1167,
+   "pop": "LV",
+   "results": {
+    "Hochul": 55,
+    "Blakeman": 41
+   },
+   "source": "https://capitolpressroom.org/2026/10/23/ny-gov-hochul-has-14-point-lead-in-latest-quinnipiac-poll/"
+  },
+  {
+   "race": "GOV-NY",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-10-01",
+   "end": "2026-10-04",
+   "n": null,
+   "pop": "RV",
+   "results": {
+    "Hochul": 53,
+    "Blakeman": 42
+   },
+   "source": "https://hoodline.com/2026/10/hochul-s-11-point-lead-over-blakeman-hides-a-widening-gender-gap/"
+  },
+  {
+   "race": "GOV-NY",
+   "pollster": "Quinnipiac University",
+   "pollsterId": "quinnipiac",
+   "start": "2026-09-17",
+   "end": "2026-09-20",
+   "n": 1026,
+   "pop": "LV",
+   "results": {
+    "Hochul": 58,
+    "Blakeman": 39
+   },
+   "source": "https://www.cityandstateny.com/politics/2026/09/quinnipiac-poll-puts-hochul-19-points-over-blakeman/416168/"
+  },
+  {
+   "race": "GOV-NY",
+   "pollster": "Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-09-17",
+   "end": "2026-09-17",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Hochul": 50,
+    "Blakeman": 41
+   },
+   "approx": true,
+   "note": "September release; field dates not in available reports.",
+   "source": "https://www.cityandstateny.com/politics/2026/09/hochul-leads-blakeman-just-9-points-new-siena-poll/416151/"
+  },
+  {
+   "race": "GOV-NY",
+   "pollster": "Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-08-07",
+   "end": "2026-08-07",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Hochul": 49,
+    "Blakeman": 39
+   },
+   "approx": true,
+   "note": "Released Aug. 12; field dates not in available reports.",
+   "source": "https://www.wcax.com/2026/08/12/hochul-leads-blakeman-by-10-points-three-months-out-election/"
+  },
+  {
+   "race": "GOV-CT",
+   "pollster": "Quinnipiac University",
+   "pollsterId": "quinnipiac",
+   "start": "2026-10-13",
+   "end": "2026-10-13",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Lamont": 58,
+    "Fazio": 38
+   },
+   "approx": true,
+   "note": "October release; field dates not in available reports.",
+   "source": "https://poll.qu.edu/"
+  },
+  {
+   "race": "GOV-CT",
+   "pollster": "Quinnipiac University",
+   "pollsterId": "quinnipiac",
+   "start": "2026-09-15",
+   "end": "2026-09-15",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Lamont": 55,
+    "Fazio": 38
+   },
+   "approx": true,
+   "note": "September release; field dates not in available reports.",
+   "source": "https://poll.qu.edu/"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-10-15",
+   "end": "2026-10-18",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Acton": 50,
+    "Ramaswamy": 43
+   },
+   "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-ohio-october-2026/"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-09-24",
+   "end": "2026-09-27",
+   "n": 1298,
+   "pop": "RV",
+   "results": {
+    "Acton": 50,
+    "Ramaswamy": 44
+   },
+   "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-ohio-september-2026/"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-08-06",
+   "end": "2026-08-10",
+   "n": 1008,
+   "pop": "RV",
+   "results": {
+    "Acton": 48,
+    "Ramaswamy": 50
+   },
+   "source": "https://www.breitbart.com/midterm-election/2026/08/14/ohio-poll-gops-vivek-ramaswamy-ahead-his-democrat-opponent-but-sen-jon-husted-trailing-his/"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-17",
+   "end": "2026-10-19",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 46,
+    "Abbott": 49
+   },
+   "source": "https://emersoncollegepolling.com/texas-2026-poll-toss-up/"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-08-09",
+   "end": "2026-08-10",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 45,
+    "Abbott": 49
+   },
+   "source": "https://www.newsweek.com/greg-abbott-chances-losing-texas-warning-signs-republicans-12457051"
+  },
+  {
+   "race": "GOV-IA",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-05",
+   "end": "2026-10-06",
+   "n": 650,
+   "pop": "LV",
+   "results": {
+    "Sand": 49,
+    "Lahn": 45
+   },
+   "source": "https://www.bleedingheartland.com/?p=458199"
+  },
+  {
+   "race": "GOV-IA",
+   "pollster": "Suffolk University",
+   "pollsterId": "suffolk",
+   "start": "2026-10-01",
+   "end": "2026-10-04",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Sand": 55,
+    "Lahn": 43
+   },
+   "source": "https://politicalwire.com/2026/10/07/josh-turek-overtakes-ashley-hinson-in-iowa-senate-race/"
+  },
+  {
+   "race": "GOV-IA",
+   "pollster": "Suffolk University",
+   "pollsterId": "suffolk",
+   "start": "2026-08-20",
+   "end": "2026-08-23",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Sand": 48,
+    "Lahn": 44
+   },
+   "source": "https://www.kcrg.com/2026/08/26/new-poll-shows-tight-races-iowa-governor-us-senate-2026/"
+  },
+  {
+   "race": "GOV-KS",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-09-15",
+   "end": "2026-09-16",
+   "n": 750,
+   "pop": "LV",
+   "results": {
+    "Holscher": 44,
+    "Masterson": 51
+   },
+   "source": "https://emersoncollegepolling.com/kansas-2026/"
+  },
+  {
+   "race": "GOV-NV",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-09-08",
+   "end": "2026-09-08",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Ford": 44,
+    "Lombardo": 42
+   },
+   "approx": true,
+   "note": "Released Sept. 10; field dates not in available reports.",
+   "source": "https://emersoncollegepolling.com/nevada-2026-poll-ford-and-lombardo/"
+  },
+  {
+   "race": "GOV-MN",
+   "pollster": "SurveyUSA/KSTP",
+   "pollsterId": "surveyusa",
+   "start": "2026-08-13",
+   "end": "2026-08-17",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Klobuchar": 52,
+    "Demuth": 36
+   },
+   "source": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-klobuchar-leads-all-gop-candidates-by-double-digits/"
+  },
+  {
+   "race": "GOV-MN",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-02-06",
+   "end": "2026-02-08",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "Klobuchar": 51,
+    "Demuth": 38
+   },
+   "source": "https://emersoncollegepolling.com/minnesota-2026-poll-democrats-lead-gop-as-voters-cite-threats-to-democracy/"
+  },
+  {
+   "race": "GOV-ME",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-10-01",
+   "end": "2026-10-04",
+   "n": 1505,
+   "pop": "RV",
+   "results": {
+    "Pingree": 52,
+    "Charles": 40,
+    "Bennett": 6
+   },
+   "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-maine-october-2026/"
+  },
+  {
+   "race": "SEN-NH",
+   "pollster": "Saint Anselm College",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-20",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Pappas": 50,
+    "Sununu": 43
+   },
+   "approx": true,
+   "note": "Released Oct. 22.",
+   "source": "https://politicalwire.com/2026/10/22/pappas-leads-sununu-in-senate-race/"
+  },
+  {
+   "race": "SEN-NH",
+   "pollster": "University of New Hampshire",
+   "pollsterId": null,
+   "start": "2026-09-17",
+   "end": "2026-09-21",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Pappas": 50,
+    "Sununu": 42
+   },
+   "source": "https://thehill.com/homenews/campaign/6132186-pappas-leads-nh-senate-poll/"
+  },
+  {
+   "race": "SEN-NH",
+   "pollster": "Rasmussen Reports",
+   "pollsterId": null,
+   "start": "2026-10-02",
+   "end": "2026-10-04",
+   "n": 979,
+   "pop": "LV",
+   "results": {
+    "Pappas": 49,
+    "Sununu": 44
+   },
+   "source": "https://www.realclearpolling.com/polls/senate/general/2026/new-hampshire/pappas-vs-sununu"
+  },
+  {
+   "race": "SEN-GA",
+   "pollster": "University of Georgia/AJC",
+   "pollsterId": null,
+   "start": "2026-10-07",
+   "end": "2026-10-15",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "Ossoff": 48,
+    "Collins": 40
+   },
+   "source": "https://www.wsbtv.com/news/local/ajcuga-poll-jon-ossoff-leads-mike-collins-among-likely-voters-us-senate-race/YWLQFEFS3VHILHKZ3KWBO2ZX5I/"
+  },
+  {
+   "race": "SEN-GA",
+   "pollster": "Quantus Insights",
+   "pollsterId": null,
+   "start": "2026-10-15",
+   "end": "2026-10-17",
+   "n": 755,
+   "pop": "LV",
+   "results": {
+    "Ossoff": 51.8,
+    "Collins": 44.9
+   },
+   "source": "https://www.atlantanewsfirst.com/2026/10/19/new-georgia-poll-ossoff-leads-by-nearly-7-jackson-dolezal-cling-narrow-edges/"
+  },
+  {
+   "race": "SEN-GA",
+   "pollster": "Trafalgar Group",
+   "pollsterId": null,
+   "start": "2026-10-07",
+   "end": "2026-10-09",
+   "n": 1101,
+   "pop": "LV",
+   "results": {
+    "Ossoff": 51,
+    "Collins": 43
+   },
+   "source": "https://www.newsweek.com/jon-ossoff-extends-lead-over-mike-collins-in-georgia-senate-race-poll-12552612"
+  },
+  {
+   "race": "SEN-NC",
+   "pollster": "Elon University/YouGov",
+   "pollsterId": null,
+   "start": "2026-09-29",
+   "end": "2026-10-08",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Cooper": 52,
+    "Whatley": 39
+   },
+   "source": "https://www.elon.edu/u/news/2026/10/20/final-elon-university-poll-before-election-day-cooper-has-double-digit-lead-over-whatley-in-nc-us-senate-race/"
+  },
+  {
+   "race": "SEN-NC",
+   "pollster": "Trafalgar Group",
+   "pollsterId": null,
+   "start": "2026-10-08",
+   "end": "2026-10-10",
+   "n": 1091,
+   "pop": "LV",
+   "results": {
+    "Cooper": 48.8,
+    "Whatley": 40.9
+   },
+   "source": "https://thehill.com/homenews/campaign/6144234-roy-cooper-leads-whatley-nc/"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-09-28",
+   "end": "2026-10-05",
+   "n": 3947,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 49,
+    "Rogers": 48
+   },
+   "approx": true,
+   "source": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "InsiderAdvantage",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-22",
+   "n": 1200,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 47,
+    "Rogers": 46
+   },
+   "source": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Tyson Group",
+   "pollsterId": null,
+   "partisan": "R",
+   "start": "2026-10-06",
+   "end": "2026-10-08",
+   "n": 600,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 44,
+    "Rogers": 46
+   },
+   "note": "Sponsored by an ally of Mike Rogers.",
+   "source": "https://www.newsweek.com/rogers-el-sayed-clash-over-war-trump-in-final-michigan-senate-debate-12596649"
+  },
+  {
+   "race": "SEN-NE",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-03",
+   "end": "2026-10-03",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Osborn": 48,
+    "Ricketts": 47
+   },
+   "approx": true,
+   "source": "https://politicalwire.com/2026/10/06/osborn-edges-ricketts-in-nebraska-senate-race/"
+  },
+  {
+   "race": "SEN-NE",
+   "pollster": "National Public Affairs",
+   "pollsterId": null,
+   "partisan": "R",
+   "start": "2026-10-10",
+   "end": "2026-10-10",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Osborn": 43,
+    "Ricketts": 46
+   },
+   "approx": true,
+   "source": "https://politicalwire.com/2026/10/12/ricketts-leads-osborn-in-nebraska-senate-race/"
+  },
+  {
+   "race": "SEN-MT",
+   "pollster": "Quantus Insights",
+   "pollsterId": null,
+   "start": "2026-10-15",
+   "end": "2026-10-18",
+   "n": 686,
+   "pop": "LV",
+   "results": {
+    "Bodnar": 28,
+    "Alme": 44,
+    "Bankhead": 21
+   },
+   "source": "https://www.realclearpolling.com/polls/senate/general/2026/montana/alme-vs-bankhead-vs-bodnar"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "InsiderAdvantage",
+   "pollsterId": null,
+   "start": "2026-10-13",
+   "end": "2026-10-14",
+   "n": 1200,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 47,
+    "Marshall": 48
+   },
+   "source": "https://www.newsweek.com/adam-hamilton-vs-roger-marshall-kansas-senate-race-odds-polls-12460819"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "AARP",
+   "pollsterId": null,
+   "start": "2026-09-20",
+   "end": "2026-09-22",
+   "n": 982,
+   "pop": "LV",
+   "results": {
+    "Jackson": 50,
+    "Collins": 47
+   },
+   "source": "https://www.newsweek.com/maine-senate-polling-as-susan-collins-troy-jackson-head-into-fourth-debate-12569146"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "Trafalgar Group",
+   "pollsterId": null,
+   "start": "2026-10-15",
+   "end": "2026-10-17",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 48.1,
+    "Tafoya": 44.6
+   },
+   "approx": true,
+   "source": "https://suaragarut.id/en/flanagan-tafoya-minnesota-senate-poll"
+  },
+  {
+   "race": "GOV-GA",
+   "pollster": "University of Georgia/AJC",
+   "pollsterId": null,
+   "start": "2026-10-07",
+   "end": "2026-10-15",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "Bottoms": 45,
+    "Jackson": 46
+   },
+   "source": "https://www.270towin.com/2026-governor-polls/georgia"
+  },
+  {
+   "race": "GOV-AZ",
+   "pollster": "Noble Predictive Insights",
+   "pollsterId": null,
+   "start": "2026-09-28",
+   "end": "2026-09-28",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Hobbs": 48,
+    "Biggs": 35
+   },
+   "approx": true,
+   "source": "https://cronkitenews.azpbs.org/2026/10/01/andy-biggs-katie-hobbs-arizona-polls-kalshi/"
+  },
+  {
+   "race": "GOV-NM",
+   "pollster": "Albuquerque Journal",
+   "pollsterId": null,
+   "start": "2026-08-28",
+   "end": "2026-08-28",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Haaland": 49,
+    "Hull": 43
+   },
+   "approx": true,
+   "source": "https://www.kunm.org/kunm-news-update/2026-08-31/mon-poll-shows-haaland-leads-hull-by-closer-than-expected-margin-in-new-mexicos-race-for-governor"
+  },
+  {
+   "race": "GOV-MN",
+   "pollster": "Star Tribune/KARE 11",
+   "pollsterId": null,
+   "start": "2026-10-08",
+   "end": "2026-10-08",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Klobuchar": 50,
+    "Demuth": 41
+   },
+   "approx": true,
+   "source": "https://politicalwire.com/2026/10/13/amy-klobuchar-hits-50-for-minnesota-governor/"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "co/efficient",
+   "pollsterId": null,
+   "partisan": "R",
+   "start": "2026-10-05",
+   "end": "2026-10-06",
+   "n": 925,
+   "pop": "LV",
+   "results": {
+    "Acton": 43,
+    "Ramaswamy": 45
+   },
+   "source": "https://www.newsweek.com/vivek-ramaswamy-gets-boost-after-five-ohio-polling-blows-in-a-row-12544047"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "University of Houston Hobby School",
+   "pollsterId": null,
+   "start": "2026-10-10",
+   "end": "2026-10-14",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 46,
+    "Abbott": 49
+   },
+   "source": "https://www.fox7austin.com/news/texas-governors-race-abbott-holds-narrow-lead-over-hinojosa-latest-poll"
+  }
+ ]
+}

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- head:start -->
+<title>2026 Midterm Forecast</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<!-- head:end -->
+<meta name="description" content="State-by-state 2026 Senate and governor forecast built from a weighted average of ten historically accurate pollsters, with one-click refresh from Wikipedia poll tables.">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+<!-- app:start -->
+<div class="page">
+  <header class="masthead">
+    <div class="mast-text">
+      <p class="eyebrow"><span id="election-day">Election Day: Tuesday, November 3, 2026</span> <span class="dot" aria-hidden="true">·</span> <span id="countdown"></span></p>
+      <h1>2026 Midterm Forecast</h1>
+      <p class="dek">State-by-state odds for every Senate and governor race, from a weighted average of the ten pollsters with the strongest accuracy records, blended with a fundamentals baseline and simulated <span id="sim-count">10,000</span> times.</p>
+    </div>
+    <div class="mast-actions">
+      <button type="button" id="refresh-btn" class="btn btn-primary">
+        <svg class="btn-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.6 6.5A5.75 5.75 0 1 0 13 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M14 2.5v4h-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span id="refresh-label">Refresh polls</span>
+      </button>
+      <p id="data-status" class="data-status" aria-live="polite"></p>
+      <p class="data-source">Live source: <a href="https://en.wikipedia.org/wiki/2026_United_States_Senate_elections" target="_blank" rel="noopener">Wikipedia poll tables</a>, via the MediaWiki API</p>
+    </div>
+  </header>
+
+  <div id="change-banner" class="banner" role="status" hidden></div>
+
+  <section class="kpis" aria-label="Headline forecast">
+    <article class="kpi kpi-hero">
+      <h2 class="kpi-label">Chance of Senate control</h2>
+      <div class="hero-row">
+        <p class="hero-figure"><span id="hero-party">Democrats</span> <span id="hero-value">–</span></p>
+        <p class="hero-sub" id="hero-sub"></p>
+      </div>
+      <div class="control-bar" id="control-bar" aria-hidden="true"></div>
+      <ul class="control-legend" id="control-legend"></ul>
+    </article>
+    <article class="kpi">
+      <h2 class="kpi-label">Projected Senate seats</h2>
+      <p class="kpi-value" id="kpi-seats">–</p>
+      <p class="kpi-note" id="kpi-seats-note"></p>
+    </article>
+    <article class="kpi">
+      <h2 class="kpi-label">Governors after the election</h2>
+      <p class="kpi-value" id="kpi-gov">–</p>
+      <p class="kpi-note" id="kpi-gov-note"></p>
+    </article>
+    <article class="kpi">
+      <h2 class="kpi-label">National environment</h2>
+      <p class="kpi-value" id="kpi-env">–</p>
+      <p class="kpi-note" id="kpi-env-note"></p>
+    </article>
+  </section>
+
+  <nav class="tabs" role="tablist" aria-label="Forecast sections">
+    <button type="button" role="tab" id="tab-senate" aria-controls="panel-senate" aria-selected="true">Senate</button>
+    <button type="button" role="tab" id="tab-governor" aria-controls="panel-governor" aria-selected="false" tabindex="-1">Governors</button>
+    <button type="button" role="tab" id="tab-house" aria-controls="panel-house" aria-selected="false" tabindex="-1">House ballot</button>
+    <button type="button" role="tab" id="tab-pollsters" aria-controls="panel-pollsters" aria-selected="false" tabindex="-1">Pollsters</button>
+    <button type="button" role="tab" id="tab-method" aria-controls="panel-method" aria-selected="false" tabindex="-1">Method</button>
+  </nav>
+
+  <div class="settings" role="group" aria-label="Model settings">
+    <div class="setting">
+      <span class="setting-label" id="lbl-pollsters">Polls used</span>
+      <div class="segmented" role="radiogroup" aria-labelledby="lbl-pollsters">
+        <button type="button" role="radio" id="opt-trusted" aria-checked="true">Trusted 10 only</button>
+        <button type="button" role="radio" id="opt-all" aria-checked="false">Add other pollsters (30% weight)</button>
+      </div>
+    </div>
+    <label class="setting" for="opt-halflife">
+      <span class="setting-label">Recency half-life</span>
+      <select id="opt-halflife">
+        <option value="7">7 days</option>
+        <option value="14">14 days</option>
+        <option value="21" selected>21 days</option>
+        <option value="30">30 days</option>
+      </select>
+    </label>
+    <label class="setting setting-check" for="opt-bias">
+      <input type="checkbox" id="opt-bias" checked>
+      <span>Correct each pollster's historical lean</span>
+    </label>
+  </div>
+
+  <main id="main">
+    <section class="panel" id="panel-senate" role="tabpanel" aria-labelledby="tab-senate">
+      <div class="duo">
+        <figure class="card">
+          <figcaption class="card-head">
+            <h2>Senate map</h2>
+            <p>35 seats on the ballot, colored by each race's forecast. Select a state for its polls.</p>
+          </figcaption>
+          <div class="tilemap" id="map-senate"></div>
+          <ul class="legend" id="legend-senate"></ul>
+        </figure>
+        <figure class="card">
+          <figcaption class="card-head">
+            <h2>Balance of power</h2>
+            <p id="balance-senate-note">Seats not up plus each race by rating. Republicans need 50 seats (with Vice President JD Vance); Democrats need 51.</p>
+          </figcaption>
+          <div class="balance" id="balance-senate"></div>
+          <h3 class="sub-head">Distribution of Republican seats across simulations</h3>
+          <div class="hist" id="hist-senate"></div>
+          <details class="table-toggle">
+            <summary>Show distribution as a table</summary>
+            <div class="table-scroll"><table class="data-table compact" id="hist-senate-table"></table></div>
+          </details>
+        </figure>
+      </div>
+      <section class="card">
+        <div class="card-head row">
+          <div>
+            <h2>Every Senate race</h2>
+            <p>Sorted by closeness. Chance is the share of simulations each side wins.</p>
+          </div>
+          <label class="inline-filter" for="filter-senate">
+            <span>Show</span>
+            <select id="filter-senate">
+              <option value="all">All 35 races</option>
+              <option value="competitive">Competitive (Lean or closer)</option>
+              <option value="polled">With trusted polls</option>
+            </select>
+          </label>
+        </div>
+        <div class="table-scroll"><table class="data-table race-table" id="table-senate"></table></div>
+      </section>
+    </section>
+
+    <section class="panel" id="panel-governor" role="tabpanel" aria-labelledby="tab-governor" hidden>
+      <div class="duo">
+        <figure class="card">
+          <figcaption class="card-head">
+            <h2>Governor map</h2>
+            <p>36 governorships on the ballot. Select a state for its polls.</p>
+          </figcaption>
+          <div class="tilemap" id="map-governor"></div>
+          <ul class="legend" id="legend-governor"></ul>
+        </figure>
+        <figure class="card">
+          <figcaption class="card-head">
+            <h2>Governorships</h2>
+            <p>14 governorships not on the ballot plus each race by rating. A majority is 26 of 50.</p>
+          </figcaption>
+          <div class="balance" id="balance-governor"></div>
+          <h3 class="sub-head">Distribution of Democratic governorships across simulations</h3>
+          <div class="hist" id="hist-governor"></div>
+          <details class="table-toggle">
+            <summary>Show distribution as a table</summary>
+            <div class="table-scroll"><table class="data-table compact" id="hist-governor-table"></table></div>
+          </details>
+        </figure>
+      </div>
+      <section class="card">
+        <div class="card-head row">
+          <div>
+            <h2>Every governor's race</h2>
+            <p>Sorted by closeness. Chance is the share of simulations each side wins.</p>
+          </div>
+          <label class="inline-filter" for="filter-governor">
+            <span>Show</span>
+            <select id="filter-governor">
+              <option value="all">All 36 races</option>
+              <option value="competitive">Competitive (Lean or closer)</option>
+              <option value="polled">With trusted polls</option>
+            </select>
+          </label>
+        </div>
+        <div class="table-scroll"><table class="data-table race-table" id="table-governor"></table></div>
+      </section>
+    </section>
+
+    <section class="panel" id="panel-house" role="tabpanel" aria-labelledby="tab-house" hidden>
+      <figure class="card">
+        <figcaption class="card-head">
+          <h2>Generic congressional ballot</h2>
+          <p id="house-note">Which party voters prefer for the House, averaged across the trusted pollsters. This national margin also sets the baseline for every race above.</p>
+        </figcaption>
+        <div class="chart" id="chart-house"></div>
+      </figure>
+      <section class="card">
+        <div class="card-head"><h2>Generic-ballot polls in the average</h2><p>Weight is the poll's share of the current average.</p></div>
+        <div class="table-scroll"><table class="data-table" id="table-house"></table></div>
+      </section>
+    </section>
+
+    <section class="panel" id="panel-pollsters" role="tabpanel" aria-labelledby="tab-pollsters" hidden>
+      <section class="card">
+        <div class="card-head">
+          <h2>The ten trusted pollsters</h2>
+          <p>Selected on Silver Bulletin's accuracy-and-transparency ratings (January 2026 update), then filtered to firms still publishing 2026 polls for major media. Trust weight multiplies every poll a firm releases.</p>
+        </div>
+        <div class="table-scroll"><table class="data-table pollster-table" id="table-pollsters"></table></div>
+      </section>
+      <section class="card prose">
+        <h2>Who was left out, and why</h2>
+        <ul id="excluded-list"></ul>
+      </section>
+    </section>
+
+    <section class="panel prose-panel" id="panel-method" role="tabpanel" aria-labelledby="tab-method" hidden>
+      <article class="card prose" id="method"></article>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Independent forecast built from public polls. Not affiliated with any pollster, news outlet or campaign. Probabilities describe uncertainty in the polls, not certainty about the outcome.</p>
+  </footer>
+</div>
+
+<dialog id="race-dialog" class="race-dialog" aria-labelledby="race-title">
+  <div class="dialog-inner">
+    <header class="dialog-head">
+      <div>
+        <p class="eyebrow" id="race-eyebrow"></p>
+        <h2 id="race-title"></h2>
+      </div>
+      <button type="button" class="btn btn-ghost" id="race-close" aria-label="Close race details">Close</button>
+    </header>
+    <div id="race-body"></div>
+  </div>
+</dialog>
+
+<div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+<!-- app:end -->
+<script src="js/config.js"></script>
+<script src="js/model.js"></script>
+<script src="js/wikipedia.js"></script>
+<script src="data/polls.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

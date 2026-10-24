@@ -1,0 +1,17 @@
+{
+  "name": "2026-midterm-forecast",
+  "version": "1.0.0",
+  "private": true,
+  "description": "State-by-state 2026 Senate and governor forecast from a weighted average of ten trusted pollsters, with one-click refresh from Wikipedia poll tables.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "predict": "node scripts/predict.js",
+    "update": "node scripts/update-polls.js",
+    "update:dry": "node scripts/update-polls.js --dry-run",
+    "build": "node scripts/build-standalone.js",
+    "serve": "python3 -m http.server 8000"
+  }
+}

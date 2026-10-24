@@ -1,0 +1,59 @@
+name: Update polls
+
+# One-click refresh: Actions tab -> "Update polls" -> "Run workflow".
+# Reads every race article on Wikipedia, merges new poll rows into
+# data/polls.js and data/polls.json, and commits them to the branch you pick.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Report what would change without committing
+        type: boolean
+        default: false
+  # To refresh automatically every morning, uncomment:
+  # schedule:
+  #   - cron: "17 11 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-polls-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run tests
+        run: node --test test/*.test.js
+
+      - name: Pull polls from Wikipedia
+        run: node scripts/update-polls.js ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Re-run tests on the refreshed data
+        if: ${{ !inputs.dry_run }}
+        run: node --test test/*.test.js
+
+      - name: Print the new forecast
+        run: node scripts/predict.js
+
+      - name: Commit refreshed data
+        if: ${{ !inputs.dry_run }}
+        run: |
+          if git diff --quiet -- data; then
+            echo "No poll changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/polls.js data/polls.json
+          git commit -m "Update polls from Wikipedia"
+          git push
