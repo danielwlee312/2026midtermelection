@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-24T23:19:49.853Z",
+  "refreshed": "2026-10-25T04:50:21.938Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -15361,6 +15361,38 @@
    },
    "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_Idaho_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-CA",
+   "pollster": "McLaughlin & Associates (R)",
+   "pollsterId": null,
+   "start": "2026-10-17",
+   "end": "2026-10-20",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Becerra": 55,
+    "Hilton": 39
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_California_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NY",
+   "pollster": "ActiVote",
+   "pollsterId": null,
+   "start": "2026-10-01",
+   "end": "2026-10-23",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Hochul": 59,
+    "Blakeman": 41
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_New_York_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
