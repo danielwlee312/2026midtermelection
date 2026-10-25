@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-25T04:50:21.938Z",
+  "refreshed": "2026-10-25T16:29:42.567Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -15393,6 +15393,22 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_New_York_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "Trafalgar Group (R)",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-23",
+   "n": 1077,
+   "pop": "LV",
+   "results": {
+    "Jackson": 47,
+    "Collins": 47
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
    "origin": "wikipedia"
   }
  ]
