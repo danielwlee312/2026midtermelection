@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-25T16:29:42.567Z",
+  "refreshed": "2026-10-25T20:55:57.754Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -15409,6 +15409,54 @@
    },
    "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NE",
+   "pollster": "Concord Public Opinion Partners (D)",
+   "pollsterId": null,
+   "start": "2026-10-15",
+   "end": "2026-10-18",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Osborn": 48,
+    "Ricketts": 41
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NE",
+   "pollster": "Concord Public Opinion Partners (D)",
+   "pollsterId": null,
+   "start": "2026-10-15",
+   "end": "2026-10-18",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Walz": 43,
+    "Pillen": 40
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Nebraska_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NV",
+   "pollster": "Concord Public Opinion Partners (D)",
+   "pollsterId": null,
+   "start": "2026-09-26",
+   "end": "2026-09-30",
+   "n": 565,
+   "pop": "LV",
+   "results": {
+    "Ford": 42,
+    "Lombardo": 43
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Nevada_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
