@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-26T04:55:07.997Z",
+  "refreshed": "2026-10-26T20:33:53.688Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -7610,7 +7610,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Rasmussen Reports (R)",
+   "pollster": "Rasmussen Reports",
    "pollsterId": null,
    "start": "2026-10-20",
    "end": "2026-10-21",
@@ -7620,7 +7620,7 @@
     "Talarico": 45,
     "Paxton": 45
    },
-   "partisan": "R",
+   "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
    "origin": "wikipedia"
   },
@@ -7850,7 +7850,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Rasmussen Reports (R)",
+   "pollster": "Rasmussen Reports",
    "pollsterId": null,
    "start": "2026-09-28",
    "end": "2026-09-29",
@@ -7860,7 +7860,7 @@
     "Talarico": 46,
     "Paxton": 45
    },
-   "partisan": "R",
+   "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
    "origin": "wikipedia"
   },
@@ -15473,6 +15473,86 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-FL",
+   "pollster": "RedBox Research",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 4832,
+   "pop": "LV",
+   "results": {
+    "Nixon": 43,
+    "Moody": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "RedBox Research",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 1301,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 45,
+    "Marshall": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-FL",
+   "pollster": "RedBox Research",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 4832,
+   "pop": "LV",
+   "results": {
+    "Jolly": 44,
+    "Donalds": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NV",
+   "pollster": "RedBox Research",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 1407,
+   "pop": "LV",
+   "results": {
+    "Ford": 46,
+    "Lombardo": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Nevada_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "RedBox Research (D)",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 2998,
+   "pop": "LV",
+   "results": {
+    "Acton": 48,
+    "Ramaswamy": 44
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
