@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-25T20:55:57.754Z",
+  "refreshed": "2026-10-26T04:55:07.997Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -15457,6 +15457,22 @@
    },
    "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_Nevada_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "RedBox Research",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 2696,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 49,
+    "Rogers": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
    "origin": "wikipedia"
   }
  ]
