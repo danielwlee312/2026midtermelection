@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-27T10:32:15.228Z",
+  "refreshed": "2026-10-27T16:37:15.350Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -15727,6 +15727,102 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_South_Carolina_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "Echelon Insights (R)",
+   "pollsterId": null,
+   "start": "2026-10-16",
+   "end": "2026-10-23",
+   "n": 413,
+   "pop": "LV",
+   "results": {
+    "Jackson": 51,
+    "Collins": 44
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Glengariff Group",
+   "pollsterId": null,
+   "start": "2026-10-19",
+   "end": "2026-10-22",
+   "n": 600,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 51,
+    "Rogers": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Univision / YouGov",
+   "pollsterId": null,
+   "start": "2026-10-13",
+   "end": "2026-10-21",
+   "n": 1000,
+   "pop": "RV",
+   "results": {
+    "Talarico": 50,
+    "Paxton": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-AZ",
+   "pollster": "RedBox Research (D)",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 2686,
+   "pop": "LV",
+   "results": {
+    "Hobbs": 47,
+    "Biggs": 42
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Arizona_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "Univision / YouGov",
+   "pollsterId": null,
+   "start": "2026-10-13",
+   "end": "2026-10-21",
+   "n": 1000,
+   "pop": "RV",
+   "results": {
+    "Hinojosa": 46,
+    "Abbott": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-VT",
+   "pollster": "State Navigate",
+   "pollsterId": null,
+   "start": "2026-10-23",
+   "end": "2026-10-25",
+   "n": 1752,
+   "pop": "LV",
+   "results": {
+    "Janoo": 46,
+    "Scott": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Vermont_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
