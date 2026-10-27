@@ -36,7 +36,8 @@ function main() {
   const head = between(html, '<!-- head:start -->', '<!-- head:end -->');
   const body = between(html, '<!-- app:start -->', '<!-- app:end -->');
   const css = read('css/dashboard.css');
-  const env = { hosted: artifact ? 'artifact' : 'file' };
+  const homepage = JSON.parse(read('package.json')).homepage || null;
+  const env = artifact ? { hosted: 'artifact', liveUrl: homepage } : { hosted: 'file' };
   const scripts = [inlineScript('window.DASHBOARD_ENV = ' + JSON.stringify(env) + ';')]
     .concat(SCRIPTS.map((p) => inlineScript(read(p))));
 

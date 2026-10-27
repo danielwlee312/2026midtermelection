@@ -2,6 +2,8 @@
 
 A state-by-state forecast for every 2026 Senate and governor race. It's built from a weighted average of the **ten pollsters with the strongest accuracy records**, blended with a fundamentals baseline, and simulated 10,000 times. One click on **Refresh polls** pulls the latest poll tables from Wikipedia and recalculates everything.
 
+**Live dashboard: <https://danielwlee312.github.io/2026midtermelection/>** (poll data updates every hour)
+
 ![Dashboard: Senate control odds, tile map, balance of power and race table](docs/dashboard.png)
 
 ## Open it
@@ -76,50 +78,51 @@ All of this lives in [`js/model.js`](js/model.js), with defaults in `DEFAULTS`.
 
 Ratings: Safe ≥ 95%, Likely ≥ 80%, Lean ≥ 60%, otherwise Toss-up.
 
-## Forecast snapshot (October 24, 2026)
+## Forecast snapshot (October 27, 2026)
 
-This uses the bundled data after the **Update polls** workflow merged Wikipedia's poll tables (05:19 UTC), with trusted pollsters only and default settings. The dashboard recalculates every time you refresh.
+From the bundled data on October 27 (trusted pollsters only, default settings). The data updates every hour, so the [live dashboard](https://danielwlee312.github.io/2026midtermelection/) is always newer than this table.
 
-- **Senate control:** Democrats 62%, Republicans 29%, no outright majority 9%. Average seats: D 51.3, R 47.9, independents 0.8.
-- **Governors:** Democratic majority 69%. Average 26.5 Democratic governors.
-- **National environment:** D+10.9 on the generic ballot (NYT/Siena, Emerson, Marquette, Quinnipiac).
+- **Senate control:** Democrats 57%, Republicans 33%, no outright majority 10%. Average seats: D 50.9, R 48.3, independents 0.8.
+- **Governors:** Democratic majority 66%. Average 26.3 Democratic governors.
+- **National environment:** D+9.8 on the generic ballot (NYT/Siena, ABC/Washington Post/Ipsos, Fox News, Emerson, Marquette, Quinnipiac).
 
 Every race where the leader's chance is below 90%:
 
 | Senate race | Polls | Poll avg | Forecast | Chance |
 |---|---|---|---|---|
-| Iowa: Turek (D) v Hinson (R) | 11 | D+0.8 | R+0.1 | Toss-up 50/50 |
-| Maine: Jackson (D) v Collins (R) | 6 | D+1.2 | D+0.2 | Jackson 52% |
-| Alaska: Peltola (D) v Sullivan (R) | 2 | D+6.8 | R+0.3 | Sullivan 52% |
-| Texas: Talarico (D) v Paxton (R) | 14 | D+1.6 | D+0.6 | Talarico 55% |
-| Nebraska: Osborn (I) v Ricketts (R) | 1 | I+4.0 | I+2.0 | Osborn 61% |
-| Kansas: Hamilton (D) v Marshall (R) | 2 | D+0.5 | R+2.2 | Marshall 66% |
-| Florida (special): Nixon (D) v Moody (R) | 1 | R+11.7 | R+4.7 | Moody 70% |
-| Mississippi: Colom (D) v Hyde-Smith (R) | 0 | – | R+4.6 | Hyde-Smith 71% |
-| Ohio (special): Brown (D) v Husted (R) | 8 | D+4.2 | D+2.8 | Brown 73% |
-| Michigan: El-Sayed (D) v Rogers (R) | 8 | D+2.6 | D+3.9 | El-Sayed 81% |
-| Georgia: Ossoff (D) v Collins (R) | 2 | D+12.8 | D+7.0 | Ossoff 81% |
-| Montana: Bodnar (I) v Alme (R) | 0 | – | R+10.0 | Alme 82% |
-| South Carolina: Andrews (D) v Graham (R) | 0 | – | R+9.5 | Graham 85% |
-| Minnesota: Flanagan (D) v Tafoya (R) | 3 | D+2.5 | D+6.4 | Flanagan 87% |
+| Maine: Jackson (D) v Collins (R) | 6 | D+1.2 | even | Toss-up 50/50 |
+| Iowa: Turek (D) v Hinson (R) | 11 | D+0.8 | R+0.3 | Hinson 52% |
+| Texas: Talarico (D) v Paxton (R) | 14 | D+1.6 | D+0.4 | Talarico 53% |
+| Alaska: Peltola (D) v Sullivan (R) | 2 | D+6.8 | R+0.9 | Sullivan 57% |
+| Nebraska: Osborn (I) v Ricketts (R) | 1 | I+4.0 | I+1.6 | Osborn 59% |
+| Kansas: Hamilton (D) v Marshall (R) | 2 | D+0.5 | R+2.6 | Marshall 68% |
+| Ohio (special): Brown (D) v Husted (R) | 8 | D+4.2 | D+2.6 | Brown 72% |
+| Florida (special): Nixon (D) v Moody (R) | 1 | R+11.7 | R+5.6 | Moody 73% |
+| Mississippi: Colom (D) v Hyde-Smith (R) | 0 | – | R+5.3 | Hyde-Smith 74% |
+| Georgia: Ossoff (D) v Collins (R) | 2 | D+12.8 | D+6.2 | Ossoff 78% |
+| Michigan: El-Sayed (D) v Rogers (R) | 8 | D+2.6 | D+3.7 | El-Sayed 80% |
+| Montana: Bodnar (I) v Alme (R) | 0 | – | R+10.9 | Alme 84% |
+| Minnesota: Flanagan (D) v Tafoya (R) | 3 | D+2.5 | D+6.3 | Flanagan 86% |
+| South Carolina: Andrews (D) v Graham (R) | 0 | – | R+10.4 | Graham 87% |
+| New Hampshire: Pappas (D) v Sununu (R) | 2 | D+5.0 | D+8.5 | Pappas 89% |
 
 | Governor race | Polls | Poll avg | Forecast | Chance |
 |---|---|---|---|---|
-| Nevada: Ford (D) v Lombardo (R) | 1 | D+1.4 | D+3.9 | Ford 70% |
-| Alaska: Kreiss-Tomkins (D) v Wilson (R) | 0 | – | R+5.7 | Wilson 71% |
-| Georgia: Bottoms (D) v Jackson (R) | 1 | D+5.0 | D+5.2 | Bottoms 71% |
-| Florida: Jolly (D) v Donalds (R) | 1 | R+5.7 | R+5.7 | Donalds 72% |
-| Ohio: Acton (D) v Ramaswamy (R) | 8 | D+4.4 | D+2.9 | Acton 75% |
-| Wisconsin: Crowley (D) v Tiffany (R) | 2 | D+2.9 | D+4.4 | Crowley 76% |
-| Texas: Hinojosa (D) v Abbott (R) | 13 | R+3.3 | R+3.5 | Abbott 79% |
-| Arizona: Hobbs (D) v Biggs (R) | 0 | – | D+7.5 | Hobbs 80% |
-| South Carolina: Johnson (D) v Wilson (R) | 0 | – | R+10.5 | Wilson 85% |
-| New Hampshire: Warmington (D) v Ayotte (R) | 1 | R+11.0 | R+7.0 | Ayotte 86% |
-| Oregon: Kotek (D) v Drazan (R) | 0 | – | D+10.3 | Kotek 87% |
-| Kansas: Holscher (D) v Masterson (R) | 2 | R+6.0 | R+6.8 | Masterson 88% |
-| Iowa: Sand (D) v Lahn (R) | 11 | D+8.0 | D+5.4 | Sand 88% |
+| Nevada: Ford (D) v Lombardo (R) | 1 | D+1.4 | D+3.6 | Ford 69% |
+| Georgia: Bottoms (D) v Jackson (R) | 1 | D+5.0 | D+4.6 | Bottoms 69% |
+| Alaska: Kreiss-Tomkins (D) v Wilson (R) | 0 | – | R+6.3 | Wilson 73% |
+| Ohio: Acton (D) v Ramaswamy (R) | 8 | D+4.4 | D+2.8 | Acton 73% |
+| Wisconsin: Crowley (D) v Tiffany (R) | 2 | D+2.9 | D+4.2 | Crowley 74% |
+| Florida: Jolly (D) v Donalds (R) | 1 | R+5.7 | R+6.3 | Donalds 74% |
+| Arizona: Hobbs (D) v Biggs (R) | 0 | – | D+7.0 | Hobbs 78% |
+| Texas: Hinojosa (D) v Abbott (R) | 13 | R+3.3 | R+3.6 | Abbott 80% |
+| New Hampshire: Warmington (D) v Ayotte (R) | 1 | R+11.0 | R+7.1 | Ayotte 85% |
+| Oregon: Kotek (D) v Drazan (R) | 0 | – | D+9.8 | Kotek 86% |
+| South Carolina: Johnson (D) v Wilson (R) | 0 | – | R+11.1 | Wilson 86% |
+| Iowa: Sand (D) v Lahn (R) | 11 | D+8.0 | D+5.2 | Sand 87% |
+| Kansas: Holscher (D) v Masterson (R) | 2 | R+6.0 | R+7.1 | Masterson 88% |
 
-*Polls* counts every trusted poll from the last 240 days, but old polls carry little weight. Florida's only Senate poll is from March, so that forecast is essentially the baseline. Alaska shows the other side of the blend: one recent poll (Peltola +7) against an incumbent baseline of Sullivan +7 lands near even. Run `node scripts/predict.js` for all 71 races.
+*Polls* counts every trusted poll from the last 240 days, but old polls carry little weight. Florida's only Senate poll is from March, so that forecast is essentially the baseline. Alaska shows the other side of the blend: one recent poll (Peltola +7) against an incumbent baseline of Sullivan +7 lands at Sullivan +1. Run `node scripts/predict.js` for all 71 races.
 
 ## Refreshing the data
 
@@ -131,13 +134,13 @@ Every race where the leader's chance is below 90%:
 
 A banner lists the new polls, the races that moved, and any page that couldn't be read. Refreshed data is saved in your browser; *Use bundled snapshot* resets it. If Wikipedia can't be reached, the page loads `data/polls.json` instead. A claude.ai Artifact copy can't call Wikipedia at all, so its button loads the `data/polls.json` published with it.
 
-**In GitHub:** the **Update polls** workflow runs the same parser in Node every 3 hours and commits refreshed `data/polls.js` and `data/polls.json` whenever polls changed. You can also run it any time (Actions tab → *Update polls* → *Run workflow*), or pause the schedule by commenting out `schedule` in `.github/workflows/update-polls.yml`.
+**In GitHub:** the **Update polls** workflow runs the same parser in Node every hour and commits refreshed `data/polls.js` and `data/polls.json` whenever polls changed. You can also run it any time (Actions tab → *Update polls* → *Run workflow*), or pause the schedule by commenting out `schedule` in `.github/workflows/update-polls.yml`.
 
 ## Data and caveats
 
-- `data/polls.js` started as a hand-compiled snapshot (October 24, 2026) of 96 polls from pollster releases and news coverage, 73 of them from the trusted ten, with a source link on every row. The **Update polls** workflow then merged Wikipedia's poll tables: Wikipedia's versions replaced every matching row, so the file now holds 952 polls, 179 from the trusted ten. Nine rows remain hand-compiled: the six national generic-ballot polls and three state polls Wikipedia doesn't list. Rows marked `approx: true` (≈ in the UI) use a release date in place of unpublished field dates.
+- `data/polls.js` started as a hand-compiled snapshot (October 24, 2026) of 96 polls from pollster releases and news coverage, 73 of them from the trusted ten, with a source link on every row. The **Update polls** workflow then merged Wikipedia's poll tables: Wikipedia's versions replaced every matching row; on October 27 the file held 973 polls, 182 from the trusted ten. Eleven rows remain hand-compiled: nine national generic-ballot polls and two state polls Wikipedia doesn't list. Rows marked `approx: true` (≈ in the UI) use a release date in place of unpublished field dates.
 - Only the trusted ten count by default, so races they have not polled lean on the fundamentals baseline. Turn on *Add other pollsters* to see every public poll's effect.
-- No Wikipedia article lists individual national generic-ballot polls this cycle (only aggregator averages), so the national environment comes from the bundled trusted generic-ballot polls; add new ones to `data/polls.js` as `HOUSE-US` rows.
+- No Wikipedia article lists individual national generic-ballot polls this cycle (only aggregator averages), so the national environment comes from hand-entered trusted generic-ballot polls, and **it does not update on its own**. Add new ones to `data/polls.js` as `HOUSE-US` rows (then run `node scripts/update-polls.js --json-only`); the dashboard's refresh message reminds you of this.
 - Ranked-choice Alaska and the three-way Montana Senate race are modeled as the top two candidates.
 - Expert ratings shown in race details (Sabato's Crystal Ball, Cook) are context only and do not enter the model.
 - This is an independent forecast built from public polls. It is not affiliated with any pollster, news outlet or campaign.

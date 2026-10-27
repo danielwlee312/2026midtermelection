@@ -152,18 +152,33 @@
     return state.polls.filter(function (p) { return p.pollsterId && POLLSTER[p.pollsterId]; }).length;
   }
 
+  /** The loaded polls with the latest field end date, overall and from trusted pollsters. */
+  function newestPolls() {
+    let any = null, trusted = null;
+    state.polls.forEach(function (p) {
+      if (!p.end) return;
+      if (!any || p.end > any.end) any = p;
+      if (p.pollsterId && POLLSTER[p.pollsterId] && (!trusted || p.end > trusted.end)) trusted = p;
+    });
+    return { any: any, trusted: trusted };
+  }
+
+  function trustedSummary() {
+    const newest = newestPolls().trusted;
+    return plural(trustedCount(), 'trusted poll') + (newest ? ', newest ended ' + fmtDay(newest.end) : '');
+  }
+
   function renderStatus() {
     const box = clear($('data-status'));
-    const n = trustedCount();
     if (state.data.fetchedAt && state.data.origin !== 'snapshot') {
       append(box, 'Refreshed ' + fmtTime(state.data.fetchedAt) +
         (state.data.pagesTotal ? ' from ' + state.data.pagesOk + ' of ' + state.data.pagesTotal + ' pages' : '') +
-        ' · ' + plural(n, 'trusted poll') + ' · ');
+        ' · ' + trustedSummary() + ' · ');
       append(box, h('button', { type: 'button', class: 'btn-link', onclick: resetToSnapshot, text: 'Use bundled snapshot' }));
     } else if (SNAP.meta.refreshed) {
-      append(box, 'Bundled data, updated from Wikipedia ' + fmtTime(SNAP.meta.refreshed) + ' · ' + plural(n, 'trusted poll'));
+      append(box, 'Bundled data, updated from Wikipedia ' + fmtTime(SNAP.meta.refreshed) + ' · ' + trustedSummary());
     } else {
-      append(box, 'Bundled snapshot, compiled ' + fmtDayYear(state.data.compiled) + ' · ' + plural(n, 'trusted poll'));
+      append(box, 'Bundled snapshot, compiled ' + fmtDayYear(state.data.compiled) + ' · ' + trustedSummary());
     }
     const days = M.daysBetween(localISO(), C.ELECTION_DATE);
     $('countdown').textContent = days > 1 ? days + ' days to go' : days === 1 ? 'Tomorrow' : days === 0 ? 'Today' : 'Results pending';
@@ -828,10 +843,12 @@
         if (!older) state.data = { origin: 'repository', compiled: SNAP.meta.compiled, fetchedAt: refreshed || new Date().toISOString() };
         writeStore(STORE_KEY, Object.assign({}, state.data, { polls: state.polls }));
         recompute();
-        showBanner(false, 'This page can\'t call Wikipedia directly, so it loaded the published data file (' +
+        const liveUrl = hostedEnv().liveUrl;
+        showBanner(false, null, [h('p', null, 'This page can\'t call Wikipedia directly, so it loaded the published data file (' +
           (refreshed ? 'last refreshed from Wikipedia ' + fmtTime(refreshed) + (older ? ', older than the data already here' : '') : 'the hand-compiled snapshot; the repository\'s "Update polls" action has not run yet') + '): ' +
-          plural(merged.added.length, 'new poll') + ', ' + plural(merged.updated.length, 'updated row') + '.' +
-          (artifact ? ' For a live pull, open the dashboard from its GitHub Pages site or a local copy.' : ''), null);
+          plural(merged.added.length, 'new poll') + ', ' + plural(merged.updated.length, 'updated poll') + '.' +
+          (artifact ? ' For a live pull, open the dashboard from its GitHub Pages site or a local copy. ' : ''),
+          artifact && liveUrl ? h('a', { href: liveUrl, target: '_blank', rel: 'noopener', text: 'Open the live dashboard' }) : null)]);
       } else if (artifact) {
         showBanner(true, 'This copy of the dashboard can\'t call Wikipedia and has no published data file to load. Open it from the repository\'s GitHub Pages site or a local copy for live refreshes.', null);
       } else {
@@ -859,22 +876,41 @@
   function showChanges(merged, res, before) {
     const after = probsById();
     const trustedNew = merged.added.filter(function (p) { return p.pollsterId; });
-    const otherNew = merged.added.length - trustedNew.length;
-    const failed = res.pages.filter(function (p) { return !p.ok; });
+    const otherNew = merged.added.filter(function (p) { return !p.pollsterId; });
+    const counted = state.settings.includeOthers;
+    const unread = res.pages.filter(function (p) { return !p.ok; });
+    // Wikipedia has no list of national generic-ballot polls this cycle: expected, not a failure.
+    const noHouseList = unread.some(function (p) { return p.race === 'HOUSE-US'; });
+    const failed = unread.filter(function (p) { return p.race !== 'HOUSE-US'; });
     const moves = Object.keys(after).map(function (id) { return { id: id, d: after[id] - before[id] }; })
       .filter(function (m) { return Math.abs(m.d) >= 0.02; })
       .sort(function (a, b) { return Math.abs(b.d) - Math.abs(a.d); }).slice(0, 6);
     const nodes = [];
-    nodes.push(h('h2', { text: 'Refreshed from Wikipedia at ' + fmtTime(res.fetchedAt) + ': read ' + (res.pages.length - failed.length) + ' of ' + res.pages.length + ' pages' }));
-    nodes.push(h('p', { text: plural(trustedNew.length, 'new poll') + ' from trusted pollsters, ' + plural(merged.updated.length, 'updated row') + ', ' + plural(otherNew, 'poll') + ' from other pollsters (used only when you add other pollsters).' }));
-    if (trustedNew.length) {
+    nodes.push(h('h2', { text: 'Refreshed from Wikipedia at ' + fmtTime(res.fetchedAt) + ': read ' + (res.pages.length - unread.length) + ' of ' + res.pages.length + ' pages' }));
+    let summary;
+    if (!merged.added.length) summary = 'No new polls: this page already had every poll Wikipedia lists.';
+    else if (!trustedNew.length) summary = 'Found ' + plural(otherNew.length, 'new poll') + ', none from the ten trusted pollsters' +
+      (counted ? '.' : ', so the forecast is unchanged. Turn on "Add other pollsters" to count them at reduced weight.');
+    else summary = 'Found ' + plural(trustedNew.length, 'new poll') + ' from trusted pollsters' +
+      (otherNew.length ? ' and ' + otherNew.length + ' from other pollsters' + (counted ? '' : ' (not counted unless you add other pollsters)') : '') + '.';
+    if (merged.updated.length) summary += ' ' + plural(merged.updated.length, 'poll') + ' already loaded had corrected numbers on Wikipedia.';
+    nodes.push(h('p', { text: summary }));
+    const listed = trustedNew.concat(otherNew);
+    if (listed.length) {
       const ul = h('ul');
-      trustedNew.slice(0, 8).forEach(function (p) {
+      listed.slice(0, 8).forEach(function (p) {
         const race = M.RACE_BY_ID[p.race];
-        append(ul, h('li', { text: shortPollster(p) + ' · ' + raceTitle(race) + ' · ' + fmtRange(p.start, p.end) + ' · ' + fmtMargin(M.pollMargin(p, race), race) }));
+        append(ul, h('li', null, h('strong', { text: p.pollsterId ? shortPollster(p) : p.pollster }),
+          ' · ' + raceTitle(race) + ' · ' + fmtRange(p.start, p.end) + ' · ' + fmtMargin(M.pollMargin(p, race), race) +
+          (p.pollsterId ? '' : counted ? ' · other pollster' : ' · other pollster, not counted')));
       });
-      if (trustedNew.length > 8) append(ul, h('li', { text: 'and ' + (trustedNew.length - 8) + ' more' }));
+      if (listed.length > 8) append(ul, h('li', { text: 'and ' + (listed.length - 8) + ' more' }));
       nodes.push(ul);
+    }
+    const newest = newestPolls();
+    if (newest.trusted) {
+      nodes.push(h('p', { text: 'Newest trusted poll: ' + shortPollster(newest.trusted) + ' · ' + raceTitle(M.RACE_BY_ID[newest.trusted.race]) + ' · ' +
+        fmtRange(newest.trusted.start, newest.trusted.end) + '. Newest poll from any pollster ended ' + fmtDay(newest.any.end) + '.' }));
     }
     if (moves.length) {
       nodes.push(h('p', { text: 'Biggest moves: ' + moves.map(function (m) {
@@ -884,6 +920,7 @@
     } else {
       nodes.push(h('p', { text: 'No race moved by two points or more.' }));
     }
+    if (noHouseList) nodes.push(h('p', { class: 'muted', text: 'Wikipedia has no list of national generic-ballot polls this cycle, so the national average uses the polls bundled with the dashboard.' }));
     if (failed.length) nodes.push(h('p', { class: 'muted', text: 'Could not read: ' + failed.map(function (f) { return f.title + ' (' + f.error + ')'; }).slice(0, 5).join('; ') + (failed.length > 5 ? '; and ' + (failed.length - 5) + ' more' : '') + '.' }));
     showBanner(false, null, nodes);
   }

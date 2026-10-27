@@ -774,6 +774,51 @@
    "source": "https://politicalwire.com/2026/09/10/democrats-lead-on-the-generic-ballot/"
   },
   {
+   "race": "HOUSE-US",
+   "pollster": "ABC News/Washington Post/Ipsos",
+   "pollsterId": "wapo",
+   "start": "2026-10-09",
+   "end": "2026-10-13",
+   "n": 2032,
+   "pop": "LV",
+   "results": {
+    "Democratic": 52,
+    "Republican": 44
+   },
+   "note": "Toplines as listed by CNN's poll of polls.",
+   "source": "https://www.cnn.com/polling/2026-generic-ballot/choice-poll-of-polls"
+  },
+  {
+   "race": "HOUSE-US",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-10-09",
+   "end": "2026-10-12",
+   "n": 1202,
+   "pop": "RV",
+   "results": {
+    "Democratic": 54,
+    "Republican": 45
+   },
+   "note": "Sample from Fox's topline release; ballot shares as listed by CNN's poll of polls.",
+   "source": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/fox_october-9-12-2026_complete_national_topline_october-14-release.pdf"
+  },
+  {
+   "race": "HOUSE-US",
+   "pollster": "Fox News",
+   "pollsterId": "fox",
+   "start": "2026-09-11",
+   "end": "2026-09-14",
+   "n": 1211,
+   "pop": "RV",
+   "results": {
+    "Democratic": 51,
+    "Republican": 44
+   },
+   "note": "Toplines as listed by CNN's poll of polls.",
+   "source": "https://www.cnn.com/polling/2026-generic-ballot/choice-poll-of-polls"
+  },
+  {
    "race": "GOV-MI",
    "pollster": "Marist University",
    "pollsterId": "marist",

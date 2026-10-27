@@ -1,6 +1,6 @@
 name: Update polls
 
-# Runs every 3 hours, or on demand: Actions tab -> "Update polls" -> "Run workflow".
+# Runs every hour, or on demand: Actions tab -> "Update polls" -> "Run workflow".
 # Reads every race article on Wikipedia, merges new poll rows into
 # data/polls.js and data/polls.json, and commits them when polls changed.
 # Scheduled runs use the default branch. To pause them, comment out "schedule".
@@ -12,7 +12,7 @@ on:
         type: boolean
         default: false
   schedule:
-    - cron: "17 */3 * * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: write
