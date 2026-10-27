@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-26T20:33:53.688Z",
+  "refreshed": "2026-10-27T04:18:48.776Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -1257,7 +1257,7 @@
   },
   {
    "race": "SEN-NH",
-   "pollster": "Rasmussen Reports",
+   "pollster": "Rasmussen Reports (R)",
    "pollsterId": null,
    "start": "2026-10-02",
    "end": "2026-10-04",
@@ -1267,8 +1267,9 @@
     "Pappas": 49,
     "Sununu": 44
    },
-   "source": "https://www.realclearpolling.com/polls/senate/general/2026/new-hampshire/pappas-vs-sununu",
-   "partisan": "R"
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+   "origin": "wikipedia"
   },
   {
    "race": "SEN-NC",
@@ -15506,7 +15507,7 @@
   },
   {
    "race": "SEN-MI",
-   "pollster": "RedBox Research",
+   "pollster": "RedBox Research (D)",
    "pollsterId": null,
    "start": "2026-10-20",
    "end": "2026-10-23",
@@ -15516,7 +15517,7 @@
     "El-Sayed": 49,
     "Rogers": 44
    },
-   "partisan": null,
+   "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
    "origin": "wikipedia"
   },
@@ -15538,7 +15539,7 @@
   },
   {
    "race": "SEN-KS",
-   "pollster": "RedBox Research",
+   "pollster": "RedBox Research (D)",
    "pollsterId": null,
    "start": "2026-10-20",
    "end": "2026-10-23",
@@ -15548,7 +15549,7 @@
     "Hamilton": 45,
     "Marshall": 46
    },
-   "partisan": null,
+   "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
    "origin": "wikipedia"
   },
@@ -15598,6 +15599,38 @@
    },
    "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NH",
+   "pollster": "Rasmussen Reports (R)",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 970,
+   "pop": "LV",
+   "results": {
+    "Pappas": 50,
+    "Sununu": 44
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "RedBox Research (D)",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 2998,
+   "pop": "LV",
+   "results": {
+    "Brown": 47,
+    "Husted": 44
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
    "origin": "wikipedia"
   }
  ]
