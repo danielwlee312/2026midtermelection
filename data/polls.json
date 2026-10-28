@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-28T01:19:52.333Z",
+  "refreshed": "2026-10-28T08:27:50.482Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -7688,7 +7688,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Verasight/VoteHub",
+   "pollster": "Verasight /VoteHub",
    "pollsterId": null,
    "start": "2026-10-01",
    "end": "2026-10-20",
@@ -16097,6 +16097,70 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-SC",
+   "pollster": "The Citadel Military College of South Carolina",
+   "pollsterId": null,
+   "start": "2026-10-14",
+   "end": "2026-10-25",
+   "n": 1009,
+   "pop": "RV",
+   "results": {
+    "Andrews": 39,
+    "Graham": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-CA",
+   "pollster": "PPIC",
+   "pollsterId": null,
+   "start": "2026-10-16",
+   "end": "2026-10-22",
+   "n": 1086,
+   "pop": "LV",
+   "results": {
+    "Becerra": 61,
+    "Hilton": 37
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_California_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NY",
+   "pollster": "Marist University",
+   "pollsterId": "marist",
+   "start": "2026-10-22",
+   "end": "2026-10-25",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Hochul": 53,
+    "Blakeman": 42
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_New_York_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-SC",
+   "pollster": "The Citadel",
+   "pollsterId": null,
+   "start": "2026-10-14",
+   "end": "2026-10-25",
+   "n": 890,
+   "pop": "LV",
+   "results": {
+    "Johnson": 31,
+    "Wilson": 42
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_South_Carolina_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
