@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-27T21:18:01.237Z",
+  "refreshed": "2026-10-28T01:19:52.333Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -15354,8 +15354,8 @@
    "n": 400,
    "pop": "LV",
    "results": {
-    "Shapiro": 62,
-    "Garrity": 39
+    "Shapiro": 61.5,
+    "Garrity": 38.5
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Pennsylvania_gubernatorial_election",
@@ -16065,6 +16065,38 @@
    },
    "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-AZ",
+   "pollster": "HighGround, Inc.",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-25",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Hobbs": 52,
+    "Biggs": 39
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Arizona_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "Glengariff Group",
+   "pollsterId": null,
+   "start": "2026-10-19",
+   "end": "2026-10-22",
+   "n": 600,
+   "pop": "LV",
+   "results": {
+    "Benson": 51,
+    "James": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
