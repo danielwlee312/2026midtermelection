@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-28T08:27:50.482Z",
+  "refreshed": "2026-10-28T15:59:52.910Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -16158,6 +16158,134 @@
    "results": {
     "Johnson": 31,
     "Wilson": 42
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_South_Carolina_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-19",
+   "end": "2026-10-26",
+   "n": 752,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 54,
+    "Tafoya": 40
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Suffolk University",
+   "pollsterId": "suffolk",
+   "start": "2026-10-21",
+   "end": "2026-10-26",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Brown": 47,
+    "Husted": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-SC",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-19",
+   "end": "2026-10-26",
+   "n": 707,
+   "pop": "LV",
+   "results": {
+    "Andrews": 48,
+    "Graham": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-SC",
+   "pollster": "The Citadel",
+   "pollsterId": null,
+   "start": "2026-10-14",
+   "end": "2026-10-25",
+   "n": 890,
+   "pop": "LV",
+   "results": {
+    "Andrews": 39,
+    "Graham": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-FL",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-19",
+   "end": "2026-10-25",
+   "n": 813,
+   "pop": "LV",
+   "results": {
+    "Jolly": 44,
+    "Donalds": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MN",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-19",
+   "end": "2026-10-26",
+   "n": 752,
+   "pop": "LV",
+   "results": {
+    "Klobuchar": 56,
+    "Demuth": 38
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Minnesota_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "Suffolk University",
+   "pollsterId": "suffolk",
+   "start": "2026-10-21",
+   "end": "2026-10-26",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Acton": 48,
+    "Ramaswamy": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-SC",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-19",
+   "end": "2026-10-26",
+   "n": 707,
+   "pop": "LV",
+   "results": {
+    "Johnson": 44,
+    "Wilson": 51
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_South_Carolina_gubernatorial_election",
