@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-28T15:59:52.910Z",
+  "refreshed": "2026-10-28T21:02:16.887Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -14282,8 +14282,8 @@
    "n": 400,
    "pop": "LV",
    "results": {
-    "Hinojosa": 48,
-    "Abbott": 53
+    "Hinojosa": 47.5,
+    "Abbott": 52.5
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
@@ -15203,7 +15203,7 @@
   },
   {
    "race": "GOV-WI",
-   "pollster": "YouGov",
+   "pollster": "YouGov (D)",
    "pollsterId": null,
    "start": "2026-09-22",
    "end": "2026-10-09",
@@ -15213,7 +15213,7 @@
     "Crowley": 46,
     "Tiffany": 42
    },
-   "partisan": null,
+   "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_Wisconsin_gubernatorial_election",
    "origin": "wikipedia"
   },
@@ -16289,6 +16289,166 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_South_Carolina_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-FL",
+   "pollster": "St. Pete Polls",
+   "pollsterId": null,
+   "start": "2026-10-25",
+   "end": "2026-10-27",
+   "n": 916,
+   "pop": "LV",
+   "results": {
+    "Nixon": 45,
+    "Moody": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-FL",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-19",
+   "end": "2026-10-25",
+   "n": 813,
+   "pop": "LV",
+   "results": {
+    "Nixon": 44,
+    "Moody": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "YouGov Blue (D)",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-26",
+   "n": 1000,
+   "pop": "RV",
+   "results": {
+    "Talarico": 51,
+    "Paxton": 43
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-FL",
+   "pollster": "St. Pete Polls",
+   "pollsterId": null,
+   "start": "2026-10-25",
+   "end": "2026-10-27",
+   "n": 916,
+   "pop": "LV",
+   "results": {
+    "Jolly": 46,
+    "Donalds": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-GA",
+   "pollster": "State Navigate",
+   "pollsterId": null,
+   "start": "2026-10-23",
+   "end": "2026-10-27",
+   "n": 679,
+   "pop": "LV",
+   "results": {
+    "Bottoms": 50,
+    "Jackson": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Georgia_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MN",
+   "pollster": "Mason-Dixon Polling & Strategy",
+   "pollsterId": null,
+   "start": "2026-10-05",
+   "end": "2026-10-07",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Klobuchar": 50,
+    "Demuth": 41
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Minnesota_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NY",
+   "pollster": "Siena College",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-19",
+   "end": "2026-10-22",
+   "n": 807,
+   "pop": "LV",
+   "results": {
+    "Hochul": 54,
+    "Blakeman": 40
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_New_York_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "TBA (R)",
+   "pollsterId": null,
+   "start": "2026-10-23",
+   "end": "2026-10-26",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Acton": 50,
+    "Ramaswamy": 42
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "YouGov Blue (D)",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-26",
+   "n": 1000,
+   "pop": "RV",
+   "results": {
+    "Hinojosa": 49,
+    "Abbott": 46
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-WI",
+   "pollster": "Marquette University",
+   "pollsterId": "marquette",
+   "start": "2026-10-14",
+   "end": "2026-10-22",
+   "n": 668,
+   "pop": "LV",
+   "results": {
+    "Crowley": 51,
+    "Tiffany": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Wisconsin_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
