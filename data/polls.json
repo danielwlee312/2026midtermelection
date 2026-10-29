@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-29T00:54:33.943Z",
+  "refreshed": "2026-10-29T07:03:23.454Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -4938,7 +4938,7 @@
   },
   {
    "race": "SEN-MT",
-   "pollster": "Concord Public Opinion Partners",
+   "pollster": "Concord Public Opinion Partners (D)",
    "pollsterId": null,
    "start": "2026-10-06",
    "end": "2026-10-08",
@@ -4949,7 +4949,7 @@
     "Alme": 35,
     "Bankhead": 13
    },
-   "partisan": null,
+   "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana",
    "origin": "wikipedia"
   },
@@ -6680,7 +6680,7 @@
   },
   {
    "race": "SEN-OH",
-   "pollster": "GS Strategy Group (R)/New River Strategies (D)",
+   "pollster": "GS Strategy Group (R)/ New River Strategies (D)",
    "pollsterId": null,
    "start": "2026-10-09",
    "end": "2026-10-13",
@@ -13059,7 +13059,7 @@
   },
   {
    "race": "GOV-OH",
-   "pollster": "GS Strategy Group (R)/New River Strategies (D)",
+   "pollster": "GS Strategy Group (R)/ New River Strategies (D)",
    "pollsterId": null,
    "start": "2026-10-09",
    "end": "2026-10-13",
@@ -16517,7 +16517,7 @@
   },
   {
    "race": "SEN-MT",
-   "pollster": "Concord Public Opinion Partners",
+   "pollster": "Concord Public Opinion Partners (D)",
    "pollsterId": null,
    "start": "2026-10-22",
    "end": "2026-10-23",
@@ -16528,7 +16528,7 @@
     "Alme": 38,
     "Bankhead": 10
    },
-   "partisan": null,
+   "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana",
    "origin": "wikipedia"
   },
@@ -16550,7 +16550,7 @@
   },
   {
    "race": "GOV-CA",
-   "pollster": "M3 Strategies",
+   "pollster": "M3 Strategies (R)",
    "pollsterId": null,
    "start": "2026-10-21",
    "end": "2026-10-23",
@@ -16560,7 +16560,7 @@
     "Becerra": 59,
     "Hilton": 36
    },
-   "partisan": null,
+   "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_California_gubernatorial_election",
    "origin": "wikipedia"
   },
@@ -16610,6 +16610,54 @@
    },
    "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_Wisconsin_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NC",
+   "pollster": "High Point University / YouGov",
+   "pollsterId": null,
+   "start": "2026-10-01",
+   "end": "2026-10-20",
+   "n": 620,
+   "pop": "LV",
+   "results": {
+    "Cooper": 54,
+    "Whatley": 40
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Concord Public Opinion Partners (D)",
+   "pollsterId": null,
+   "start": "2026-08-29",
+   "end": "2026-08-31",
+   "n": 504,
+   "pop": "LV",
+   "results": {
+    "Brown": 50,
+    "Husted": 40
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "Concord Public Opinion Partners (D)",
+   "pollsterId": null,
+   "start": "2026-08-29",
+   "end": "2026-08-31",
+   "n": 504,
+   "pop": "LV",
+   "results": {
+    "Acton": 49,
+    "Ramaswamy": 37
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
