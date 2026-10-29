@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-29T14:16:07.855Z",
+  "refreshed": "2026-10-29T19:40:36.563Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -16850,6 +16850,86 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "co/efficient (R)",
+   "pollsterId": null,
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "n": 1020,
+   "pop": "LV",
+   "results": {
+    "Turek": 46,
+    "Hinson": 48
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-SC",
+   "pollster": "East Carolina University",
+   "pollsterId": null,
+   "start": "2026-10-19",
+   "end": "2026-10-24",
+   "n": 955,
+   "pop": "LV",
+   "results": {
+    "Andrews": 47,
+    "Graham": 51
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-IA",
+   "pollster": "co/efficient (R)",
+   "pollsterId": null,
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "n": 1020,
+   "pop": "LV",
+   "results": {
+    "Sand": 50,
+    "Lahn": 45
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_Iowa_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-KS",
+   "pollster": "SSRS",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-26",
+   "n": 838,
+   "pop": "LV",
+   "results": {
+    "Holscher": 45,
+    "Masterson": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Kansas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NH",
+   "pollster": "UMass Lowell / YouGov",
+   "pollsterId": null,
+   "start": "2026-10-02",
+   "end": "2026-10-19",
+   "n": 600,
+   "pop": "LV",
+   "results": {
+    "Warmington": 42,
+    "Ayotte": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_New_Hampshire_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
