@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-29T19:40:36.563Z",
+  "refreshed": "2026-10-29T23:56:44.588Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -16930,6 +16930,86 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_New_Hampshire_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Upswing Research (D)",
+   "pollsterId": null,
+   "start": "2026-10-24",
+   "end": "2026-10-28",
+   "n": 505,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 50,
+    "Rogers": 45
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Michigan State University /Verasight",
+   "pollsterId": null,
+   "start": "2026-10-08",
+   "end": "2026-10-23",
+   "n": 1383,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 51,
+    "Rogers": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "ActiVote",
+   "pollsterId": null,
+   "start": "2026-10-22",
+   "end": "2026-10-28",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Talarico": 52,
+    "Paxton": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "A2 Insights",
+   "pollsterId": null,
+   "start": "2026-10-23",
+   "end": "2026-10-27",
+   "n": 631,
+   "pop": "LV",
+   "results": {
+    "Talarico": 50,
+    "Paxton": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "Mitchell Research & Communications",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-27",
+   "n": 636,
+   "pop": "LV",
+   "results": {
+    "Benson": 49,
+    "James": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
