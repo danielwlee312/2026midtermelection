@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-28T21:02:16.887Z",
+  "refreshed": "2026-10-29T00:54:33.943Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -4911,8 +4911,8 @@
    "n": 667,
    "pop": "LV",
    "results": {
-    "Bodnar": 28,
-    "Alme": 44,
+    "Bodnar": 29,
+    "Alme": 46,
     "Bankhead": 21
    },
    "partisan": "R",
@@ -16448,6 +16448,167 @@
     "Tiffany": 44
    },
    "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Wisconsin_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-AL",
+   "pollster": "Chism Strategies (D)",
+   "pollsterId": null,
+   "start": "2026-10-22",
+   "end": "2026-10-24",
+   "n": 695,
+   "pop": "LV",
+   "results": {
+    "Wess": 40,
+    "Moore": 48
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alabama",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-AK",
+   "pollster": "Rasmussen Reports (R)",
+   "pollsterId": null,
+   "start": "2026-10-12",
+   "end": "2026-10-15",
+   "n": 775,
+   "pop": "LV",
+   "results": {
+    "Peltola": 44,
+    "Sullivan": 42
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Mitchell Research & Communications",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-27",
+   "n": 636,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 51,
+    "Rogers": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "Victory Insights (R)",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-22",
+   "n": 1194,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 48,
+    "Tafoya": 44
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MT",
+   "pollster": "Concord Public Opinion Partners",
+   "pollsterId": null,
+   "start": "2026-10-22",
+   "end": "2026-10-23",
+   "n": 410,
+   "pop": "LV",
+   "results": {
+    "Bodnar": 39,
+    "Alme": 38,
+    "Bankhead": 10
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-AL",
+   "pollster": "Chism Strategies (D)",
+   "pollsterId": null,
+   "start": "2026-10-22",
+   "end": "2026-10-24",
+   "n": 695,
+   "pop": "LV",
+   "results": {
+    "Jones": 45,
+    "Tuberville": 48
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Alabama_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-CA",
+   "pollster": "M3 Strategies",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-23",
+   "n": 489,
+   "pop": "LV",
+   "results": {
+    "Becerra": 59,
+    "Hilton": 36
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_California_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MN",
+   "pollster": "Victory Insights (R)",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-22",
+   "n": 1194,
+   "pop": "LV",
+   "results": {
+    "Klobuchar": 50,
+    "Demuth": 43
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_Minnesota_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TN",
+   "pollster": "GOTV Polling",
+   "pollsterId": null,
+   "start": "2026-10-25",
+   "end": "2026-10-26",
+   "n": 1196,
+   "pop": "RV",
+   "results": {
+    "Green": 30,
+    "Blackburn": 35
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Tennessee_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-WI",
+   "pollster": "Wick (R)",
+   "pollsterId": null,
+   "start": "2026-10-19",
+   "end": "2026-10-23",
+   "n": 1213,
+   "pop": "LV",
+   "results": {
+    "Crowley": 48,
+    "Tiffany": 45
+   },
+   "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_Wisconsin_gubernatorial_election",
    "origin": "wikipedia"
   }
