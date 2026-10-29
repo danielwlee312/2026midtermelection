@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-29T07:03:23.454Z",
+  "refreshed": "2026-10-29T14:16:07.855Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -14282,8 +14282,8 @@
    "n": 400,
    "pop": "LV",
    "results": {
-    "Hinojosa": 47.5,
-    "Abbott": 52.5
+    "Hinojosa": 48,
+    "Abbott": 53
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
@@ -16658,6 +16658,198 @@
    },
    "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "SSRS",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-26",
+   "n": 838,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 49,
+    "Marshall": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "SSRS",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-26",
+   "n": 783,
+   "pop": "LV",
+   "results": {
+    "Jackson": 49,
+    "Collins": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "SSRS",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-27",
+   "n": 768,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 49,
+    "Rogers": 42
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "SSRS",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-27",
+   "n": 923,
+   "pop": "LV",
+   "results": {
+    "Talarico": 49,
+    "Paxton": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Texas Southern University",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-25",
+   "n": 2000,
+   "pop": "LV",
+   "results": {
+    "Talarico": 49,
+    "Paxton": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Cor Strategies (R)",
+   "pollsterId": null,
+   "start": "2026-10-10",
+   "end": "2026-10-15",
+   "n": 1409,
+   "pop": "LV",
+   "results": {
+    "Talarico": 44,
+    "Paxton": 40
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-ME",
+   "pollster": "SSRS",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-26",
+   "n": 783,
+   "pop": "LV",
+   "results": {
+    "Pingree": 53,
+    "Charles": 39
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Maine_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "SSRS",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-27",
+   "n": 768,
+   "pop": "LV",
+   "results": {
+    "Benson": 53,
+    "James": 41
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MN",
+   "pollster": "State Navigate",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-28",
+   "n": 806,
+   "pop": "LV",
+   "results": {
+    "Klobuchar": 52,
+    "Demuth": 42
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Minnesota_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NH",
+   "pollster": "Rasmussen Reports (R)",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 970,
+   "pop": "LV",
+   "results": {
+    "Warmington": 42,
+    "Ayotte": 52
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_New_Hampshire_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "SSRS",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-27",
+   "n": 923,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 46,
+    "Abbott": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "Texas Southern University",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-25",
+   "n": 2000,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 47,
+    "Abbott": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
