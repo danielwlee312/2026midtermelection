@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-30T18:36:22.377Z",
+  "refreshed": "2026-10-30T22:57:39.652Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -17203,6 +17203,86 @@
    },
    "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-LA",
+   "pollster": "Hart Research Associates (D)",
+   "pollsterId": null,
+   "start": "2026-10-28",
+   "end": "2026-10-29",
+   "n": 502,
+   "pop": "LV",
+   "results": {
+    "Davis": 45,
+    "Letlow": 45
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Louisiana",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Rasmussen Reports (R)",
+   "pollsterId": null,
+   "start": "2026-10-28",
+   "end": "2026-10-29",
+   "n": 745,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 49,
+    "Rogers": 44
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-SC",
+   "pollster": "Patinkin Research Strategies (D)",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Andrews": 48,
+    "Graham": 43
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "Michigan State University /Verasight",
+   "pollsterId": null,
+   "start": "2026-10-08",
+   "end": "2026-10-23",
+   "n": 1383,
+   "pop": "LV",
+   "results": {
+    "Benson": 51,
+    "James": 42
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NV",
+   "pollster": "Noble Predictive Insights",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-28",
+   "n": 487,
+   "pop": "LV",
+   "results": {
+    "Ford": 47,
+    "Lombardo": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Nevada_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
