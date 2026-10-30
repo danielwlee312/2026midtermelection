@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-29T23:56:44.588Z",
+  "refreshed": "2026-10-30T18:36:22.377Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -17010,6 +17010,199 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-FL",
+   "pollster": "Workbench Strategy (D)",
+   "pollsterId": null,
+   "start": "2026-10-18",
+   "end": "2026-10-22",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Nixon": 47,
+    "Moody": 49
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-26",
+   "end": "2026-10-28",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 50,
+    "Marshall": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "The Washington Post / SSPG",
+   "pollsterId": "wapo",
+   "start": "2026-10-22",
+   "end": "2026-10-26",
+   "n": 801,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 52,
+    "Marshall": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MT",
+   "pollster": "Montana State University Billings",
+   "pollsterId": null,
+   "start": "2026-10-05",
+   "end": "2026-10-21",
+   "n": 720,
+   "pop": "A",
+   "results": {
+    "Bodnar": 26,
+    "Alme": 30,
+    "Bankhead": 21
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-SD",
+   "pollster": "Concord Public Opinion Partners",
+   "pollsterId": null,
+   "start": "2026-10-22",
+   "end": "2026-10-26",
+   "n": 448,
+   "pop": "LV",
+   "results": {
+    "Bengs": 43,
+    "Rounds": 41
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Dakota",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Quantus Insights",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-28",
+   "n": 1221,
+   "pop": "LV",
+   "results": {
+    "Talarico": 48,
+    "Paxton": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-AZ",
+   "pollster": "Noble Predictive Insights",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-28",
+   "n": 511,
+   "pop": "LV",
+   "results": {
+    "Hobbs": 51,
+    "Biggs": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Arizona_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-CA",
+   "pollster": "Berkeley IGS",
+   "pollsterId": null,
+   "start": "2026-10-19",
+   "end": "2026-10-25",
+   "n": 1477,
+   "pop": "LV",
+   "results": {
+    "Becerra": 61,
+    "Hilton": 34
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_California_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-FL",
+   "pollster": "Workbench Strategy (D)",
+   "pollsterId": null,
+   "start": "2026-10-18",
+   "end": "2026-10-22",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Jolly": 48,
+    "Donalds": 46
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-KS",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-26",
+   "end": "2026-10-28",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Holscher": 46,
+    "Masterson": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Kansas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-KS",
+   "pollster": "The Washington Post / SSPG",
+   "pollsterId": "wapo",
+   "start": "2026-10-22",
+   "end": "2026-10-26",
+   "n": 801,
+   "pop": "LV",
+   "results": {
+    "Holscher": 51,
+    "Masterson": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Kansas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "Quantus Insights (R)",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-28",
+   "n": 1221,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 46,
+    "Abbott": 51
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
