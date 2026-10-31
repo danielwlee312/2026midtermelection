@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-31T09:36:48.783Z",
+  "refreshed": "2026-10-31T15:43:34.805Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -17395,6 +17395,54 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Nebraska_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "Data for Progress (D)",
+   "pollsterId": null,
+   "start": "2026-10-23",
+   "end": "2026-10-27",
+   "n": 652,
+   "pop": "LV",
+   "results": {
+    "Jackson": 50,
+    "Collins": 45
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "KStrat",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-10-30",
+   "n": 900,
+   "pop": "LV",
+   "results": {
+    "Talarico": 48,
+    "Paxton": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "KStrat",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-10-30",
+   "n": 900,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 47,
+    "Abbott": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
