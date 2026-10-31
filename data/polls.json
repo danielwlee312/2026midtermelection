@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-30T22:57:39.652Z",
+  "refreshed": "2026-10-31T02:20:40.683Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -17242,7 +17242,7 @@
    "pollster": "Patinkin Research Strategies (D)",
    "pollsterId": null,
    "start": "2026-10-27",
-   "end": "2026-10-27",
+   "end": "2026-10-29",
    "n": 500,
    "pop": "LV",
    "results": {
@@ -17283,6 +17283,54 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Nevada_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-AK",
+   "pollster": "Alaska Survey Research",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 1326,
+   "pop": "LV",
+   "results": {
+    "Peltola": 48,
+    "Sullivan": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "KSTP / SurveyUSA",
+   "pollsterId": "surveyusa",
+   "start": "2026-10-24",
+   "end": "2026-10-28",
+   "n": 714,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 48,
+    "Tafoya": 41
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MN",
+   "pollster": "KSTP / SurveyUSA",
+   "pollsterId": "surveyusa",
+   "start": "2026-10-24",
+   "end": "2026-10-28",
+   "n": 718,
+   "pop": "LV",
+   "results": {
+    "Klobuchar": 51,
+    "Demuth": 39
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Minnesota_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
