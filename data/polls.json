@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-31T02:20:40.683Z",
+  "refreshed": "2026-10-31T09:36:48.783Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -17079,7 +17079,7 @@
   },
   {
    "race": "SEN-SD",
-   "pollster": "Concord Public Opinion Partners",
+   "pollster": "Concord Public Opinion Partners (D)",
    "pollsterId": null,
    "start": "2026-10-22",
    "end": "2026-10-26",
@@ -17089,7 +17089,7 @@
     "Bengs": 43,
     "Rounds": 41
    },
-   "partisan": null,
+   "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Dakota",
    "origin": "wikipedia"
   },
@@ -17331,6 +17331,70 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Minnesota_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NE",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-23",
+   "end": "2026-10-29",
+   "n": 809,
+   "pop": "LV",
+   "results": {
+    "Osborn": 43,
+    "Ricketts": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Data for Progress (D)",
+   "pollsterId": null,
+   "start": "2026-10-23",
+   "end": "2026-10-26",
+   "n": 712,
+   "pop": "LV",
+   "results": {
+    "Talarico": 49,
+    "Paxton": 45
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-AZ",
+   "pollster": "GrayHouse (R)",
+   "pollsterId": null,
+   "start": "2026-10-28",
+   "end": "2026-10-29",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Hobbs": 50,
+    "Biggs": 45
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_Arizona_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NE",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-23",
+   "end": "2026-10-29",
+   "n": 809,
+   "pop": "LV",
+   "results": {
+    "Walz": 40,
+    "Pillen": 53
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Nebraska_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
