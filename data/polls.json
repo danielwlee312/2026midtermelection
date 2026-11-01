@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-11-01T13:20:16.364Z",
+  "refreshed": "2026-11-01T18:55:08.422Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -7816,7 +7816,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Quantus Insights",
+   "pollster": "Quantus Insights (R)",
    "pollsterId": null,
    "start": "2026-10-09",
    "end": "2026-10-11",
@@ -7826,7 +7826,7 @@
     "Talarico": 47,
     "Paxton": 47
    },
-   "partisan": null,
+   "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
    "origin": "wikipedia"
   },
@@ -8360,7 +8360,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Quantus Insights",
+   "pollster": "Quantus Insights (R)",
    "pollsterId": null,
    "start": "2026-06-03",
    "end": "2026-06-04",
@@ -8370,7 +8370,7 @@
     "Talarico": 43,
     "Paxton": 45
    },
-   "partisan": null,
+   "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
    "origin": "wikipedia"
   },
@@ -17095,7 +17095,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Quantus Insights",
+   "pollster": "Quantus Insights (R)",
    "pollsterId": null,
    "start": "2026-10-26",
    "end": "2026-10-28",
@@ -17105,7 +17105,7 @@
     "Talarico": 48,
     "Paxton": 49
    },
-   "partisan": null,
+   "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
    "origin": "wikipedia"
   },
@@ -17732,6 +17732,247 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Illinois_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2020,
+   "pop": "LV",
+   "results": {
+    "Turek": 50,
+    "Hinson": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2092,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 50,
+    "Marshall": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 1503,
+   "pop": "LV",
+   "results": {
+    "Jackson": 52,
+    "Collins": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2093,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 51,
+    "Rogers": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NE",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 1979,
+   "pop": "LV",
+   "results": {
+    "Osborn": 49,
+    "Ricketts": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NC",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2130,
+   "pop": "LV",
+   "results": {
+    "Cooper": 55,
+    "Whatley": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2090,
+   "pop": "LV",
+   "results": {
+    "Brown": 50,
+    "Husted": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2141,
+   "pop": "LV",
+   "results": {
+    "Talarico": 51,
+    "Paxton": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-IA",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2020,
+   "pop": "LV",
+   "results": {
+    "Sand": 53,
+    "Lahn": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Iowa_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-KS",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2092,
+   "pop": "LV",
+   "results": {
+    "Holscher": 49,
+    "Masterson": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Kansas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-ME",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 1503,
+   "pop": "LV",
+   "results": {
+    "Pingree": 53,
+    "Charles": 45,
+    "Bennett": 2
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Maine_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2093,
+   "pop": "LV",
+   "results": {
+    "Benson": 52,
+    "James": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NE",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 1979,
+   "pop": "LV",
+   "results": {
+    "Walz": 47,
+    "Pillen": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Nebraska_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2090,
+   "pop": "LV",
+   "results": {
+    "Acton": 52,
+    "Ramaswamy": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "YouGov",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 2141,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 49,
+    "Abbott": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
