@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-11-01T05:59:32.536Z",
+  "refreshed": "2026-11-01T13:20:16.364Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -17468,11 +17468,11 @@
    "pollsterId": null,
    "start": "2026-10-26",
    "end": "2026-10-30",
-   "n": 1129,
+   "n": 1067,
    "pop": "LV",
    "results": {
-    "Nixon": 44,
-    "Moody": 47
+    "Nixon": 45,
+    "Moody": 52
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida",
@@ -17668,6 +17668,70 @@
    },
    "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-CA",
+   "pollster": "ActiVote",
+   "pollsterId": null,
+   "start": "2026-10-17",
+   "end": "2026-10-31",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Becerra": 63,
+    "Hilton": 37
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_California_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-FL",
+   "pollster": "ActiVote",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-31",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Jolly": 48,
+    "Donalds": 52
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-FL",
+   "pollster": "Big Data Poll",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-30",
+   "n": 1067,
+   "pop": "LV",
+   "results": {
+    "Jolly": 44,
+    "Donalds": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-IL",
+   "pollster": "ActiVote",
+   "pollsterId": null,
+   "start": "2026-10-23",
+   "end": "2026-10-31",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Pritzker": 59,
+    "Bailey": 41
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Illinois_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
