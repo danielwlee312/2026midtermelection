@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-10-31T23:22:40.822Z",
+  "refreshed": "2026-11-01T05:59:32.536Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -14283,7 +14283,7 @@
    "pop": "LV",
    "results": {
     "Hinojosa": 48,
-    "Abbott": 53
+    "Abbott": 52
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
@@ -17166,8 +17166,8 @@
    "n": 800,
    "pop": "LV",
    "results": {
-    "Holscher": 46,
-    "Masterson": 50
+    "Holscher": 48,
+    "Masterson": 53
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Kansas_gubernatorial_election",
@@ -17572,6 +17572,102 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-IL",
+   "pollster": "ActiVote",
+   "pollsterId": null,
+   "start": "2026-10-21",
+   "end": "2026-10-30",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Stratton": 56,
+    "Tracy": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Illinois",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Data for Progress (D)",
+   "pollsterId": null,
+   "start": "2026-10-23",
+   "end": "2026-10-25",
+   "n": 622,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 50,
+    "Rogers": 46
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Kreate Strategies",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-10-30",
+   "n": 900,
+   "pop": "LV",
+   "results": {
+    "Talarico": 48,
+    "Paxton": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "Data for Progress (D)",
+   "pollsterId": null,
+   "start": "2026-10-23",
+   "end": "2026-10-25",
+   "n": 622,
+   "pop": "LV",
+   "results": {
+    "Benson": 50,
+    "James": 46
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "Kreate Strategies",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-10-30",
+   "n": 900,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 47,
+    "Abbott": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "Data for Progress (D)",
+   "pollsterId": null,
+   "start": "2026-10-23",
+   "end": "2026-10-26",
+   "n": 712,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 47,
+    "Abbott": 48
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
