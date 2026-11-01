@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-11-01T18:55:08.422Z",
+  "refreshed": "2026-11-01T22:48:00.164Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -17904,8 +17904,7 @@
    "pop": "LV",
    "results": {
     "Pingree": 53,
-    "Charles": 45,
-    "Bennett": 2
+    "Charles": 45
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Maine_gubernatorial_election",
@@ -17973,6 +17972,134 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-CO",
+   "pollster": "Lake Research Partners (D)",
+   "pollsterId": null,
+   "start": "2026-09-16",
+   "end": "2026-09-30",
+   "n": 600,
+   "pop": "RV",
+   "results": {
+    "Hickenlooper": 52,
+    "Baisley": 38
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Colorado",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NC",
+   "pollster": "RedBox Research (D)",
+   "pollsterId": null,
+   "start": "2026-10-20",
+   "end": "2026-10-23",
+   "n": 3292,
+   "pop": "LV",
+   "results": {
+    "Cooper": 50,
+    "Whatley": 43
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "ActiVote",
+   "pollsterId": null,
+   "start": "2026-10-18",
+   "end": "2026-10-31",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Brown": 50,
+    "Husted": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "InsiderAdvantage (R)",
+   "pollsterId": null,
+   "start": "2026-10-29",
+   "end": "2026-10-30",
+   "n": 1200,
+   "pop": "LV",
+   "results": {
+    "Brown": 49,
+    "Husted": 47
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-AZ",
+   "pollster": "Lake Research Partners (D)",
+   "pollsterId": null,
+   "start": "2026-09-16",
+   "end": "2026-09-30",
+   "n": 600,
+   "pop": "RV",
+   "results": {
+    "Hobbs": 56,
+    "Biggs": 33
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Arizona_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-CO",
+   "pollster": "Lake Research Partners (D)",
+   "pollsterId": null,
+   "start": "2026-09-16",
+   "end": "2026-09-30",
+   "n": 600,
+   "pop": "RV",
+   "results": {
+    "Weiser": 51,
+    "Marx": 36
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Colorado_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "ActiVote",
+   "pollsterId": null,
+   "start": "2026-10-16",
+   "end": "2026-10-31",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Acton": 51,
+    "Ramaswamy": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "InsiderAdvantage (R)",
+   "pollsterId": null,
+   "start": "2026-10-29",
+   "end": "2026-10-30",
+   "n": 1200,
+   "pop": "LV",
+   "results": {
+    "Acton": 49,
+    "Ramaswamy": 46
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
