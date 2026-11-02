@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-11-02T11:00:11.257Z",
+  "refreshed": "2026-11-02T20:45:27.374Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -7816,7 +7816,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Quantus Insights (R)",
+   "pollster": "Quantus Insights",
    "pollsterId": null,
    "start": "2026-10-09",
    "end": "2026-10-11",
@@ -7826,7 +7826,7 @@
     "Talarico": 47,
     "Paxton": 47
    },
-   "partisan": "R",
+   "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
    "origin": "wikipedia"
   },
@@ -8360,7 +8360,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Quantus Insights (R)",
+   "pollster": "Quantus Insights",
    "pollsterId": null,
    "start": "2026-06-03",
    "end": "2026-06-04",
@@ -8370,7 +8370,7 @@
     "Talarico": 43,
     "Paxton": 45
    },
-   "partisan": "R",
+   "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
    "origin": "wikipedia"
   },
@@ -17095,7 +17095,7 @@
   },
   {
    "race": "SEN-TX",
-   "pollster": "Quantus Insights (R)",
+   "pollster": "Quantus Insights",
    "pollsterId": null,
    "start": "2026-10-26",
    "end": "2026-10-28",
@@ -17105,7 +17105,7 @@
     "Talarico": 48,
     "Paxton": 49
    },
-   "partisan": "R",
+   "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
    "origin": "wikipedia"
   },
@@ -18726,6 +18726,182 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Wisconsin_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-AK",
+   "pollster": "InsiderAdvantage (R)",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 1200,
+   "pop": "LV",
+   "results": {
+    "Peltola": 48,
+    "Sullivan": 48
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-CO",
+   "pollster": "CU Boulder / YouGov",
+   "pollsterId": null,
+   "start": "2026-10-09",
+   "end": "2026-10-20",
+   "n": 710,
+   "pop": "LV",
+   "results": {
+    "Hickenlooper": 57,
+    "Baisley": 39
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Colorado",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-GA",
+   "pollster": "InsiderAdvantage (R)",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 2500,
+   "pop": "LV",
+   "results": {
+    "Ossoff": 53,
+    "Collins": 46
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-GA",
+   "pollster": "University of Georgia",
+   "pollsterId": null,
+   "start": "2026-10-07",
+   "end": "2026-10-15",
+   "n": 1000,
+   "pop": "LV",
+   "results": {
+    "Ossoff": 48,
+    "Collins": 40
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NH",
+   "pollster": "National Public Affairs (R)",
+   "pollsterId": null,
+   "start": "2026-10-25",
+   "end": "2026-10-29",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Pappas": 51,
+    "Sununu": 45
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NC",
+   "pollster": "East Carolina University",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 1041,
+   "pop": "LV",
+   "results": {
+    "Cooper": 54,
+    "Whatley": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Trafalgar Group (R)",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 1092,
+   "pop": "LV",
+   "results": {
+    "Brown": 47,
+    "Husted": 45
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-CO",
+   "pollster": "CU Boulder / YouGov",
+   "pollsterId": null,
+   "start": "2026-10-09",
+   "end": "2026-10-20",
+   "n": 710,
+   "pop": "LV",
+   "results": {
+    "Weiser": 57,
+    "Marx": 37
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Colorado_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-GA",
+   "pollster": "InsiderAdvantage (R)",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 2500,
+   "pop": "LV",
+   "results": {
+    "Bottoms": 49,
+    "Jackson": 49
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_Georgia_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "Rasmussen Reports (R)",
+   "pollsterId": null,
+   "start": "2026-10-28",
+   "end": "2026-10-29",
+   "n": 745,
+   "pop": "LV",
+   "results": {
+    "Benson": 50,
+    "James": 40
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NH",
+   "pollster": "National Public Affairs (R)",
+   "pollsterId": null,
+   "start": "2026-10-25",
+   "end": "2026-10-29",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Warmington": 43,
+    "Ayotte": 52
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_New_Hampshire_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
