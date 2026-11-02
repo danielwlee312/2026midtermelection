@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-11-01T22:48:00.164Z",
+  "refreshed": "2026-11-02T02:29:43.243Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -18100,6 +18100,247 @@
    },
    "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-AK",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-23",
+   "end": "2026-10-30",
+   "n": 610,
+   "pop": "LV",
+   "results": {
+    "Peltola": 48,
+    "Sullivan": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-26",
+   "end": "2026-11-01",
+   "n": 705,
+   "pop": "LV",
+   "results": {
+    "Turek": 48,
+    "Hinson": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 736,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 49,
+    "Marshall": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 714,
+   "pop": "LV",
+   "results": {
+    "Jackson": 51,
+    "Collins": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-23",
+   "end": "2026-11-01",
+   "n": 1011,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 53,
+    "Rogers": 42
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "InsiderAdvantage (R)",
+   "pollsterId": null,
+   "start": "2026-10-29",
+   "end": "2026-10-30",
+   "n": 1200,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 49,
+    "Tafoya": 46
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NE",
+   "pollster": "National Public Affairs (R)",
+   "pollsterId": null,
+   "start": "2026-10-25",
+   "end": "2026-10-29",
+   "n": 800,
+   "pop": "LV",
+   "results": {
+    "Osborn": 45,
+    "Ricketts": 48
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-26",
+   "end": "2026-11-01",
+   "n": 717,
+   "pop": "LV",
+   "results": {
+    "Brown": 49,
+    "Husted": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 1215,
+   "pop": "LV",
+   "results": {
+    "Talarico": 50,
+    "Paxton": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-IA",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-26",
+   "end": "2026-11-01",
+   "n": 705,
+   "pop": "LV",
+   "results": {
+    "Sand": 51,
+    "Lahn": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Iowa_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-KS",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 736,
+   "pop": "LV",
+   "results": {
+    "Holscher": 48,
+    "Masterson": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Kansas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-ME",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 714,
+   "pop": "LV",
+   "results": {
+    "Pingree": 49,
+    "Charles": 37,
+    "Bennett": 8
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Maine_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-23",
+   "end": "2026-11-01",
+   "n": 1011,
+   "pop": "LV",
+   "results": {
+    "Benson": 52,
+    "James": 39
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-26",
+   "end": "2026-11-01",
+   "n": 717,
+   "pop": "LV",
+   "results": {
+    "Acton": 49,
+    "Ramaswamy": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "New York Times / Siena University",
+   "pollsterId": "nyt-siena",
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 1215,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 48,
+    "Abbott": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
