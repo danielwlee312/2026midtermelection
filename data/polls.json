@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-11-03T02:55:01.820Z",
+  "refreshed": "2026-11-03T10:49:23.595Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -19833,6 +19833,86 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-LA",
+   "pollster": "Lincoln Park Strategies (D)",
+   "pollsterId": null,
+   "start": "2026-10-29",
+   "end": "2026-10-31",
+   "n": null,
+   "pop": "LV",
+   "results": {
+    "Davis": 47,
+    "Letlow": 47
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Louisiana",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NE",
+   "pollster": "Greyhouse",
+   "pollsterId": null,
+   "start": "2026-11-01",
+   "end": "2026-11-01",
+   "n": 534,
+   "pop": "LV",
+   "results": {
+    "Osborn": 49,
+    "Ricketts": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NH",
+   "pollster": "UMass Lowell / YouGov",
+   "pollsterId": null,
+   "start": "2026-10-02",
+   "end": "2026-10-19",
+   "n": 600,
+   "pop": "LV",
+   "results": {
+    "Pappas": 48,
+    "Sununu": 41
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TN",
+   "pollster": "Targoz Market Research",
+   "pollsterId": null,
+   "start": "2026-10-24",
+   "end": "2026-11-02",
+   "n": 718,
+   "pop": "LV",
+   "results": {
+    "Bradshaw": 37,
+    "Hagerty": 57
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Tennessee",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TN",
+   "pollster": "Targoz Market Research",
+   "pollsterId": null,
+   "start": "2026-10-24",
+   "end": "2026-11-02",
+   "n": 718,
+   "pop": "LV",
+   "results": {
+    "Green": 35,
+    "Blackburn": 54
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Tennessee_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
