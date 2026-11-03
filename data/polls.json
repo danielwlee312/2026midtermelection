@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-11-03T10:49:23.595Z",
+  "refreshed": "2026-11-03T18:26:18.570Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -1839,8 +1839,8 @@
    "n": 550,
    "pop": "LV",
    "results": {
-    "Shoffner": 39,
-    "Cotton": 50
+    "Shoffner": 40,
+    "Cotton": 51
    },
    "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Arkansas",
@@ -2671,8 +2671,8 @@
    "n": 400,
    "pop": "LV",
    "results": {
-    "Stratton": 58.5,
-    "Tracy": 41.5
+    "Stratton": 59,
+    "Tracy": 42
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Illinois",
@@ -19354,9 +19354,9 @@
   },
   {
    "race": "SEN-SC",
-   "pollster": "Rasmussen Reports",
+   "pollster": "Rasmussen Reports (R)",
    "pollsterId": null,
-   "start": "2026-10-31",
+   "start": "2026-10-27",
    "end": "2026-10-31",
    "n": 1028,
    "pop": "LV",
@@ -19364,7 +19364,7 @@
     "Andrews": 47,
     "Graham": 50
    },
-   "partisan": null,
+   "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
    "origin": "wikipedia"
   },
@@ -19913,6 +19913,166 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Tennessee_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-AL",
+   "pollster": "Blueprint Polling (D)",
+   "pollsterId": null,
+   "start": "2026-10-22",
+   "end": "2026-10-24",
+   "n": 695,
+   "pop": "LV",
+   "results": {
+    "Wess": 40,
+    "Moore": 48
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alabama",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-AR",
+   "pollster": "GrayHouse (R)",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-10-28",
+   "n": 509,
+   "pop": "LV",
+   "results": {
+    "Shoffner": 39,
+    "Cotton": 55
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Arkansas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-CO",
+   "pollster": "Keating Research (D)",
+   "pollsterId": null,
+   "start": "2026-11-01",
+   "end": "2026-11-02",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Hickenlooper": 58,
+    "Baisley": 37
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Colorado",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-FL",
+   "pollster": "RedBox Research (D)",
+   "pollsterId": null,
+   "start": "2026-10-30",
+   "end": "2026-10-31",
+   "n": 2898,
+   "pop": "LV",
+   "results": {
+    "Nixon": 45,
+    "Moody": 47
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-FL",
+   "pollster": "Targoz Market Research",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 1013,
+   "pop": "LV",
+   "results": {
+    "Nixon": 43,
+    "Moody": 52
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ID",
+   "pollster": "Peak Insights (R)",
+   "pollsterId": null,
+   "start": "2026-10-13",
+   "end": "2026-10-15",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Achilles": 27,
+    "Risch": 54
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Idaho",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NE",
+   "pollster": "GrayHouse (R)",
+   "pollsterId": null,
+   "start": "2026-10-29",
+   "end": "2026-11-01",
+   "n": 534,
+   "pop": "LV",
+   "results": {
+    "Osborn": 44,
+    "Ricketts": 50
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-CO",
+   "pollster": "Keating Research (D)",
+   "pollsterId": null,
+   "start": "2026-11-01",
+   "end": "2026-11-02",
+   "n": 400,
+   "pop": "LV",
+   "results": {
+    "Weiser": 59,
+    "Marx": 33
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Colorado_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-FL",
+   "pollster": "RedBox Research (D)",
+   "pollsterId": null,
+   "start": "2026-10-30",
+   "end": "2026-10-31",
+   "n": 2898,
+   "pop": "LV",
+   "results": {
+    "Jolly": 46,
+    "Donalds": 47
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-FL",
+   "pollster": "Targoz Market Research",
+   "pollsterId": null,
+   "start": "2026-10-26",
+   "end": "2026-10-29",
+   "n": 1014,
+   "pop": "LV",
+   "results": {
+    "Jolly": 43,
+    "Donalds": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
