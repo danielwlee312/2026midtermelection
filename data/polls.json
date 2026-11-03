@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-11-02T20:45:27.374Z",
+  "refreshed": "2026-11-03T02:55:01.820Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -4719,8 +4719,8 @@
    "n": 622,
    "pop": "LV",
    "results": {
-    "Flanagan": 40,
-    "Tafoya": 38
+    "Flanagan": 46,
+    "Tafoya": 44
    },
    "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
@@ -12771,7 +12771,7 @@
   },
   {
    "race": "GOV-NY",
-   "pollster": "Siena College",
+   "pollster": "Siena University",
    "pollsterId": "nyt-siena",
    "start": "2026-06-17",
    "end": "2026-06-23",
@@ -12867,7 +12867,7 @@
   },
   {
    "race": "GOV-NY",
-   "pollster": "Siena College",
+   "pollster": "Siena University",
    "pollsterId": "nyt-siena",
    "start": "2026-02-23",
    "end": "2026-02-26",
@@ -12947,7 +12947,7 @@
   },
   {
    "race": "GOV-NY",
-   "pollster": "Siena College",
+   "pollster": "Siena University",
    "pollsterId": "nyt-siena",
    "start": "2025-12-08",
    "end": "2025-12-12",
@@ -13962,8 +13962,8 @@
    "n": 800,
    "pop": "LV",
    "results": {
-    "Foulkes": 44,
-    "Guckian": 10
+    "Foulkes": 48,
+    "Guckian": 12
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Rhode_Island_gubernatorial_election",
@@ -16389,7 +16389,7 @@
   },
   {
    "race": "GOV-NY",
-   "pollster": "Siena College",
+   "pollster": "Siena University",
    "pollsterId": "nyt-siena",
    "start": "2026-10-19",
    "end": "2026-10-22",
@@ -18494,7 +18494,7 @@
    "start": "2026-10-28",
    "end": "2026-11-01",
    "n": 1678,
-   "pop": "A",
+   "pop": "LV",
    "results": {
     "Talarico": 51,
     "Paxton": 45
@@ -18687,7 +18687,7 @@
    "start": "2026-10-28",
    "end": "2026-11-01",
    "n": 1678,
-   "pop": "A",
+   "pop": "LV",
    "results": {
     "Hinojosa": 49,
     "Abbott": 48
@@ -18902,6 +18902,937 @@
    },
    "partisan": "R",
    "source": "https://en.wikipedia.org/wiki/2026_New_Hampshire_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-AK",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 522,
+   "pop": "LV",
+   "results": {
+    "Peltola": 50,
+    "Sullivan": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-CO",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Hickenlooper": 57,
+    "Baisley": 35
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Colorado",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-FL",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Nixon": 44,
+    "Moody": 51
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-GA",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Ossoff": 52,
+    "Collins": 42
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-IL",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Stratton": 53,
+    "Tracy": 41
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Illinois",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 1219,
+   "pop": "LV",
+   "results": {
+    "Turek": 51,
+    "Hinson": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "GrayHouse (R)",
+   "pollsterId": null,
+   "start": "2026-10-28",
+   "end": "2026-10-31",
+   "n": 601,
+   "pop": "LV",
+   "results": {
+    "Turek": 46,
+    "Hinson": 48
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-IA",
+   "pollster": "Rasmussen Reports (R)",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-10-31",
+   "n": 901,
+   "pop": "LV",
+   "results": {
+    "Turek": 46,
+    "Hinson": 47
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 2038,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 52,
+    "Marshall": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-KS",
+   "pollster": "Survey 160",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 1267,
+   "pop": "LV",
+   "results": {
+    "Hamilton": 50,
+    "Marshall": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "Rasmussen Reports (R)",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-11-02",
+   "n": 896,
+   "pop": "LV",
+   "results": {
+    "Jackson": 49,
+    "Collins": 46
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 600,
+   "pop": "LV",
+   "results": {
+    "Jackson": 49,
+    "Collins": 51
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 967,
+   "pop": "LV",
+   "results": {
+    "Jackson": 53,
+    "Collins": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-ME",
+   "pollster": "Survey 160",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 1323,
+   "pop": "LV",
+   "results": {
+    "Jackson": 50,
+    "Collins": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MA",
+   "pollster": "UMass Lowell",
+   "pollsterId": null,
+   "start": "2026-10-07",
+   "end": "2026-10-18",
+   "n": 850,
+   "pop": "LV",
+   "results": {
+    "Markey": 55,
+    "Deaton": 26
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Massachusetts",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "John Zogby Strategies",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 1001,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 51,
+    "Rogers": 49
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 51,
+    "Rogers": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "Concord Public Opinion Partners (D)",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 510,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 51,
+    "Rogers": 41
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 1316,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 54,
+    "Rogers": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 2133,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 48,
+    "Tafoya": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MN",
+   "pollster": "Survey 160",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 1365,
+   "pop": "LV",
+   "results": {
+    "Flanagan": 52,
+    "Tafoya": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NH",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 1057,
+   "pop": "LV",
+   "results": {
+    "Pappas": 52,
+    "Sununu": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NM",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Luján": 56,
+    "Marker": 37
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Mexico",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-NC",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 1459,
+   "pop": "LV",
+   "results": {
+    "Cooper": 56,
+    "Whatley": 42
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 930,
+   "pop": "LV",
+   "results": {
+    "Brown": 46,
+    "Husted": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 1801,
+   "pop": "LV",
+   "results": {
+    "Brown": 51,
+    "Husted": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Survey 160",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 1122,
+   "pop": "LV",
+   "results": {
+    "Brown": 50,
+    "Husted": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "Rasmussen Reports (R)",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-10-31",
+   "n": 1119,
+   "pop": "LV",
+   "results": {
+    "Brown": 46,
+    "Husted": 46
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-SC",
+   "pollster": "Rasmussen Reports",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "n": 1028,
+   "pop": "LV",
+   "results": {
+    "Andrews": 47,
+    "Graham": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-SC",
+   "pollster": "Trafalgar Group (R)",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 1091,
+   "pop": "LV",
+   "results": {
+    "Andrews": 46,
+    "Graham": 48
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-SC",
+   "pollster": "Resonance Media Services (R)",
+   "pollsterId": null,
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "n": 600,
+   "pop": "LV",
+   "results": {
+    "Andrews": 46,
+    "Graham": 45
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Talarico": 49,
+    "Paxton": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Talarico": 50,
+    "Paxton": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-CO",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Weiser": 53,
+    "Marx": 38
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Colorado_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-FL",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Jolly": 44,
+    "Donalds": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-GA",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Bottoms": 46,
+    "Jackson": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Georgia_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-IL",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Pritzker": 57,
+    "Bailey": 36
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Illinois_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-IA",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 1219,
+   "pop": "LV",
+   "results": {
+    "Sand": 54,
+    "Lahn": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Iowa_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-IA",
+   "pollster": "Rasmussen Reports (R)",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-10-31",
+   "n": 901,
+   "pop": "LV",
+   "results": {
+    "Sand": 50,
+    "Lahn": 45
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_Iowa_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-KS",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 2038,
+   "pop": "LV",
+   "results": {
+    "Holscher": 50,
+    "Masterson": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Kansas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-KS",
+   "pollster": "Survey 160",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 1267,
+   "pop": "LV",
+   "results": {
+    "Holscher": 49,
+    "Masterson": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Kansas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-ME",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 600,
+   "pop": "LV",
+   "results": {
+    "Pingree": 50,
+    "Charles": 41,
+    "Bennett": 9
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Maine_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-ME",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 967,
+   "pop": "LV",
+   "results": {
+    "Pingree": 50,
+    "Charles": 42,
+    "Bennett": 5
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Maine_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-ME",
+   "pollster": "Survey 160",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 1323,
+   "pop": "LV",
+   "results": {
+    "Pingree": 53,
+    "Charles": 41,
+    "Bennett": 5
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Maine_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MA",
+   "pollster": "UMass Lowell",
+   "pollsterId": null,
+   "start": "2026-10-07",
+   "end": "2026-10-18",
+   "n": 850,
+   "pop": "LV",
+   "results": {
+    "Healey": 57,
+    "Minogue": 29
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Massachusetts_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Benson": 50,
+    "James": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "Concord Public Opinion Partners (D)",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 510,
+   "pop": "LV",
+   "results": {
+    "Benson": 50,
+    "James": 41
+   },
+   "partisan": "D",
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 1316,
+   "pop": "LV",
+   "results": {
+    "Benson": 53,
+    "James": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MN",
+   "pollster": "Survey 160",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 1365,
+   "pop": "LV",
+   "results": {
+    "Klobuchar": 53,
+    "Demuth": 43
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Minnesota_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NH",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 1057,
+   "pop": "LV",
+   "results": {
+    "Warmington": 44,
+    "Ayotte": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_New_Hampshire_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-NM",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Haaland": 51,
+    "Hull": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_New_Mexico_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 930,
+   "pop": "LV",
+   "results": {
+    "Acton": 48,
+    "Ramaswamy": 48
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "AtlasIntel",
+   "pollsterId": "atlasintel",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "n": 1801,
+   "pop": "LV",
+   "results": {
+    "Acton": 52,
+    "Ramaswamy": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "Survey 160",
+   "pollsterId": null,
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "n": 1122,
+   "pop": "LV",
+   "results": {
+    "Acton": 51,
+    "Ramaswamy": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-SC",
+   "pollster": "Trafalgar Group (R)",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 1091,
+   "pop": "LV",
+   "results": {
+    "Johnson": 39,
+    "Wilson": 54
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_South_Carolina_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-SC",
+   "pollster": "Resonance Media Services (R)",
+   "pollsterId": null,
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "n": 600,
+   "pop": "LV",
+   "results": {
+    "Johnson": 42,
+    "Wilson": 51
+   },
+   "partisan": "R",
+   "source": "https://en.wikipedia.org/wiki/2026_South_Carolina_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "Research Co.",
+   "pollsterId": null,
+   "start": "2026-10-31",
+   "end": "2026-11-02",
+   "n": 450,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 44,
+    "Abbott": 46
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "Emerson College",
+   "pollsterId": "emerson",
+   "start": "2026-10-31",
+   "end": "2026-11-01",
+   "n": 500,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 49,
+    "Abbott": 50
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
