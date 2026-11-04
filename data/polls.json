@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-11-04T15:24:53.142Z",
+  "refreshed": "2026-11-04T21:51:41.207Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -5064,8 +5064,9 @@
    "n": 517,
    "pop": "LV",
    "results": {
-    "Bodnar": 45,
-    "Alme": 50
+    "Bodnar": 25,
+    "Alme": 49,
+    "Bankhead": 24
    },
    "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana",
@@ -5080,8 +5081,9 @@
    "n": 500,
    "pop": "LV",
    "results": {
-    "Bodnar": 44,
-    "Alme": 40
+    "Bodnar": 27,
+    "Alme": 41,
+    "Bankhead": 22
    },
    "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana",
@@ -5130,8 +5132,9 @@
    "n": 800,
    "pop": "LV",
    "results": {
-    "Bodnar": 45,
-    "Alme": 47
+    "Bodnar": 25,
+    "Alme": 47,
+    "Bankhead": 22
    },
    "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana",
@@ -5146,8 +5149,9 @@
    "n": 400,
    "pop": "LV",
    "results": {
-    "Bodnar": 50,
-    "Alme": 50
+    "Bodnar": 24,
+    "Alme": 49,
+    "Bankhead": 26
    },
    "partisan": "D",
    "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana",
