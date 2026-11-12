@@ -3,7 +3,7 @@
   "compiled": "2026-10-24",
   "origin": "snapshot+wikipedia",
   "description": "Hand-compiled snapshot of 2026 Senate, governor and generic-ballot polls.",
-  "refreshed": "2026-11-04T21:51:41.207Z",
+  "refreshed": "2026-11-12T02:57:38.882Z",
   "pagesRead": 71,
   "pagesTotal": 72
  },
@@ -20105,6 +20105,102 @@
    },
    "partisan": null,
    "source": "https://en.wikipedia.org/wiki/2026_Illinois_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-MI",
+   "pollster": "HarrisX",
+   "pollsterId": null,
+   "start": "2026-10-30",
+   "end": "2026-11-01",
+   "n": 663,
+   "pop": "LV",
+   "results": {
+    "El-Sayed": 48,
+    "Rogers": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-OH",
+   "pollster": "HarrisX",
+   "pollsterId": null,
+   "start": "2026-10-30",
+   "end": "2026-11-01",
+   "n": 496,
+   "pop": "LV",
+   "results": {
+    "Brown": 47,
+    "Husted": 45
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "SEN-TX",
+   "pollster": "HarrisX",
+   "pollsterId": null,
+   "start": "2026-10-30",
+   "end": "2026-11-01",
+   "n": 512,
+   "pop": "LV",
+   "results": {
+    "Talarico": 50,
+    "Paxton": 44
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-MI",
+   "pollster": "HarrisX",
+   "pollsterId": null,
+   "start": "2026-10-30",
+   "end": "2026-11-01",
+   "n": 663,
+   "pop": "LV",
+   "results": {
+    "Benson": 53,
+    "James": 41
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-OH",
+   "pollster": "HarrisX",
+   "pollsterId": null,
+   "start": "2026-10-30",
+   "end": "2026-11-01",
+   "n": 496,
+   "pop": "LV",
+   "results": {
+    "Acton": 45,
+    "Ramaswamy": 47
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "origin": "wikipedia"
+  },
+  {
+   "race": "GOV-TX",
+   "pollster": "HarrisX",
+   "pollsterId": null,
+   "start": "2026-10-30",
+   "end": "2026-11-01",
+   "n": 512,
+   "pop": "LV",
+   "results": {
+    "Hinojosa": 46,
+    "Abbott": 51
+   },
+   "partisan": null,
+   "source": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
    "origin": "wikipedia"
   }
  ]
